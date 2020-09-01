@@ -50,7 +50,7 @@ header{
     .menu-btn__burger{
         width: 40px;
         height: 6px;
-        background: #fff;
+        background: #EEFFFF;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
         transition: all .5s ease-in-out;
@@ -63,13 +63,17 @@ header{
         position: absolute;
         width: 40px;
         height: 6px;
-        background: #fff;
+        background: #EEFFFF;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
         transition: all .5s ease-in-out;
 
 
     }
+
+    /*nočna barva menija*/
+
+
 
     .menu-btn__burger::before{
         transform: translateY(-16px);
@@ -152,19 +156,69 @@ header{
 
 }
 
+/*night/day mode*/
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: rgb(73, 73, 72);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #EEFFFF;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+    color: #f1c40f;
+    
+}
+
+.fa-sun {
+	color: #FF4D5A;
+}
+
+
 /* VSEBINA */
 .showcase{
     display: grid;
     min-height: 100vh;
     max-height: fit-content;
-    grid-template-columns: 5% 1fr 1fr 2fr 5%;
+    grid-template-columns: 9rem 1fr 1fr 2fr 5%;
     grid-template-rows: 68px 1fr 1fr;
 
     h2{
-        grid-row: 2/3;
-       grid-column: 2/4;
+       grid-row: 2/3;
+       grid-column: 2/5;
        align-self: flex-end;
-       padding-left:5rem;
+       justify-self: flex-start;
+       margin-left: 5rem;
+       margin-bottom: 5rem;
     }
 
     
@@ -172,8 +226,11 @@ header{
         grid-row:2/3;
         grid-column: 2/5;
         align-self: flex-end;
+        justify-self: flex-start;
         position: relative;
-        padding-left:12.5rem;
+        left: 29rem;
+        top:-5rem;
+
         .homedot {
             margin: 0 20px 0 0; 
             height: 15px;
@@ -190,19 +247,19 @@ header{
         grid-row: 2/4;
         grid-column: 3/6;
         object-fit: cover;
-        height: 80%;
+        max-height: 100vh;
+        min-height: 75vh;
         align-self: center;
         justify-self: center;
+        margin-top:10rem
     
     }
     p{
         grid-row: 3/4;
-        grid-column: 2/4;
-        z-index:1000;
+        grid-column: 2/5;
         align-self: flex-start;
         justify-self: flex-start;
-        padding-left:8rem;
-        padding-top:3rem
+        margin-left:8rem;
     }
 
 }

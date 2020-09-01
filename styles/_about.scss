@@ -2,22 +2,24 @@
     display: grid;
     min-height: 100%;
     max-height: fit-content;
-    grid-template-columns: 5% 2fr 1fr 1fr 5%;
+    grid-template-columns: 9rem 2fr 1fr 1fr 5%;
     grid-template-rows: 68px 1fr 1fr;
 
     h2{
         grid-row: 2/3;
        grid-column: 2/3;
        align-self: flex-end;
-       padding-left:10rem;
+       justify-self: flex-start;
+       margin-left: 5rem;
+       margin-bottom: 15rem;
     }
     p{
         grid-row: 3/4;
         grid-column: 2/4;
         align-self: flex-start;
         justify-self: flex-start;
-        padding-left:8rem;
-        padding-top:3rem
+        margin-left:8rem;
+        margin-top:3rem
     } 
        
 
@@ -25,8 +27,10 @@
         grid-row:2/3;
         grid-column: 2/4;
         align-self: flex-end;
+        justify-self: flex-start;
         position: relative;
-        padding-left:11rem;
+        left: 6rem;
+        top:-15rem;
         .homedot {
             margin: 0 20px 0 0; 
             height: 15px;
