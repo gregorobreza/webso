@@ -1,0 +1,209 @@
+
+
+header{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    background-color:transparent;
+
+
+    nav{
+        width: 90%;
+        margin: auto;
+        min-height: 68px;
+        padding: 23px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex:1;
+            list-style: none;
+
+
+        }
+        #logo1{
+            flex: 2;
+        }
+
+
+    }
+
+    
+    /* BURGER MENI V ZGORNJI VRSTICI */
+    .menu-btn{
+        
+        margin-top: -12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /*border: 3px solid #fff; */
+
+    }
+
+    .menu-btn__burger{
+        width: 40px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger::before, 
+    .menu-btn__burger::after{
+
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+
+
+    }
+
+    .menu-btn__burger::before{
+        transform: translateY(-16px);
+    }
+
+    .menu-btn__burger::after{
+        transform: translateY(16px);
+    }
+
+    /* ANIMACIJA */
+
+    .menu-btn.open .menu-btn__burger{
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    
+    }
+
+    .menu-btn.open .menu-btn__burger::before{
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu-btn.open .menu-btn__burger::after{
+        transform: rotate(-45deg)translate(35px, 35px);
+    }
+}
+
+/* stranski meni */
+.sidebar{
+    
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    right:-300px;
+    width: 300px;
+    height: 100%;
+    background-color: #061A33;
+    z-index : 100;
+    transition: all .5s ease-in-out;
+
+    
+}
+
+.sidebar ul{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    li{
+        text-decoration: none;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        h1{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        a{
+            color: #EEFFFF;
+
+            &:hover {
+                color: #FF4D5A;
+            } 
+        }
+    }
+
+    li.active a{
+        color: #FF4D5A
+
+
+    }
+}
+
+
+
+.sidebar.open{
+    transform: translateX(-300px);
+
+}
+
+/* VSEBINA */
+.showcase{
+    display: grid;
+    min-height: 100vh;
+    max-height: fit-content;
+    grid-template-columns: 5% 1fr 1fr 2fr 5%;
+    grid-template-rows: 68px 1fr 1fr;
+
+    h2{
+        grid-row: 2/3;
+       grid-column: 2/4;
+       align-self: flex-end;
+       padding-left:5rem;
+    }
+
+    
+    .pike{
+        grid-row:2/3;
+        grid-column: 2/5;
+        align-self: flex-end;
+        position: relative;
+        padding-left:12.5rem;
+        .homedot {
+            margin: 0 20px 0 0; 
+            height: 15px;
+            width: 15px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: 50;
+          }
+    
+    }
+
+    img{
+        grid-row: 2/4;
+        grid-column: 3/6;
+        object-fit: cover;
+        height: 80%;
+        align-self: center;
+        justify-self: center;
+    
+    }
+    p{
+        grid-row: 3/4;
+        grid-column: 2/4;
+        z-index:1000;
+        align-self: flex-start;
+        justify-self: flex-start;
+        padding-left:8rem;
+        padding-top:3rem
+    }
+
+}
+

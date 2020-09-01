@@ -1,0 +1,116 @@
+html{
+  font-size: 100%;
+  background: #061A33;
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top:0;
+}
+
+body {
+  color: #EEFFFF;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+h1{
+  font-family: 'Russo One', sans-serif;
+}
+
+h2{
+  font-family: 'Russo One', sans-serif;
+  font-size: 85pt;
+}
+
+h3{
+  font-size: 45pt;
+}
+
+p{
+  font-size: 45pt
+}
+
+li{
+  font-family: 'Russo One', sans-serif;
+  font-size: 20pt;
+}
+
+a{
+  color: #EEFFFF;
+  text-decoration: none;
+}
+
+.verticalLine{
+  display:box;
+  border-left: 3pt solid #FF4D5A;
+  height:55%;
+  position:fixed;
+  margin-left: 90px;
+  top: 55%;
+  bottom: 0;
+}
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 5px #EEFFFF;
+    overflow: hidden;
+    
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 140%;
+      height: 0;
+      border-radius: 50%;
+      left: 0;
+      bottom: 0;
+      background-color: #FF4D5A;
+      box-shadow: 0 0 1px #EEFFFF;
+      transition: width 0.8s;
+      
+   }
+}
+      
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    border: 4px solid;
+    margin: -8px 0 0 -8px;
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px #EEFFFF;
+    
+   &::after {
+     height: 100%;
+    
+     
+
+   }
+}
+
+.sectionname{
+  position: absolute;
+  text-align:center;
+  font-size: 1.2rem;
+  writing-mode: vertical-rl;
+  left:90px;
+  top:65%;
+  
+}
+
+@import 'home';
+@import 'projects';
+@import 'about';
+@import 'contact';

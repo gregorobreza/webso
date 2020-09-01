@@ -1,0 +1,32 @@
+.pro{
+    display: grid;
+    min-height: 100vh;
+    max-height: fit-content;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-rows: 68px 1fr 1fr;
+
+    h2{
+        grid-row: 2/3;
+       grid-column: 2/3;
+       align-self: flex-end;
+       padding-left:5rem;
+    }
+
+    .pike{
+        grid-row:2/3;
+        grid-column: 2/5;
+        align-self: flex-end;
+        position: relative;
+        padding-left:14rem;
+        .homedot {
+            margin: 0 20px 0 0; 
+            height: 15px;
+            width: 15px;
+            background-color: red;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: 50;
+          }
+    
+    }
+}
