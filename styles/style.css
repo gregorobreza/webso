@@ -505,8 +505,8 @@ header .menu-btn.open .menu-btn__burger::after {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  -ms-grid-columns: 5% 1fr 1fr 5%;
-      grid-template-columns: 5% 1fr 1fr 5%;
+  -ms-grid-columns: 9rem 1fr 1fr 5%;
+      grid-template-columns: 9rem 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
 }
