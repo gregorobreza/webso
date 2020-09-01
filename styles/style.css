@@ -101,7 +101,7 @@ a {
   transition: width 0.8s;
 }
 
-/*dnevne pikice*/
+/*dnevne in pikice*/
 body.day #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   -webkit-box-shadow: inset 0 0 0 5px #061A33;
@@ -327,7 +327,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .label {
-  background-color: #494948;
+  background-color: #797973;
   border-radius: 50px;
   cursor: pointer;
   display: -webkit-box;
