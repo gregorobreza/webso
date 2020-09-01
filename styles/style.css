@@ -1,5 +1,5 @@
 html {
-  font-size: 100%;
+  font-size: 62.5%;
   background: #061A33;
   scroll-behavior: smooth;
 }
@@ -19,19 +19,20 @@ body {
 
 h1 {
   font-family: 'Russo One', sans-serif;
+  font-size: 4rem;
 }
 
 h2 {
   font-family: 'Russo One', sans-serif;
-  font-size: 85pt;
+  font-size: 12rem;
 }
 
 h3 {
-  font-size: 45pt;
+  font-size: 4.5pt;
 }
 
 p {
-  font-size: 45pt;
+  font-size: 6rem;
 }
 
 li {
@@ -108,7 +109,7 @@ a {
 .sectionname {
   position: absolute;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -302,8 +303,8 @@ header .menu-btn.open .menu-btn__burger::after {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  -ms-grid-columns: 5% 1fr 1fr 2fr 5%;
-      grid-template-columns: 5% 1fr 1fr 2fr 5%;
+  -ms-grid-columns: 9rem 1fr 1fr 2fr 5%;
+      grid-template-columns: 9rem 1fr 1fr 2fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
 }
@@ -313,11 +314,13 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-left: 5rem;
+  justify-self: flex-start;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
 }
 
 .showcase .pike {
@@ -329,8 +332,10 @@ header .menu-btn.open .menu-btn__burger::after {
   grid-column: 2/5;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  justify-self: flex-start;
   position: relative;
-  padding-left: 12.5rem;
+  left: 29rem;
+  top: -5rem;
 }
 
 .showcase .pike .homedot {
@@ -352,12 +357,14 @@ header .menu-btn.open .menu-btn__burger::after {
   grid-column: 3/6;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 80%;
+  max-height: 100vh;
+  min-height: 75vh;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  margin-top: 10rem;
 }
 
 .showcase p {
@@ -365,14 +372,12 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
-  z-index: 1000;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
   -ms-flex-item-align: start;
       align-self: flex-start;
   justify-self: flex-start;
-  padding-left: 8rem;
-  padding-top: 3rem;
+  margin-left: 8rem;
 }
 
 .pro {
@@ -382,8 +387,8 @@ header .menu-btn.open .menu-btn__burger::after {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  -ms-grid-columns: 5% 1fr 1fr 5%;
-      grid-template-columns: 5% 1fr 1fr 5%;
+  -ms-grid-columns: 9rem 1fr 1fr 5%;
+      grid-template-columns: 9rem 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
 }
@@ -397,7 +402,9 @@ header .menu-btn.open .menu-btn__burger::after {
   grid-column: 2/3;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-left: 5rem;
+  justify-self: flex-start;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
 }
 
 .pro .pike {
@@ -405,12 +412,14 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2/5;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  justify-self: flex-start;
   position: relative;
-  padding-left: 14rem;
+  left: 20rem;
+  top: -5rem;
 }
 
 .pro .pike .homedot {
@@ -430,8 +439,8 @@ header .menu-btn.open .menu-btn__burger::after {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  -ms-grid-columns: 5% 2fr 1fr 1fr 5%;
-      grid-template-columns: 5% 2fr 1fr 1fr 5%;
+  -ms-grid-columns: 9rem 2fr 1fr 1fr 5%;
+      grid-template-columns: 9rem 2fr 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
 }
@@ -445,7 +454,9 @@ header .menu-btn.open .menu-btn__burger::after {
   grid-column: 2/3;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-left: 10rem;
+  justify-self: flex-start;
+  margin-left: 5rem;
+  margin-bottom: 15rem;
 }
 
 .onas p {
@@ -458,8 +469,8 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-flex-item-align: start;
       align-self: flex-start;
   justify-self: flex-start;
-  padding-left: 8rem;
-  padding-top: 3rem;
+  margin-left: 8rem;
+  margin-top: 3rem;
 }
 
 .onas .pike {
@@ -471,8 +482,10 @@ header .menu-btn.open .menu-btn__burger::after {
   grid-column: 2/4;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  justify-self: flex-start;
   position: relative;
-  padding-left: 11rem;
+  left: 6rem;
+  top: -15rem;
 }
 
 .onas .pike .homedot {
@@ -507,7 +520,9 @@ header .menu-btn.open .menu-btn__burger::after {
   grid-column: 2/4;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding-left: 2rem;
+  justify-self: flex-start;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
 }
 
 .kontakt p {
@@ -520,8 +535,10 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-left: 4rem;
-  padding-top: 3rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: flex-start;
+  margin-left: 8rem;
 }
 
 .kontakt .pike {
@@ -533,8 +550,10 @@ header .menu-btn.open .menu-btn__burger::after {
   grid-column: 2/4;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  justify-self: flex-start;
   position: relative;
-  padding-left: 28rem;
+  left: 38rem;
+  top: -5rem;
 }
 
 .kontakt .pike .homedot {

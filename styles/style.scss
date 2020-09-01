@@ -1,5 +1,5 @@
 html{
-  font-size: 100%;
+  font-size: 62.5%;
   background: #061A33;
   scroll-behavior: smooth;
 }
@@ -19,19 +19,20 @@ body {
 
 h1{
   font-family: 'Russo One', sans-serif;
+  font-size: 4rem;
 }
 
 h2{
   font-family: 'Russo One', sans-serif;
-  font-size: 85pt;
+  font-size: 12rem;
 }
 
 h3{
-  font-size: 45pt;
+  font-size: 4.5pt;
 }
 
 p{
-  font-size: 45pt
+  font-size: 6rem
 }
 
 li{
@@ -103,7 +104,7 @@ a{
 .sectionname{
   position: absolute;
   text-align:center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   writing-mode: vertical-rl;
   left:90px;
   top:65%;
