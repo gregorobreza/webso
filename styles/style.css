@@ -1,6 +1,7 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 html {
   font-size: 62.5%;
-  background: #061A33;
   scroll-behavior: smooth;
 }
 
@@ -14,7 +15,22 @@ html {
 
 body {
   color: #EEFFFF;
+  background-color: #061A33;
   font-family: 'Titillium Web', sans-serif;
+}
+
+/*vse za dnevno temo*/
+body.day {
+  color: #061A33;
+  background-color: #EEFFFF;
+}
+
+body.day a {
+  color: #061A33;
+}
+
+body.day .label {
+  background-color: #061A33;
 }
 
 h1 {
@@ -55,6 +71,7 @@ a {
   bottom: 0;
 }
 
+/*navigacijske pikice*/
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   width: 16px;
@@ -82,6 +99,13 @@ a {
           box-shadow: 0 0 1px #EEFFFF;
   -webkit-transition: width 0.8s;
   transition: width 0.8s;
+}
+
+/*dnevne pikice*/
+body.day #fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  -webkit-box-shadow: inset 0 0 0 5px #061A33;
+          box-shadow: inset 0 0 0 5px #061A33;
 }
 
 #fp-nav ul li a.active span,
@@ -123,6 +147,7 @@ header {
   width: 100%;
   background-color: transparent;
   /* BURGER MENI V ZGORNJI VRSTICI */
+  /*nočna barva menija*/
   /* ANIMACIJA */
 }
 
@@ -183,7 +208,7 @@ header .menu-btn {
 header .menu-btn__burger {
   width: 40px;
   height: 6px;
-  background: #fff;
+  background: #EEFFFF;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -197,7 +222,7 @@ header .menu-btn__burger::after {
   position: absolute;
   width: 40px;
   height: 6px;
-  background: #fff;
+  background: #EEFFFF;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -293,6 +318,62 @@ header .menu-btn.open .menu-btn__burger::after {
 .sidebar.open {
   -webkit-transform: translateX(-300px);
           transform: translateX(-300px);
+}
+
+/*night/day mode*/
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #494948;
+  border-radius: 50px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #EEFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #FF4D5A;
 }
 
 /* VSEBINA */

@@ -50,7 +50,7 @@ header{
     .menu-btn__burger{
         width: 40px;
         height: 6px;
-        background: #fff;
+        background: #EEFFFF;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
         transition: all .5s ease-in-out;
@@ -63,13 +63,17 @@ header{
         position: absolute;
         width: 40px;
         height: 6px;
-        background: #fff;
+        background: #EEFFFF;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
         transition: all .5s ease-in-out;
 
 
     }
+
+    /*nočna barva menija*/
+
+
 
     .menu-btn__burger::before{
         transform: translateY(-16px);
@@ -151,6 +155,54 @@ header{
     transform: translateX(-300px);
 
 }
+
+/*night/day mode*/
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: rgb(73, 73, 72);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #EEFFFF;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+    color: #f1c40f;
+    
+}
+
+.fa-sun {
+	color: #FF4D5A;
+}
+
 
 /* VSEBINA */
 .showcase{

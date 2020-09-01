@@ -1,6 +1,5 @@
 html{
   font-size: 62.5%;
-  background: #061A33;
   scroll-behavior: smooth;
 }
 
@@ -13,7 +12,22 @@ html{
 
 body {
   color: #EEFFFF;
+  background-color: #061A33;
   font-family: 'Titillium Web', sans-serif;
+}
+
+/*vse za dnevno temo*/
+body.day {
+  color: #061A33;
+  background-color: #EEFFFF;
+}
+
+body.day a {
+  color: #061A33;
+}
+
+body.day .label{
+  background-color: #061A33;
 }
 
 
@@ -40,10 +54,13 @@ li{
   font-size: 20pt;
 }
 
+
 a{
   color: #EEFFFF;
   text-decoration: none;
 }
+
+
 
 .verticalLine{
   display:box;
@@ -54,6 +71,8 @@ a{
   top: 55%;
   bottom: 0;
 }
+
+/*navigacijske pikice*/
 
 #fp-nav ul li a span, 
 .fp-slidesNav ul li a span {
@@ -80,6 +99,13 @@ a{
       
    }
 }
+
+/*dnevne pikice*/
+body.day #fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    box-shadow: inset 0 0 0 5px #061A33;
+}
+  
       
 #fp-nav ul li a.active span, 
 .fp-slidesNav ul li a.active span, 
@@ -111,7 +137,10 @@ a{
   
 }
 
+
+
 @import 'home';
 @import 'projects';
 @import 'about';
 @import 'contact';
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
