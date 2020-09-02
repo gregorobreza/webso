@@ -720,7 +720,7 @@ header .menu-btn.open .menu-btn__burger::after {
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-  color: #061A33;
+  color: #EEFFFF;
 }
 
 .kontaktcontainer .row100 .inputBox .text {
@@ -788,7 +788,7 @@ header .menu-btn.open .menu-btn__burger::after {
   position: relative;
   width: 100%;
   height: 100px;
-  padding: 10px 0;
+  padding: 0px 0;
   resize: none;
 }
 
