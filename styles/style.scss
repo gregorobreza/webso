@@ -14,6 +14,7 @@ body {
   color: #EEFFFF;
   background-color: #061A33;
   font-family: 'Titillium Web', sans-serif;
+  transition: all 0.5s ease-in-out;
 }
 
 /*vse za dnevno temo*/
@@ -38,6 +39,14 @@ body.day .sidebarMenu a{
   color: #061A33;
 }
 
+/*nočni burger*/
+body.day .menu-btn__burger, .menu-btn__burger::before{
+   background:#061A33;
+}
+
+body.day .menu-btn__burger::before, body.day .menu-btn__burger::after{
+  background:#061A33;
+}
 
 h1{
   font-family: 'Russo One', sans-serif;
