@@ -33,6 +33,14 @@ body.day .label {
   background-color: #061A33;
 }
 
+body.day .sidebar {
+  background-color: #EEFFFF;
+}
+
+body.day .sidebarMenu a {
+  color: #061A33;
+}
+
 h1 {
   font-family: 'Russo One', sans-serif;
   font-size: 4rem;
