@@ -17,6 +17,8 @@ body {
   color: #EEFFFF;
   background-color: #061A33;
   font-family: 'Titillium Web', sans-serif;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /*vse za dnevno temo*/
@@ -31,6 +33,23 @@ body.day a {
 
 body.day .label {
   background-color: #061A33;
+}
+
+body.day .sidebar {
+  background-color: #EEFFFF;
+}
+
+body.day .sidebarMenu a {
+  color: #061A33;
+}
+
+/*nočni burger*/
+body.day .menu-btn__burger, .menu-btn__burger::before {
+  background: #061A33;
+}
+
+body.day .menu-btn__burger::before, body.day .menu-btn__burger::after {
+  background: #061A33;
 }
 
 h1 {
@@ -147,7 +166,6 @@ header {
   width: 100%;
   background-color: transparent;
   /* BURGER MENI V ZGORNJI VRSTICI */
-  /*nočna barva menija*/
   /* ANIMACIJA */
 }
 
@@ -433,13 +451,13 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  grid-column: 3/6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 100vh;
-  min-height: 75vh;
+  max-height: 80vh;
+  min-height: 60vh;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -586,8 +604,8 @@ header .menu-btn.open .menu-btn__burger::after {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  -ms-grid-columns: 9rem 1fr 1fr 5%;
-      grid-template-columns: 9rem 1fr 1fr 5%;
+  -ms-grid-columns: 9rem 1.5fr 1fr 5%;
+      grid-template-columns: 9rem 1.5fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
 }
@@ -644,6 +662,162 @@ header .menu-btn.open .menu-btn__burger::after {
   background-color: red;
   border-radius: 50%;
   display: inline-block;
-  z-index: 50;
+}
+
+/*kontaktna forma*/
+.kontaktcontainer {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+  padding: 20px;
+  background: #061A33;
+  border: 4px solid #EEFFFF;
+}
+
+.kontaktcontainer .row100 {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[autofit];
+      grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+}
+
+.kontaktcontainer .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.kontaktcontainer .row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #EEFFFF;
+}
+
+.kontaktcontainer .row100 .inputBox input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #061A33;
+}
+
+.kontaktcontainer .row100 .inputBox textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #061A33;
+}
+
+.kontaktcontainer .row100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.kontaktcontainer .row100 .inputBox input:focus + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.kontaktcontainer .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.kontaktcontainer .row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #EEFFFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.kontaktcontainer .row100 .inputBox input:focus ~ .line {
+  height: 100%;
+}
+
+.kontaktcontainer .row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.kontaktcontainer .row100 .inputBox textarea:focus + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.kontaktcontainer .row100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.kontaktcontainer .row100 .inputBox textarea:focus ~ .line {
+  height: 100%;
+}
+
+.kontaktcontainer .row100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+.kontaktcontainer .row100 .textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+  resize: none;
+}
+
+.kontaktcontainer .row100 .textarea textarea {
+  height: 100%;
+  resize: none;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #FF4D5A;
+  font-size: 18px;
+  border-radius: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
