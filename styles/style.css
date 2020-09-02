@@ -451,13 +451,13 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 3;
-  grid-column: 3/6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 100vh;
-  min-height: 75vh;
+  max-height: 80vh;
+  min-height: 60vh;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

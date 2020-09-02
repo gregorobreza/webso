@@ -247,10 +247,10 @@ header{
 
     img{
         grid-row: 2/4;
-        grid-column: 3/6;
+        grid-column: 2/6;
         object-fit: cover;
-        max-height: 100vh;
-        min-height: 75vh;
+        max-height: 80vh;
+        min-height: 60vh;
         align-self: center;
         justify-self: center;
         margin-top:10rem
