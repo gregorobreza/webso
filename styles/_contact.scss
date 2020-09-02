@@ -12,7 +12,6 @@
        justify-self: flex-start;
        margin-left: 5rem;
        margin-bottom: 5rem;
-       font-size: 20px;
     }
     p{
         grid-row: 3/4;
@@ -21,8 +20,7 @@
         align-self: flex-start;
         justify-self: flex-start;
         margin-left:8rem;
-        /*za lažje delo*/
-        display:none;
+
         
         
     }    
@@ -36,8 +34,6 @@
         position: relative;
         left: 38rem;
         top:-5rem;
-        /*za lažje delo*/
-        display:none;
         .homedot {
             margin: 0 20px 0 0; 
             height: 15px;
@@ -54,52 +50,52 @@
 /*kontaktna forma*/
 
 
-.kontaktcontainer{
-    width: 80%;
-    grid-row:2/4;
-    grid-column:3/4;
-    align-self: center;
-    background-color: #EEFFFF;
-    color: #061A33;
-    padding: 2rem;
 
+
+.kontaktcontainer{
+    grid-row:2/4;
+    grid-column: 3/4;
+    align-self: center;
+    width: 80%;
+    padding: 20px;
+    background:#061A33;
+    border: 4px solid #EEFFFF;
 
     .row100{
-        position: relative;
-        width: 100%;
-        display: grid;
+        position:relative;
+        width:100%;
+        display:grid;
         grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+
 
         .col{
             position:relative;
             width: 100%;
-            padding:0 10px;
+            padding: 0 10px;
             margin: 30px 0 10px;
             transition: 0.5s;
-
         }
 
         .inputBox{
-            position:relative;
-            width: 100%;
-            height: 50px;
-            color: #061A33;
+            position: relative;
+            width:100%;
+            height: 40px;
+            color: #EEFFFF;
 
             input{
-                
-                position: absolute;
+                position:absolute;
                 width: 100%;
                 height: 100%;
-                background: transparent;
-                box-shadow: none;
-                border:none;
-                outline: none;
-                font-size: 18px;
-                padding: 0 10px;
-                z-index: 5;
-                color:#EEFFFF;
-            }
+                background:transparent;
+                box-shadow:none;
+                border: none;
+                outline:none;
+                font-size:18px;
+                padding:0 10px;
+                z-index: 1;
+                color: #061A33;
 
+            }
             textarea{
                 position: absolute;
                 width: 100%;
@@ -111,93 +107,91 @@
                 font-size: 18px;
                 padding: 0 10px;
                 z-index: 1;
-                color:#EEFFFF;   
+                color:#061A33;   
             }
 
-
-
             .text{
-                position: absolute;
+                position:absolute;
                 top:0;
                 left:0;
-                line-height: 40px;
+                line-height:40px;
                 font-size: 18px;
                 padding: 0 10px;
-                display: block;
+                display:block;
                 transition: 0.5s;
                 pointer-events: none;
 
             }
 
-            input:focus + .text,
-            input:valid + .text{
-                top: -35px;
-                left: -10px;
+            input:focus + .text{
+                top:-35px;
+                left:-10px;
+            }
 
+            input:valid + .text{
+                top:-35px;
+                left:-10px;
             }
 
             .line{
                 position:absolute;
-                bottom:0;
+                bottom: 0;
                 display: block;
-                width:100%;
+                width: 100%;
                 height: 2px;
-                background: #061A33;
+                background: #EEFFFF;
                 transition: 0.5s;
-                border-radius: 2px;
-                pointer-events: none;
+                border-radius:2px;
+                pointer-events:none;
             }
 
-            input:focus ~ .line,
+            input:focus ~ .line{
+                height: 100%;
+
+            }
+
             input:valid ~ .line{
                 height: 100%;
-                
-
 
             }
-
-            textarea{
-                position:relative;
-                width:100%;
-                height:200px;
-                padding: 10px 0;
-                resize: none;
-
-                textarea{
-                    height:100%;
-                    resize: none;
-                }
-
+            textarea:focus + .text{
+                top:-35px;
+                left:-10px;
             }
-            textarea:focus + .text,
+
             textarea:valid + .text{
-                top: -35px;
-                left: -10px;
+                top:-35px;
+                left:-10px;
+            }
+            textarea:focus ~ .line{
+                height: 100%;
 
             }
 
-            textarea:focus ~ .line,
             textarea:valid ~ .line{
                 height: 100%;
-                
-
 
             }
         }
 
-        .textarea{
-            position:relative;
-            width:100%;
-            height:100px;
-            padding: 0px 0;
-            resize: none;
-            textarea{
-                height:100%;
-                resize: none;
-            }
-        } 
 
-    
+        .textarea{
+                position: relative;
+                width: 100%;
+                height: 100px;
+                padding: 10px 0;
+                resize:none;
+
+            textarea{
+                   height: 100%;
+                   resize:none;
+                   
+
+            }
+        }
+
+ 
+
     }
 }
 
