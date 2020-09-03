@@ -1,226 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/7fff0a11af.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <script src="https://kit.fontawesome.com/7fff0a11af.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fullpage.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Webso</title>
+  </head>
 
-  <link rel="stylesheet" href="./fullpage.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <title>Webso</title>
-</head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <nav>
+          <h1 id="logo1">Webso</h1>
 
-<body>
-
-  <header>
-    <div class="nav-container">
-      <nav>
-        <h1 id="logo1">Webso</h1>
-
-        <ul>
-          <div>
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-moon"></i>
-              <div class="ball"></div>
-            </label>
-          </div>
-          <li><a href="./">
-
-            </a></li>
-          <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-          <li><a href="#kontakt-stran">KONTAKT</a></li>
-          <li>
-            <div class="menu-btn">
-              <div class="menu-btn__burger">
-
-              </div>
+          <ul>
+            <div>
+              <input type="checkbox" class="checkbox" id="chk" />
+              <label class="label" for="chk">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+              </label>
             </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="full-container">
-      <div class="sidebar" id="mySidebar">
-        <ul class="sidebarMenu" id="sidebarMenu">
-          <li><a href="#domov-stran" onclick="closeMenu()">
-              <h1 id="logo">Webso</h1>
-            </a></li>
-          <li data-menuanchor="domov-stran" class="active"><a href="#domov-stran" onclick="closeMenu()">Domov</a></li>
-          <li data-menuanchor="projekti-stran"><a href="#projekti-stran" onclick="closeMenu()">Projekti</a></li>
-          <li data-menuanchor="onas-stran"><a href="#onas-stran" onclick="closeMenu()">O nas</a></li>
-          <li data-menuanchor="kontakt-stran"><a href="#kontakt-stran" onclick="closeMenu()">Kontakt</a></li>
-
-
-        </ul>
+            <li><a href="./"> </a></li>
+            <li>
+              <a href="https://www.linkedin.com/"
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li><a href="#kontakt-stran">KONTAKT</a></li>
+            <li>
+              <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+              </div>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
+    <main>
+      <div class="full-container">
+        <div class="sidebar" id="mySidebar">
+          <ul class="sidebarMenu" id="sidebarMenu">
+            <li>
+              <a href="#domov-stran" onclick="closeMenu()">
+                <h1 id="logo">Webso</h1>
+              </a>
+            </li>
+            <li data-menuanchor="domov-stran" class="active">
+              <a href="#domov-stran" onclick="closeMenu()">Domov</a>
+            </li>
+            <li data-menuanchor="projekti-stran">
+              <a href="#projekti-stran" onclick="closeMenu()">Projekti</a>
+            </li>
+            <li data-menuanchor="onas-stran">
+              <a href="#onas-stran" onclick="closeMenu()">O nas</a>
+            </li>
+            <li data-menuanchor="kontakt-stran">
+              <a href="#kontakt-stran" onclick="closeMenu()">Kontakt</a>
+            </li>
+          </ul>
+        </div>
 
-      <div id="fullpage">
-        <section class="section home" data-anchor="domov-stran">
-          <div class="showcase">
+        <div id="fullpage">
+          <section class="section home" data-anchor="domov-stran">
+            <div class="showcase">
+              <h2>
+                REŠITVE<br />
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbspWEBSO
+              </h2>
 
-            <h2>REŠITVE<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbspWEBSO</h2>
-
-            <img src="./img/triglav-svg.svg" alt="triglav">
-            <div class="pike">
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
+              <img src="./img/triglav-svg.svg" alt="triglav" />
+              <div class="pike">
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+              </div>
+              <p>
+                Vaša želja,<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnaš
+                izziv.
+              </p>
             </div>
-            <p>Vaša želja,<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnaš izziv.</p>
-          </div>
-          <p class="sectionname homename">POSKROLAJ</p>
+            <p class="sectionname homename">POSKROLAJ</p>
+          </section>
+          <section class="section projects" data-anchor="projekti-stran">
+            <div class="pro">
+              <h2>
+                Naši <br />
+                &nbsp&nbsp&nbsp&nbspProjekti
+              </h2>
 
-        </section>
-        <section class="section projects" data-anchor="projekti-stran">
-          <div class="pro">
+              <div class="pike">
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+              </div>
 
-            <h2>Naši <br> &nbsp&nbsp&nbsp&nbspProjekti</h2>
+              <div class="container-projekti">
+                <div class="projekti-bck">
+                  <a href="#" class="previous-round">&#8249;</a>
+                </div>
 
-
-            <div class="pike">
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-
-            </div>
-          </div>
-
-
-          <p class="sectionname projectname">PROJEKTI</p>
-        </section>
-        <section class="section about" data-anchor="onas-stran">
-          <div class="onas">
-
-            <h2>O Nas</h2>
-
-            <div class="pike">
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-
-            </div>
-            <p>Od designa do<br>vaše spletne strani.</p>
-          </div>
-          <p class="sectionname aboutname">O NAS</p>
-        </section>
-        <section class="section contact" data-anchor="kontakt-stran">
-          <div class="kontakt">
-
-            <h2>Stopimo v<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspstik.</h2>
-
-            <div class="pike">
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-              <span class="homedot"></span>
-
-
-            </div>
-
-            <p>resitve.webso@gmail.com</p>
-            
-            <div class="kontaktcontainer">
-              <div class="row100">
-                <div class="col">
-                  <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span class="text">Ime</span>
-                    <span class="line"></span>
+                <div class="projekti-img">
+                  <div class="proSlide">
+                    <img src="https://www.oakneagle.com/wp-content/uploads/2020/05/Oak-n-Eagle-Tab-logo.png" />
+                    <div class="st-projekta">01</div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span class="text">Priimek</span>
-                    <span class="line"></span>
+
+                <div class="projekti-fwd">
+                  <a href="#" class="next-round">&#8250;</a>
+                </div>
+              </div>
+
+              <div class="opisi-projektov">
+                <div class="pro1">
+                  <h4>Oak N' Eagle</h4>
+                  <p>Zasnova in izdelava spletne strani s spletno trgovino.</p>
+                  <div class="orodja">
+                    <h5>Uporabljena orodja:</h5>
+                    <ul>
+                      <li>Wordpress</li>
+                      <li>Woocommerce</li>
+                      <li>HTML & CSS</li>
+                    </ul>
+                  </div>
+
+                  <input
+                    class="obisci-stran"
+                    type="submit"
+                    value="Obišči stran"
+                  />
+                </div>
+                <div class="pro2"></div>
+                <div class="pro3"></div>
+              </div>
+            </div>
+
+            <p class="sectionname projectname">PROJEKTI</p>
+          </section>
+          <section class="section about" data-anchor="onas-stran">
+            <div class="onas">
+              <h2>O Nas</h2>
+
+              <div class="pike">
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+              </div>
+              <p>Od designa do<br />vaše spletne strani.</p>
+            </div>
+            <p class="sectionname aboutname">O NAS</p>
+          </section>
+          <section class="section contact" data-anchor="kontakt-stran">
+            <div class="kontakt">
+              <h2>
+                Stopimo v<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspstik.
+              </h2>
+
+              <div class="pike">
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+                <span class="homedot"></span>
+              </div>
+
+              <p>resitve.webso@gmail.com</p>
+
+              <div class="kontaktcontainer">
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="" required="required" />
+                      <span class="text">Ime</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="" required="required" />
+                      <span class="text">Priimek</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="" required="required" />
+                      <span class="text">Email</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="inputBox">
+                      <input type="text" name="" required="required" />
+                      <span class="text">Mobilni telefon</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row100">
+                  <div class="col">
+                    <div class="inputBox textarea">
+                      <textarea required="required"></textarea>
+                      <span class="text">Kratko sporočilo kaj vas zanima.</span>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row100">
+                  <div class="col">
+                    <input type="submit" value="Pošlji" />
                   </div>
                 </div>
               </div>
-              <div class="row100">
-                <div class="col">
-                  <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span class="text">Email</span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span class="text">Mobilni telefon</span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row100">
-                <div class="col">
-                  <div class="inputBox textarea">
-                    <textarea required="required"></textarea>
-                    <span class="text">Kratko sporočilo kaj vas zanima.</span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="row100">
-                <div class="col">
-                  <input type="submit" value="Pošlji">
-                </div>
-              </div>
             </div>
-          </div>
-          <p class="sectionname contactname">KONTAKT</p>
-        </section>
-
+            <p class="sectionname contactname">KONTAKT</p>
+          </section>
+        </div>
+        <div class="verticalLine"></div>
       </div>
-      <div class="verticalLine"></div>
-    </div>
-  </main>
+    </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-  <script src="./fullpage.js"></script>
-  <script src="app.js"></script>
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./fullpage.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
