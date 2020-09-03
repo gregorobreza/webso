@@ -10,7 +10,6 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  top: 0;
 }
 
 body {
@@ -80,6 +79,7 @@ a {
   text-decoration: none;
 }
 
+/*črta*/
 .verticalLine {
   display: box;
   border-left: 3pt solid #FF4D5A;
@@ -742,7 +742,7 @@ header .menu-btn.open .menu-btn__burger::after {
   left: 0;
   line-height: 40px;
   font-size: 18px;
-  padding: 0 10px;
+  padding: 0px 10px;
   display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;

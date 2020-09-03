@@ -53,6 +53,8 @@
 
 
 .kontaktcontainer{
+    
+    
     grid-row:2/4;
     grid-column: 3/4;
     align-self: center;
@@ -67,7 +69,7 @@
         display:grid;
         grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 
-
+        
         .col{
             position:relative;
             width: 100%;
@@ -96,6 +98,7 @@
                 color: #061A33;
 
             }
+            
             textarea{
                 position: absolute;
                 width: 100%;
@@ -112,11 +115,11 @@
 
             .text{
                 position:absolute;
-                top:0;
+                top: 0;
                 left:0;
                 line-height:40px;
                 font-size: 18px;
-                padding: 0 10px;
+                padding: 0px 10px;
                 display:block;
                 transition: 0.5s;
                 pointer-events: none;
