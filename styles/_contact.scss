@@ -53,11 +53,13 @@
 
 
 .kontaktcontainer{
+    
+    
     grid-row:2/4;
     grid-column: 3/4;
     align-self: center;
     width: 80%;
-    padding: 20px;
+    padding: 2rem;
     background:#061A33;
     border: 4px solid #EEFFFF;
 
@@ -67,12 +69,12 @@
         display:grid;
         grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 
-
+        
         .col{
             position:relative;
             width: 100%;
-            padding: 0 10px;
-            margin: 30px 0 10px;
+            padding: 0 2rem;
+            margin: 3rem 0 1rem;
             transition: 0.5s;
         }
 
@@ -96,6 +98,7 @@
                 color: #061A33;
 
             }
+            
             textarea{
                 position: absolute;
                 width: 100%;
@@ -112,11 +115,24 @@
 
             .text{
                 position:absolute;
-                top:0;
+                top: 0;
                 left:0;
                 line-height:40px;
-                font-size: 18px;
-                padding: 0 10px;
+                font-size: 2rem;
+                padding: 0px 10px;
+                display:block;
+                transition: 0.5s;
+                pointer-events: none;
+
+            }
+
+            .sporocilo{
+                position:absolute;
+                top: 6rem;
+                left:0;
+                line-height:40px;
+                font-size: 2rem;
+                padding: 0px 10px;
                 display:block;
                 transition: 0.5s;
                 pointer-events: none;
@@ -197,11 +213,12 @@
 
 input[type="submit"]{
     border: none;
+    font-family: 'Russo One', sans-serif;
     padding: 7px 35px;
     cursor: pointer;
     outline: none;
     background:#FF4D5A;
-    font-size: 18px;
+    font-size: 2rem;
     border-radius: 2rem;
 
 
