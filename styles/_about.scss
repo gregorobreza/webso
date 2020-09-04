@@ -1,7 +1,7 @@
 .onas{
     display: grid;
-    min-height: 100%;
-    max-height: fit-content;
+    height: 100vh;
+    align-content: stretch;
     grid-template-columns: 9rem 2fr 1fr 1fr 5%;
     grid-template-rows: 68px 1fr 1fr;
 
