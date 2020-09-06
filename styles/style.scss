@@ -1,89 +1,88 @@
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*top:0; Zakomentiral zaradi pozicioniranja številke na slikah projektov*/ 
+  /*top:0; Zakomentiral zaradi pozicioniranja številke na slikah projektov*/
 }
 
 body {
-  color: #EEFFFF;
-  background-color: #061A33;
-  font-family: 'Titillium Web', sans-serif;
+  color: #eeffff;
+  background-color: #061a33;
+  font-family: "Titillium Web", sans-serif;
   transition: all 0.5s ease-in-out;
 }
 
 /*vse za dnevno temo*/
 body.day {
-  color: #061A33;
-  background-color: #EEFFFF;
+  color: #061a33;
+  background-color: #eeffff;
 }
 
 body.day a {
-  color: #061A33;
+  color: #061a33;
 }
 
-body.day .label{
-  background-color: #061A33;
+body.day .label {
+  background-color: #061a33;
 }
 
-body.day .sidebar{
-  background-color: #EEFFFF;
+body.day .sidebar {
+  background-color: #eeffff;
 }
 
-body.day .sidebarMenu a{
-  color: #061A33;
+body.day .sidebarMenu a {
+  color: #061a33;
 }
 
 /*nočni burger*/
-body.day .menu-btn__burger, .menu-btn__burger::before{
-   background:#061A33;
+body.day .menu-btn__burger,
+.menu-btn__burger::before {
+  background: #061a33;
 }
 
-body.day .menu-btn__burger::before, body.day .menu-btn__burger::after{
-  background:#061A33;
+body.day .menu-btn__burger::before,
+body.day .menu-btn__burger::after {
+  background: #061a33;
 }
 
-h1{
-  font-family: 'Russo One', sans-serif;
+h1 {
+  font-family: "Russo One", sans-serif;
   font-size: 4rem;
 }
 
-h2{
-  font-family: 'Russo One', sans-serif;
+h2 {
+  font-family: "Russo One", sans-serif;
   font-size: 12rem;
 }
 
-h3{
+h3 {
   font-size: 4.5pt;
 }
 
-p{
-  font-size: 6rem
+p {
+  font-size: 6rem;
 }
 
-li{
-  font-family: 'Russo One', sans-serif;
+li {
+  font-family: "Russo One", sans-serif;
   font-size: 20pt;
 }
 
-
-a{
-  color: #EEFFFF;
+a {
+  color: #eeffff;
   text-decoration: none;
 }
 
-
-
-.verticalLine{
-  display:box;
-  border-left: 3pt solid #FF4D5A;
-  height:55%;
-  position:fixed;
+.verticalLine {
+  display: box;
+  border-left: 3pt solid #ff4d5a;
+  height: 55%;
+  position: fixed;
   margin-left: 90px;
   top: 55%;
   bottom: 0;
@@ -91,73 +90,64 @@ a{
 
 /*navigacijske pikice*/
 
-#fp-nav ul li a span, 
+#fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    width: 16px;
-    height: 16px;
-    margin: -8px 0 0 -8px;
-    background: transparent;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 0 5px #EEFFFF;
-    overflow: hidden;
-    
-    
-    &::after {
-      content: '';
-      position: absolute;
-      width: 140%;
-      height: 0;
-      border-radius: 50%;
-      left: 0;
-      bottom: 0;
-      background-color: #FF4D5A;
-      box-shadow: 0 0 1px #EEFFFF;
-      transition: width 0.8s;
-      
-   }
+  width: 16px;
+  height: 16px;
+  margin: -8px 0 0 -8px;
+  background: transparent;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 5px #eeffff;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 0;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    background-color: #ff4d5a;
+    box-shadow: 0 0 1px #eeffff;
+    transition: width 0.8s;
+  }
 }
 
 /*dnevne in pikice*/
-body.day #fp-nav ul li a span, 
+body.day #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    box-shadow: inset 0 0 0 5px #061A33;
+  box-shadow: inset 0 0 0 5px #061a33;
 }
-  
-      
-#fp-nav ul li a.active span, 
-.fp-slidesNav ul li a.active span, 
-#fp-nav ul li:hover a.active span, 
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-    width: 16px;
-    height: 16px;
-    border: 4px solid;
-    margin: -8px 0 0 -8px;
-    background: transparent;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 0 2px #EEFFFF;
-    
-   &::after {
-     height: 100%;
-    
-     
+  width: 16px;
+  height: 16px;
+  border: 4px solid;
+  margin: -8px 0 0 -8px;
+  background: transparent;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #eeffff;
 
-   }
+  &::after {
+    height: 100%;
+  }
 }
 
-.sectionname{
+.sectionname {
   position: absolute;
-  text-align:center;
+  text-align: center;
   font-size: 2rem;
   writing-mode: vertical-rl;
-  left:90px;
-  top:65%;
-  
+  left: 90px;
+  top: 65%;
 }
 
-
-
-@import 'home';
-@import 'projects';
-@import 'about';
-@import 'contact';
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import "home";
+@import "projects";
+@import "about";
+@import "contact";
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");

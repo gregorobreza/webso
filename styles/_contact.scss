@@ -1,208 +1,184 @@
-.kontakt{
-    display: grid;
-    min-height: 100%;
-    max-height: fit-content;
-    grid-template-columns: 9rem 1.5fr 1fr 5%;
-    grid-template-rows: 68px 1fr 1fr;
+.kontakt {
+  display: grid;
+  min-height: 100%;
+  max-height: fit-content;
+  grid-template-columns: 9rem 1.5fr 1fr 5%;
+  grid-template-rows: 68px 1fr 1fr;
 
-    h2{
-        grid-row: 2/3;
-       grid-column: 2/4;
-       align-self: flex-end;
-       justify-self: flex-start;
-       margin-left: 5rem;
-       margin-bottom: 5rem;
+  h2 {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: flex-end;
+    justify-self: flex-start;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+  p {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    align-self: center;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-left: 8rem;
+  }
+
+  .pike {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: flex-end;
+    justify-self: flex-start;
+    position: relative;
+    left: 38rem;
+    top: -5rem;
+    .homedot {
+      margin: 0 20px 0 0;
+      height: 15px;
+      width: 15px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
     }
-    p{
-        grid-row: 3/4;
-        grid-column: 2/4;
-        align-self: center;
-        align-self: flex-start;
-        justify-self: flex-start;
-        margin-left:8rem;
-
-        
-        
-    }    
-
-
-    .pike{
-        grid-row:2/3;
-        grid-column: 2/4;
-        align-self: flex-end;
-        justify-self: flex-start;
-        position: relative;
-        left: 38rem;
-        top:-5rem;
-        .homedot {
-            margin: 0 20px 0 0; 
-            height: 15px;
-            width: 15px;
-            background-color: red;
-            border-radius: 50%;
-            display: inline-block;
-            
-          }
-    
-    }
+  }
 }
 
 /*kontaktna forma*/
 
+.kontaktcontainer {
+  grid-row: 2/4;
+  grid-column: 3/4;
+  align-self: center;
+  width: 80%;
+  padding: 20px;
+  background: #061a33;
+  border: 4px solid #eeffff;
 
+  .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 
-
-.kontaktcontainer{
-    grid-row:2/4;
-    grid-column: 3/4;
-    align-self: center;
-    width: 80%;
-    padding: 20px;
-    background:#061A33;
-    border: 4px solid #EEFFFF;
-
-    .row100{
-        position:relative;
-        width:100%;
-        display:grid;
-        grid-template-columns: repeat(autofit, minmax(300px, 1fr));
-
-
-        .col{
-            position:relative;
-            width: 100%;
-            padding: 0 10px;
-            margin: 30px 0 10px;
-            transition: 0.5s;
-        }
-
-        .inputBox{
-            position: relative;
-            width:100%;
-            height: 40px;
-            color: #EEFFFF;
-
-            input{
-                position:absolute;
-                width: 100%;
-                height: 100%;
-                background:transparent;
-                box-shadow:none;
-                border: none;
-                outline:none;
-                font-size:18px;
-                padding:0 10px;
-                z-index: 1;
-                color: #061A33;
-
-            }
-            textarea{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background: transparent;
-                box-shadow: none;
-                border:none;
-                outline: none;
-                font-size: 18px;
-                padding: 0 10px;
-                z-index: 1;
-                color:#061A33;   
-            }
-
-            .text{
-                position:absolute;
-                top:0;
-                left:0;
-                line-height:40px;
-                font-size: 18px;
-                padding: 0 10px;
-                display:block;
-                transition: 0.5s;
-                pointer-events: none;
-
-            }
-
-            input:focus + .text{
-                top:-35px;
-                left:-10px;
-            }
-
-            input:valid + .text{
-                top:-35px;
-                left:-10px;
-            }
-
-            .line{
-                position:absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                height: 2px;
-                background: #EEFFFF;
-                transition: 0.5s;
-                border-radius:2px;
-                pointer-events:none;
-            }
-
-            input:focus ~ .line{
-                height: 100%;
-
-            }
-
-            input:valid ~ .line{
-                height: 100%;
-
-            }
-            textarea:focus + .text{
-                top:-35px;
-                left:-10px;
-            }
-
-            textarea:valid + .text{
-                top:-35px;
-                left:-10px;
-            }
-            textarea:focus ~ .line{
-                height: 100%;
-
-            }
-
-            textarea:valid ~ .line{
-                height: 100%;
-
-            }
-        }
-
-
-        .textarea{
-                position: relative;
-                width: 100%;
-                height: 100px;
-                padding: 10px 0;
-                resize:none;
-
-            textarea{
-                   height: 100%;
-                   resize:none;
-                   
-
-            }
-        }
-
- 
-
+    .col {
+      position: relative;
+      width: 100%;
+      padding: 0 10px;
+      margin: 30px 0 10px;
+      transition: 0.5s;
     }
+
+    .inputBox {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      color: #eeffff;
+
+      input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding: 0 10px;
+        z-index: 1;
+        color: #061a33;
+      }
+      textarea {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding: 0 10px;
+        z-index: 1;
+        color: #061a33;
+      }
+
+      .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 40px;
+        font-size: 18px;
+        padding: 0 10px;
+        display: block;
+        transition: 0.5s;
+        pointer-events: none;
+      }
+
+      input:focus + .text {
+        top: -35px;
+        left: -10px;
+      }
+
+      input:valid + .text {
+        top: -35px;
+        left: -10px;
+      }
+
+      .line {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #eeffff;
+        transition: 0.5s;
+        border-radius: 2px;
+        pointer-events: none;
+      }
+
+      input:focus ~ .line {
+        height: 100%;
+      }
+
+      input:valid ~ .line {
+        height: 100%;
+      }
+      textarea:focus + .text {
+        top: -35px;
+        left: -10px;
+      }
+
+      textarea:valid + .text {
+        top: -35px;
+        left: -10px;
+      }
+      textarea:focus ~ .line {
+        height: 100%;
+      }
+
+      textarea:valid ~ .line {
+        height: 100%;
+      }
+    }
+
+    .textarea {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      padding: 10px 0;
+      resize: none;
+
+      textarea {
+        height: 100%;
+        resize: none;
+      }
+    }
+  }
 }
 
-input[type="submit"]{
-    border: none;
-    padding: 7px 35px;
-    cursor: pointer;
-    outline: none;
-    background:#FF4D5A;
-    font-size: 18px;
-    border-radius: 2rem;
-
-
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #ff4d5a;
+  font-size: 18px;
+  border-radius: 2rem;
 }
