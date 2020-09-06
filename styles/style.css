@@ -482,10 +482,9 @@ header .menu-btn.open .menu-btn__burger::after {
 .pro {
   display: -ms-grid;
   display: grid;
-  min-height: 100vh;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  height: 100vh;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
   -ms-grid-columns: 9rem 1fr 1fr 5%;
       grid-template-columns: 9rem 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
@@ -536,70 +535,30 @@ header .menu-btn.open .menu-btn__burger::after {
 .pro .container-projekti {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
-  grid-row: 2 / span 2;
+  grid-row: 2 / 4;
   -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
+  grid-column: 3;
+  -ms-grid-row-align: center;
       align-self: center;
-  position: relative;
-  width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
   height: 60%;
   background: transparent;
-  /*background: #061a33;*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
 }
 
-.pro .container-projekti .projekti-bck,
-.pro .container-projekti .projekti-fwd {
-  float: left;
-  width: 10%;
-  height: 100%;
-  z-index: 10;
-  /*background-color: #061A33;*/
-}
-
-.pro .container-projekti .projekti-bck a,
-.pro .container-projekti .projekti-fwd a {
+.pro .container-projekti .projekt-slika {
   position: relative;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25rem;
 }
 
-.pro .container-projekti .projekti-bck a:hover,
-.pro .container-projekti .projekti-fwd a:hover {
-  color: #ff4d5a;
-}
-
-.pro .container-projekti .projekti-bck {
-  left: 0;
-}
-
-.pro .container-projekti .projekti-img {
-  /* Sredinski div */
-  float: left;
-  position: relative;
-  height: 100%;
-  width: 80%;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 9;
+.pro .container-projekti .projekt-slika .proSlide {
   background-color: rgba(235, 235, 235, 0.6);
-  max-width: 1200px;
 }
 
-.pro .container-projekti .projekti-img .proSlide {
-  width: 100%;
-  height: 100%;
-}
-
-.pro .container-projekti .projekti-img .proSlide .st-projekta {
+.pro .container-projekti .projekt-slika .proSlide .st-projekta {
   text-align: center;
   width: 8rem;
   height: 9rem;
@@ -609,13 +568,30 @@ header .menu-btn.open .menu-btn__burger::after {
   bottom: 0;
 }
 
-.pro .container-projekti .projekti-img .proSlide img {
-  height: 100%;
-  width: 100%;
+.pro .container-projekti .projekt-slika .proSlide img {
+  max-width: 100%;
+  height: auto;
 }
 
-.pro .container-projekti .projekti-fwd {
-  right: 0;
+.pro .container-projekti .nazaj-naprej {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pro .container-projekti .nazaj-naprej i {
+  cursor: pointer;
+  font-size: 10rem;
+}
+
+.pro .container-projekti .nazaj-naprej i:hover {
+  color: #ff4d5a;
 }
 
 .pro .opisi-projektov {

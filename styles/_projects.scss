@@ -1,7 +1,7 @@
 .pro {
   display: grid;
-  min-height: 100vh;
-  max-height: fit-content;
+  height: 100vh;
+  align-content: stretch;
   grid-template-columns: 9rem 1fr 1fr 5%;
   grid-template-rows: 68px 1fr 1fr;
 
@@ -34,80 +34,55 @@
   }
 
   /* SLIDER S PROJEKTI */
+
   .container-projekti {
-    grid-row: 2 / span 2;
-    grid-column: 3/4;
+    grid-row: 2 / 4;
+    grid-column: 3;
     align-self: center;
-    position: relative;
-    width: 100%;
+    justify-self: center;
     height: 60%;
     background: transparent;
-    /*background: #061a33;*/
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
 
-    .projekti-bck,
-    .projekti-fwd {
-      float: left;
-      width: 10%;
-      height: 100%;
-      z-index: 10;
-      /*background-color: #061A33;*/
-
-      a {
-        position: relative;
-        top: 45%;
-        transform: translateY(-50%);
-        text-decoration: none;
-        display: inline-block;
-        font-size: 25rem;
-      }
-
-      a:hover {
-        color: #ff4d5a;
-      }
-    }
-    .projekti-bck {
-      left: 0;
-    }
-
-    .projekti-img {
-      /* Sredinski div */
-      float: left;
-      position: relative;
-      height: 100%;
-      width: 80%;
-      justify-items: center;
-      align-items: center;
-      z-index: 9;
-      background-color: rgba(235, 235, 235, 0.6);
-      max-width: 1200px;
-
+    .projekt-slika {
       
+      position: relative;
 
-      .proSlide{
-          width: 100%;
-          height: 100%;
+      .proSlide {
+        background-color: rgba(235, 235, 235, 0.6);
 
-          .st-projekta {
-            text-align: center;
-            width: 8rem;
-            height: 9rem;
-            position: absolute;
-            font-size: 7rem;
-            right: 0;
-            bottom: 0;
-          }
+        .st-projekta {
+          text-align: center;
+          width: 8rem;
+          height: 9rem;
+          position: absolute;
+          font-size: 7rem;
+          right: 0;
+          bottom: 0;
+        }
+        
+        img{
+          max-width: 100%;
+          height: auto;
 
-          img{
-            height: 100%;
-            width: 100%;
         }
       }
-
-      
     }
 
-    .projekti-fwd {
-      right: 0;
+    .nazaj-naprej {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        cursor: pointer;
+        font-size: 10rem;
+
+        &:hover{
+          color: #ff4d5a;
+        }
+      }
     }
   }
 
