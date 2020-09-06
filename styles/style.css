@@ -479,8 +479,6 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2/6;
-  -o-object-fit: cover;
-     object-fit: cover;
   max-height: 80vh;
   min-height: 60vh;
   -ms-flex-item-align: center;

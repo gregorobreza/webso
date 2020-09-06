@@ -248,12 +248,11 @@ header{
     img{
         grid-row: 2/4;
         grid-column: 2/6;
-        object-fit: cover;
         max-height: 80vh;
         min-height: 60vh;
         align-self: center;
         justify-self: center;
-        margin-top:10rem
+        margin-top:10rem;
     
     }
     p{
