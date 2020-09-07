@@ -14,51 +14,59 @@ html {
 }
 
 body {
-  color: #EEFFFF;
-  background-color: #061A33;
-  font-family: 'Titillium Web', sans-serif;
+  color: #eeffff;
+  background-color: #061a33;
+  font-family: "Titillium Web", sans-serif;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 /*vse za dnevno temo*/
 body.day {
-  color: #061A33;
-  background-color: #EEFFFF;
+  color: #061a33;
+  background-color: #eeffff;
 }
 
 body.day a {
-  color: #061A33;
+  color: #061a33;
 }
 
 body.day .label {
-  background-color: #061A33;
+  background-color: #061a33;
 }
 
 body.day .sidebar {
-  background-color: #EEFFFF;
+  background-color: #eeffff;
 }
 
 body.day .sidebarMenu a {
-  color: #061A33;
+  color: #061a33;
+}
+
+/* dnevni za stevilko pri projektih */
+body.day .pro .container-projekti .projekt-slika .proSlide .st-projekta {
+  background-color: #061a33;
+  color: #eeffff;
 }
 
 /*nočni burger*/
-body.day .menu-btn__burger, .menu-btn__burger::before {
-  background: #061A33;
+body.day .menu-btn__burger,
+.menu-btn__burger::before {
+  background: #061a33;
 }
 
-body.day .menu-btn__burger::before, body.day .menu-btn__burger::after {
-  background: #061A33;
+body.day .menu-btn__burger::before,
+body.day .menu-btn__burger::after {
+  background: #061a33;
 }
 
 h1 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 4rem;
 }
 
 h2 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 12rem;
 }
 
@@ -71,18 +79,18 @@ p {
 }
 
 li {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 20pt;
 }
 
 a {
-  color: #EEFFFF;
+  color: #eeffff;
   text-decoration: none;
 }
 
 .verticalLine {
   display: box;
-  border-left: 3pt solid #FF4D5A;
+  border-left: 3pt solid #ff4d5a;
   height: 55%;
   position: fixed;
   margin-left: 90px;
@@ -99,23 +107,23 @@ a {
   background: transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: inset 0 0 0 5px #EEFFFF;
-          box-shadow: inset 0 0 0 5px #EEFFFF;
+  -webkit-box-shadow: inset 0 0 0 5px #eeffff;
+          box-shadow: inset 0 0 0 5px #eeffff;
   overflow: hidden;
 }
 
 #fp-nav ul li a span::after,
 .fp-slidesNav ul li a span::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 140%;
   height: 0;
   border-radius: 50%;
   left: 0;
   bottom: 0;
-  background-color: #FF4D5A;
-  -webkit-box-shadow: 0 0 1px #EEFFFF;
-          box-shadow: 0 0 1px #EEFFFF;
+  background-color: #ff4d5a;
+  -webkit-box-shadow: 0 0 1px #eeffff;
+          box-shadow: 0 0 1px #eeffff;
   -webkit-transition: width 0.8s;
   transition: width 0.8s;
 }
@@ -123,8 +131,8 @@ a {
 /*dnevne in pikice*/
 body.day #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  -webkit-box-shadow: inset 0 0 0 5px #061A33;
-          box-shadow: inset 0 0 0 5px #061A33;
+  -webkit-box-shadow: inset 0 0 0 5px #061a33;
+          box-shadow: inset 0 0 0 5px #061a33;
 }
 
 #fp-nav ul li a.active span,
@@ -138,8 +146,8 @@ body.day #fp-nav ul li a span,
   background: transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: inset 0 0 0 2px #EEFFFF;
-          box-shadow: inset 0 0 0 2px #EEFFFF;
+  -webkit-box-shadow: inset 0 0 0 2px #eeffff;
+          box-shadow: inset 0 0 0 2px #eeffff;
 }
 
 #fp-nav ul li a.active span::after,
@@ -218,34 +226,34 @@ header .menu-btn {
   width: 60px;
   height: 60px;
   cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   /*border: 3px solid #fff; */
 }
 
 header .menu-btn__burger {
   width: 40px;
   height: 6px;
-  background: #EEFFFF;
+  background: #eeffff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .menu-btn__burger::before,
 header .menu-btn__burger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 40px;
   height: 6px;
-  background: #EEFFFF;
+  background: #eeffff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .menu-btn__burger::before {
@@ -288,10 +296,10 @@ header .menu-btn.open .menu-btn__burger::after {
   right: -300px;
   width: 300px;
   height: 100%;
-  background-color: #061A33;
+  background-color: #061a33;
   z-index: 100;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .sidebar ul {
@@ -322,15 +330,15 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .sidebar ul li a {
-  color: #EEFFFF;
+  color: #eeffff;
 }
 
 .sidebar ul li a:hover {
-  color: #FF4D5A;
+  color: #ff4d5a;
 }
 
 .sidebar ul li.active a {
-  color: #FF4D5A;
+  color: #ff4d5a;
 }
 
 .sidebar.open {
@@ -366,7 +374,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .label .ball {
-  background-color: #EEFFFF;
+  background-color: #eeffff;
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -391,7 +399,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .fa-sun {
-  color: #FF4D5A;
+  color: #ff4d5a;
 }
 
 /* VSEBINA */
@@ -485,8 +493,8 @@ header .menu-btn.open .menu-btn__burger::after {
   height: 100vh;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  -ms-grid-columns: 9rem 1fr 1fr 5%;
-      grid-template-columns: 9rem 1fr 1fr 5%;
+  -ms-grid-columns: 9rem 1fr 1fr 2.5%;
+      grid-template-columns: 9rem 1fr 1fr 2.5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
   /* SLIDER S PROJEKTI */
@@ -494,6 +502,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .pro h2 {
+  z-index: 2;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -505,6 +514,7 @@ header .menu-btn.open .menu-btn__burger::after {
   justify-self: flex-start;
   margin-left: 5rem;
   margin-bottom: 5rem;
+  font-size: 11rem;
 }
 
 .pro .pike {
@@ -542,8 +552,8 @@ header .menu-btn.open .menu-btn__burger::after {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  height: 60%;
-  background: transparent;
+  height: 70%;
+  width: 90%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 10% 80% 10%;
@@ -551,26 +561,66 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .pro .container-projekti .projekt-slika {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   position: relative;
+  z-index: 1;
 }
 
 .pro .container-projekti .projekt-slika .proSlide {
-  background-color: rgba(235, 235, 235, 0.6);
+  z-index: 1;
+  max-width: 100%;
+  height: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: cover;
 }
 
 .pro .container-projekti .projekt-slika .proSlide .st-projekta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eeffff;
+  color: #061a33;
+  z-index: 2;
   text-align: center;
-  width: 8rem;
-  height: 9rem;
+  width: 12rem;
+  height: 12rem;
   position: absolute;
-  font-size: 7rem;
-  right: 0;
-  bottom: 0;
+  font-size: 10rem;
+  right: -2rem;
+  bottom: -2rem;
 }
 
 .pro .container-projekti .projekt-slika .proSlide img {
   max-width: 100%;
   height: auto;
+}
+
+.pro .container-projekti .projekt-slika .oakSlika {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/test1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/test1.jpg");
+}
+
+.pro .container-projekti .projekt-slika .andSlika {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/test2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/test2.jpg");
+}
+
+.pro .container-projekti .projekt-slika .pikSlika {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/test3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/test3.jpg");
 }
 
 .pro .container-projekti .nazaj-naprej {
@@ -586,6 +636,8 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .pro .container-projekti .nazaj-naprej i {
+  padding-left: 10px;
+  padding-right: 10px;
   cursor: pointer;
   font-size: 10rem;
 }
@@ -628,6 +680,20 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .pro .opisi-projektov .obisci-stran:hover {
+  color: #061a33;
+}
+
+.pro .opisi-projektov a.button {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #ff4d5a;
+  font-size: 18px;
+  border-radius: 2rem;
+}
+
+.pro .opisi-projektov a.button:hover {
   color: #061a33;
 }
 
@@ -777,8 +843,8 @@ header .menu-btn.open .menu-btn__burger::after {
       align-self: center;
   width: 80%;
   padding: 20px;
-  background: #061A33;
-  border: 4px solid #EEFFFF;
+  background: #061a33;
+  border: 4px solid #eeffff;
 }
 
 .kontaktcontainer .row100 {
@@ -803,7 +869,7 @@ header .menu-btn.open .menu-btn__burger::after {
   position: relative;
   width: 100%;
   height: 40px;
-  color: #EEFFFF;
+  color: #eeffff;
 }
 
 .kontaktcontainer .row100 .inputBox input {
@@ -818,7 +884,7 @@ header .menu-btn.open .menu-btn__burger::after {
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-  color: #061A33;
+  color: #061a33;
 }
 
 .kontaktcontainer .row100 .inputBox textarea {
@@ -833,7 +899,7 @@ header .menu-btn.open .menu-btn__burger::after {
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-  color: #061A33;
+  color: #061a33;
 }
 
 .kontaktcontainer .row100 .inputBox .text {
@@ -865,7 +931,7 @@ header .menu-btn.open .menu-btn__burger::after {
   display: block;
   width: 100%;
   height: 2px;
-  background: #EEFFFF;
+  background: #eeffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 2px;
@@ -916,7 +982,7 @@ input[type="submit"] {
   padding: 7px 35px;
   cursor: pointer;
   outline: none;
-  background: #FF4D5A;
+  background: #ff4d5a;
   font-size: 18px;
   border-radius: 2rem;
 }

@@ -2,16 +2,18 @@
   display: grid;
   height: 100vh;
   align-content: stretch;
-  grid-template-columns: 9rem 1fr 1fr 5%;
+  grid-template-columns: 9rem 1fr 1fr 2.5%;
   grid-template-rows: 68px 1fr 1fr;
 
   h2 {
+    z-index: 2;
     grid-row: 2/3;
     grid-column: 2/4;
     align-self: flex-end;
     justify-self: flex-start;
     margin-left: 5rem;
     margin-bottom: 5rem;
+    font-size: 11rem;
   }
 
   .pike {
@@ -40,31 +42,73 @@
     grid-column: 3;
     align-self: center;
     justify-self: center;
-    height: 60%;
-    background: transparent;
+    height: 70%;
+    width: 90%;
     display: grid;
     grid-template-columns: 10% 80% 10%;
 
     .projekt-slika {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
       position: relative;
+      z-index: 1;
 
       .proSlide {
-        background-color: rgba(235, 235, 235, 0.6);
+        z-index: 1;
+        max-width: 100%;
+        height: 100%;
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+
+        background-size: auto;
+        background-origin: padding-box;
+        background-clip: border-box;
+        background-size: cover;
 
         .st-projekta {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #eeffff;
+          color: #061a33;
+          z-index: 2;
           text-align: center;
-          width: 8rem;
-          height: 9rem;
+          width: 12rem;
+          height: 12rem;
           position: absolute;
-          font-size: 7rem;
-          right: 0;
-          bottom: 0;
+          font-size: 10rem;
+          right: -2rem;
+          bottom: -2rem;
         }
 
         img {
           max-width: 100%;
           height: auto;
         }
+      }
+
+      .oakSlika {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("../img/test1.jpg");
+      }
+      .andSlika {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("../img/test2.jpg");
+      }
+      .pikSlika {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("../img/test3.jpg");
       }
     }
 
@@ -74,6 +118,8 @@
       align-items: center;
 
       i {
+        padding-left: 10px;
+        padding-right: 10px;
         cursor: pointer;
         font-size: 10rem;
 
@@ -117,6 +163,20 @@
     }
     .obisci-stran:hover {
       color: #061a33;
+    }
+
+    a.button {
+      border: none;
+      padding: 7px 35px;
+      cursor: pointer;
+      outline: none;
+      background: #ff4d5a;
+      font-size: 18px;
+      border-radius: 2rem;
+
+      &:hover{
+        color: #061a33;
+      }
     }
   }
 }

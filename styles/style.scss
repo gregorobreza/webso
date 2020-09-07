@@ -39,6 +39,13 @@ body.day .sidebarMenu a {
   color: #061a33;
 }
 
+/* dnevni za stevilko pri projektih */
+
+body.day .pro .container-projekti .projekt-slika .proSlide .st-projekta {
+  background-color: #061a33;
+  color: #eeffff;
+}
+
 /*nočni burger*/
 body.day .menu-btn__burger,
 .menu-btn__burger::before {

@@ -75,7 +75,7 @@ function plusSlides(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("proSlide");
-  //var captionText = document.getElementById("caption");
+  var captionText = document.getElementsByClassName("pro1");
   //var alts= document.getElementsByClassName("slika");
 
   if (n > slides.length) {
@@ -87,8 +87,10 @@ function showSlides(n) {
 
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    captionText[i].style.display = "none";
   }
 
   slides[slideIndex - 1].style.display = "block";
-  //captionText.innerHTML = alts[slideIndex-1].alt;
+  captionText[slideIndex - 1].style.display = "block";
+  
 }
