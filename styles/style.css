@@ -13,73 +13,75 @@ html {
 }
 
 body {
-  color: #EEFFFF;
-  background-color: #061A33;
-  font-family: 'Titillium Web', sans-serif;
+  color: #eeffff;
+  background-color: #061a33;
+  font-family: "Titillium Web", sans-serif;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 /*vse za dnevno temo*/
 body.day {
-  color: #061A33;
-  background-color: #EEFFFF;
+  color: #061a33;
+  background-color: #eeffff;
 }
 
 body.day a {
-  color: #061A33;
+  color: #061a33;
 }
 
 body.day .label {
-  background-color: #061A33;
+  background-color: #061a33;
 }
 
 body.day .sidebar {
-  background-color: #EEFFFF;
+  background-color: #eeffff;
 }
 
 body.day .sidebarMenu a {
-  color: #061A33;
+  color: #061a33;
 }
 
 /*dnevni burger*/
-body.day .menu-btn__burger, .menu-btn__burger::before {
-  background: #061A33;
+body.day .menu-btn__burger,
+.menu-btn__burger::before {
+  background: #061a33;
 }
 
-body.day .menu-btn__burger::before, body.day .menu-btn__burger::after {
-  background: #061A33;
+body.day .menu-btn__burger::before,
+body.day .menu-btn__burger::after {
+  background: #061a33;
 }
 
 /*dnevna kontaktna forma*/
 body.day .kontaktcontainer {
-  background: #EEFFFF;
-  border: 4px solid #061A33;
+  background: #eeffff;
+  border: 4px solid #061a33;
 }
 
 body.day .kontaktcontainer .inputBox {
-  color: #061A33;
+  color: #061a33;
 }
 
 body.day .kontaktcontainer .inputBox input {
-  color: #EEFFFF;
+  color: #eeffff;
 }
 
 body.day .kontaktcontainer .inputBox textarea {
-  color: #EEFFFF;
+  color: #eeffff;
 }
 
 body.day .kontaktcontainer .inputBox .line {
-  background: #061A33;
+  background: #061a33;
 }
 
 h1 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 4rem;
 }
 
 h2 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 12rem;
 }
 
@@ -92,23 +94,24 @@ p {
 }
 
 li {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   font-size: 20pt;
 }
 
-input, textarea {
-  font-family: 'Titillium Web', sans-serif;
+input,
+textarea {
+  font-family: "Titillium Web", sans-serif;
 }
 
 a {
-  color: #EEFFFF;
+  color: #eeffff;
   text-decoration: none;
 }
 
 /*črta*/
 .verticalLine {
   display: box;
-  border-left: 3pt solid #FF4D5A;
+  border-left: 3pt solid #ff4d5a;
   height: 55%;
   position: fixed;
   margin-left: 90px;
@@ -125,23 +128,23 @@ a {
   background: transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: inset 0 0 0 5px #EEFFFF;
-          box-shadow: inset 0 0 0 5px #EEFFFF;
+  -webkit-box-shadow: inset 0 0 0 5px #eeffff;
+          box-shadow: inset 0 0 0 5px #eeffff;
   overflow: hidden;
 }
 
 #fp-nav ul li a span::after,
 .fp-slidesNav ul li a span::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 140%;
   height: 0;
   border-radius: 50%;
   left: 0;
   bottom: 0;
-  background-color: #FF4D5A;
-  -webkit-box-shadow: 0 0 1px #EEFFFF;
-          box-shadow: 0 0 1px #EEFFFF;
+  background-color: #ff4d5a;
+  -webkit-box-shadow: 0 0 1px #eeffff;
+          box-shadow: 0 0 1px #eeffff;
   -webkit-transition: width 0.8s;
   transition: width 0.8s;
 }
@@ -149,8 +152,8 @@ a {
 /*dnevne in pikice*/
 body.day #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  -webkit-box-shadow: inset 0 0 0 5px #061A33;
-          box-shadow: inset 0 0 0 5px #061A33;
+  -webkit-box-shadow: inset 0 0 0 5px #061a33;
+          box-shadow: inset 0 0 0 5px #061a33;
 }
 
 #fp-nav ul li a.active span,
@@ -164,8 +167,8 @@ body.day #fp-nav ul li a span,
   background: transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: inset 0 0 0 2px #EEFFFF;
-          box-shadow: inset 0 0 0 2px #EEFFFF;
+  -webkit-box-shadow: inset 0 0 0 2px #eeffff;
+          box-shadow: inset 0 0 0 2px #eeffff;
 }
 
 #fp-nav ul li a.active span::after,
@@ -244,34 +247,34 @@ header .menu-btn {
   width: 60px;
   height: 60px;
   cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   /*border: 3px solid #fff; */
 }
 
 header .menu-btn__burger {
   width: 40px;
   height: 6px;
-  background: #EEFFFF;
+  background: #eeffff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .menu-btn__burger::before,
 header .menu-btn__burger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 40px;
   height: 6px;
-  background: #EEFFFF;
+  background: #eeffff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header .menu-btn__burger::before {
@@ -314,10 +317,10 @@ header .menu-btn.open .menu-btn__burger::after {
   right: -300px;
   width: 300px;
   height: 100%;
-  background-color: #061A33;
+  background-color: #061a33;
   z-index: 100;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .sidebar ul {
@@ -348,15 +351,15 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .sidebar ul li a {
-  color: #EEFFFF;
+  color: #eeffff;
 }
 
 .sidebar ul li a:hover {
-  color: #FF4D5A;
+  color: #ff4d5a;
 }
 
 .sidebar ul li.active a {
-  color: #FF4D5A;
+  color: #ff4d5a;
 }
 
 .sidebar.open {
@@ -392,7 +395,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .label .ball {
-  background-color: #EEFFFF;
+  background-color: #eeffff;
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -417,7 +420,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .fa-sun {
-  color: #FF4D5A;
+  color: #ff4d5a;
 }
 
 /* VSEBINA */
@@ -700,8 +703,8 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-column-align: center;
       justify-self: center;
   padding: 2rem;
-  background: #061A33;
-  border: 4px solid #EEFFFF;
+  background: #061a33;
+  border: 4px solid #eeffff;
 }
 
 .kontaktcontainer .row100 {
@@ -726,7 +729,7 @@ header .menu-btn.open .menu-btn__burger::after {
   position: relative;
   width: 100%;
   height: 40px;
-  color: #EEFFFF;
+  color: #eeffff;
 }
 
 .kontaktcontainer .row100 .inputBox input {
@@ -741,7 +744,7 @@ header .menu-btn.open .menu-btn__burger::after {
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-  color: #061A33;
+  color: #061a33;
 }
 
 .kontaktcontainer .row100 .inputBox textarea {
@@ -756,7 +759,7 @@ header .menu-btn.open .menu-btn__burger::after {
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-  color: #061A33;
+  color: #061a33;
 }
 
 .kontaktcontainer .row100 .inputBox .text {
@@ -801,7 +804,7 @@ header .menu-btn.open .menu-btn__burger::after {
   display: block;
   width: 100%;
   height: 2px;
-  background: #EEFFFF;
+  background: #eeffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 2px;
@@ -849,11 +852,11 @@ header .menu-btn.open .menu-btn__burger::after {
 
 input[type="submit"] {
   border: none;
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   padding: 7px 35px;
   cursor: pointer;
   outline: none;
-  background: #FF4D5A;
+  background: #ff4d5a;
   font-size: 2rem;
   border-radius: 2rem;
 }

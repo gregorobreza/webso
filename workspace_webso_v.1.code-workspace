@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "webso"
+		"liveServer.settings.multiRootWorkspaceName": "webso",
+		"liveServer.settings.port": 5501
 	}
 }
