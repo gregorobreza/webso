@@ -16,8 +16,8 @@ body {
   color: #eeffff;
   background-color: #061a33;
   font-family: "Titillium Web", sans-serif;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /*vse za dnevno temo*/
@@ -117,7 +117,7 @@ a {
   visibility: hidden;
 }
 
-body.day .paralax-container .noc {
+body.day .paralax-container img.noc {
   display: hidden;
 }
 
