@@ -20,6 +20,7 @@ body {
 body.day {
   color: #061a33;
   background-color: #eeffff;
+  
 }
 
 body.day a {
@@ -37,6 +38,8 @@ body.day .sidebar {
 body.day .sidebarMenu a {
   color: #061a33;
 }
+
+
 
 /*dnevni burger*/
 body.day .menu-btn__burger,
@@ -101,6 +104,23 @@ a {
   text-decoration: none;
 }
 
+/*dnevni paralax*/
+.paralax-container .noc{
+  visibility:visible;
+}
+
+.paralax-container .dan{
+  visibility:hidden;
+}
+
+body.day .paralax-container .noc{
+  visibility:hidden;
+}
+
+
+body.day .paralax-container img.dan{
+  visibility: visible;
+}
 /*črta*/
 .verticalLine {
   display: box;

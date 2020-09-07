@@ -108,6 +108,23 @@ a {
   text-decoration: none;
 }
 
+/*dnevni paralax*/
+.paralax-container .noc {
+  visibility: visible;
+}
+
+.paralax-container .dan {
+  visibility: hidden;
+}
+
+body.day .paralax-container .noc {
+  visibility: hidden;
+}
+
+body.day .paralax-container img.dan {
+  visibility: visible;
+}
+
 /*črta*/
 .verticalLine {
   display: box;
