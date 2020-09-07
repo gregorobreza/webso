@@ -46,6 +46,11 @@ body.day .pro .container-projekti .projekt-slika .proSlide .st-projekta {
   color: #eeffff;
 }
 
+/* dnevni za tipko pri projektih */
+body.day .pro .opisi-projektov a.button:hover {
+  color: #eeffff;
+}
+
 /*nočni burger*/
 body.day .menu-btn__burger,
 .menu-btn__burger::before {

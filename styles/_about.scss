@@ -1,7 +1,7 @@
 .onas {
   display: grid;
-  min-height: 100%;
-  max-height: fit-content;
+  height: 100vh;
+  align-content: stretch;
   grid-template-columns: 9rem 2fr 1fr 1fr 5%;
   grid-template-rows: 68px 1fr 1fr;
 
@@ -38,6 +38,108 @@
       border-radius: 50%;
       display: inline-block;
       z-index: 50;
+    }
+  }
+
+  /* Pozicija kartice za Jureta*/
+  .onas__card__jure {
+    grid-row: 2;
+    grid-column: 3;
+  }
+  /* Pozicija kartice za Gregorja*/
+  .onas__card__gregor {
+    grid-row: 2;
+    grid-column: 4;
+  }
+
+  /* Znotraj kartic se definira grid za lazje centriranje */
+  .onas__card {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: 1fr;
+
+    &__slika {
+      /* Nastavis velikost kroga za sliko in  */
+      grid-row: 1;
+      justify-self: center;
+      align-self: flex-end;
+      width: 22rem;
+      height: 22rem;
+      border-radius: 50%;
+
+      /* Nastavis sliko v ozadje */
+      &--jure {
+        background-color: yellowgreen;
+      }
+
+      &--gregor {
+        background-color: blue;
+      }
+    }
+
+    /* Nastavitev za prikaz in centriranje imena*/
+    &__ime {
+      grid-row: 2;
+      justify-self: center;
+      align-self: center;
+      font-size: 5rem;
+    }
+  }
+
+  /* Nastavitev opisa pod imeni */
+
+  .onas__opis--jure {
+    grid-row: 3;
+    grid-column: 3;
+  }
+
+  .onas__opis--gregor {
+    grid-row: 3;
+    grid-column: 4;
+  }
+
+  .onas__opis {
+    display: table;
+    text-align: center;
+
+    &__besedilo {
+      padding: 4rem 2rem 0 2rem;
+      width: 100%;
+      display: table-cell;
+      vertical-align: top;
+
+      p {
+        font-size: 2.5rem;
+      }
+
+      .typing,
+      .typing1 {
+        position: relative;
+        margin-left: 1rem;
+      }
+
+      .typing::after,
+      .typing1::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        border-right: 2px solid white;
+        animation: blink 0.8s infinite ease;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      &__intro{
+        display:flex;
+      }
     }
   }
 }

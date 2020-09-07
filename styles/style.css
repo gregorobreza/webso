@@ -49,6 +49,11 @@ body.day .pro .container-projekti .projekt-slika .proSlide .st-projekta {
   color: #eeffff;
 }
 
+/* dnevni za tipko pri projektih */
+body.day .pro .opisi-projektov a.button:hover {
+  color: #eeffff;
+}
+
 /*nočni burger*/
 body.day .menu-btn__burger,
 .menu-btn__burger::before {
@@ -599,13 +604,9 @@ header .menu-btn.open .menu-btn__burger::after {
   height: 12rem;
   position: absolute;
   font-size: 10rem;
+  font-weight: bold;
   right: -2rem;
   bottom: -2rem;
-}
-
-.pro .container-projekti .projekt-slika .proSlide img {
-  max-width: 100%;
-  height: auto;
 }
 
 .pro .container-projekti .projekt-slika .oakSlika {
@@ -700,14 +701,17 @@ header .menu-btn.open .menu-btn__burger::after {
 .onas {
   display: -ms-grid;
   display: grid;
-  min-height: 100%;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  height: 100vh;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
   -ms-grid-columns: 9rem 2fr 1fr 1fr 5%;
       grid-template-columns: 9rem 2fr 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
+  /* Pozicija kartice za Jureta*/
+  /* Pozicija kartice za Gregorja*/
+  /* Znotraj kartic se definira grid za lazje centriranje */
+  /* Nastavitev opisa pod imeni */
 }
 
 .onas h2 {
@@ -761,6 +765,134 @@ header .menu-btn.open .menu-btn__burger::after {
   border-radius: 50%;
   display: inline-block;
   z-index: 50;
+}
+
+.onas .onas__card__jure {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.onas .onas__card__gregor {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.onas .onas__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4fr 1fr;
+      grid-template-rows: 4fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  /* Nastavitev za prikaz in centriranje imena*/
+}
+
+.onas .onas__card__slika {
+  /* Nastavis velikost kroga za sliko in  */
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  /* Nastavis sliko v ozadje */
+}
+
+.onas .onas__card__slika--jure {
+  background-color: yellowgreen;
+}
+
+.onas .onas__card__slika--gregor {
+  background-color: blue;
+}
+
+.onas .onas__card__ime {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 5rem;
+}
+
+.onas .onas__opis--jure {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.onas .onas__opis--gregor {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.onas .onas__opis {
+  display: table;
+  text-align: center;
+}
+
+.onas .onas__opis__besedilo {
+  padding: 4rem 2rem 0 2rem;
+  width: 100%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.onas .onas__opis__besedilo p {
+  font-size: 2.5rem;
+}
+
+.onas .onas__opis__besedilo .typing,
+.onas .onas__opis__besedilo .typing1 {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.onas .onas__opis__besedilo .typing::after,
+.onas .onas__opis__besedilo .typing1::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border-right: 2px solid white;
+  -webkit-animation: blink 0.8s infinite ease;
+          animation: blink 0.8s infinite ease;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.onas .onas__opis__besedilo__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .kontakt {
