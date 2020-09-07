@@ -211,14 +211,17 @@ header {
     }
   }
 
-  img {
+  .paralax-container {
     grid-row: 2/4;
     grid-column: 2/6;
-    max-height: 80vh;
-    min-height: 60vh;
-    align-self: center;
-    justify-self: center;
-    margin-top: 10rem;
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 2rem;
+    z-index: -1;
+    img{
+      width: 90vw;
+      height: auto;
+    }
   }
   p {
     grid-row: 3/4;

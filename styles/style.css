@@ -475,21 +475,25 @@ header .menu-btn.open .menu-btn__burger::after {
   z-index: 50;
 }
 
-.showcase img {
+.showcase .paralax-container {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2/6;
-  max-height: 80vh;
-  min-height: 60vh;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin-top: 10rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-bottom: 2rem;
+  z-index: -1;
+}
+
+.showcase .paralax-container img {
+  width: 90vw;
+  height: auto;
 }
 
 .showcase p {
