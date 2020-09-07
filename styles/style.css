@@ -118,7 +118,7 @@ a {
 }
 
 body.day .paralax-container .noc {
-  visibility: hidden;
+  display: hidden;
 }
 
 body.day .paralax-container img.dan {
@@ -504,7 +504,7 @@ header .menu-btn.open .menu-btn__burger::after {
       align-self: end;
   -ms-grid-column-align: end;
       justify-self: end;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   z-index: -1;
 }
 
