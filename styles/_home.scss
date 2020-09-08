@@ -216,8 +216,24 @@ header {
     grid-column: 2/6;
     align-self: end;
     justify-self: end;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     z-index: -1;
+
+    img{
+      width: 90vw;
+      height: auto;
+      
+    }
+  }
+
+  .paralax-container-2 {
+    grid-row: 2/4;
+    grid-column: 2/6;
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 4rem;
+    z-index: -1;
+    display:none;
 
     img{
       width: 90vw;
@@ -233,7 +249,6 @@ header {
     margin-left: 8rem;
   }
 }
-
 
 
 

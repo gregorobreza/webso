@@ -109,20 +109,12 @@ a {
 }
 
 /*dnevni paralax*/
-.paralax-container .noc {
-  visibility: visible;
+body.day .paralax-container {
+  display: none;
 }
 
-.paralax-container .dan {
-  visibility: hidden;
-}
-
-body.day .paralax-container img.noc {
-  display: hidden;
-}
-
-body.day .paralax-container img.dan {
-  visibility: visible;
+body.day .paralax-container-2 {
+  display: block;
 }
 
 /*črta*/
@@ -504,11 +496,33 @@ header .menu-btn.open .menu-btn__burger::after {
       align-self: end;
   -ms-grid-column-align: end;
       justify-self: end;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   z-index: -1;
 }
 
 .showcase .paralax-container img {
+  width: 90vw;
+  height: auto;
+}
+
+.showcase .paralax-container-2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-bottom: 4rem;
+  z-index: -1;
+  display: none;
+}
+
+.showcase .paralax-container-2 img {
   width: 90vw;
   height: auto;
 }

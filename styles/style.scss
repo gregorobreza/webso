@@ -105,22 +105,15 @@ a {
 }
 
 /*dnevni paralax*/
-.paralax-container .noc{
-  visibility:visible;
+
+body.day .paralax-container{
+display:none;
 }
 
-.paralax-container .dan{
-  visibility:hidden;
-}
+body.day .paralax-container-2{
+  display:block;
+  }
 
-body.day .paralax-container img.noc{
-  display:hidden;
-}
-
-
-body.day .paralax-container img.dan{
-  visibility: visible;
-}
 /*črta*/
 .verticalLine {
   display: box;
