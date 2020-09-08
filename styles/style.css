@@ -53,6 +53,17 @@ body.day .menu-btn__burger::after {
   background: #061a33;
 }
 
+/* dnevni za stevilko pri projektih */
+body.day .pro .container-projekti .projekt-slika .proSlide .st-projekta {
+  background-color: #061a33;
+  color: #eeffff;
+}
+
+/* dnevni za tipko pri projektih */
+body.day .pro .opisi-projektov a.button:hover {
+  color: #eeffff;
+}
+
 /*dnevna kontaktna forma*/
 body.day .kontaktcontainer {
   background: #eeffff;
@@ -551,6 +562,8 @@ header .menu-btn.open .menu-btn__burger::after {
       grid-template-columns: 9rem 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
+  /* SLIDER S PROJEKTI */
+  /* OPISI PROJEKTOV */
 }
 
 .pro h2 {
@@ -592,6 +605,157 @@ header .menu-btn.open .menu-btn__burger::after {
   z-index: 50;
 }
 
+.pro .container-projekti {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 70%;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 80% 10%;
+      grid-template-columns: 10% 80% 10%;
+}
+
+.pro .container-projekti .projekt-slika {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pro .container-projekti .projekt-slika .proSlide {
+  z-index: 1;
+  max-width: 100%;
+  height: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: cover;
+}
+
+.pro .container-projekti .projekt-slika .proSlide .st-projekta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eeffff;
+  color: #061a33;
+  z-index: 2;
+  text-align: center;
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  font-size: 10rem;
+  font-weight: bold;
+  right: -2rem;
+  bottom: -2rem;
+}
+
+.pro .container-projekti .projekt-slika .oakSlika {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/test1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/test1.jpg");
+}
+
+.pro .container-projekti .projekt-slika .andSlika {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/test2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/test2.jpg");
+}
+
+.pro .container-projekti .projekt-slika .pikSlika {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/test3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/test3.jpg");
+}
+
+.pro .container-projekti .nazaj-naprej {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pro .container-projekti .nazaj-naprej i {
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  font-size: 10rem;
+}
+
+.pro .container-projekti .nazaj-naprej i:hover {
+  color: #ff4d5a;
+}
+
+.pro .opisi-projektov {
+  -ms-grid-row: 3;
+  grid-row: 3 / 3;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  /*background-color: white;*/
+  padding: 4rem 4rem 4rem 4rem;
+  text-align: center;
+  /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
+}
+
+.pro .opisi-projektov h4 {
+  font-size: 5rem;
+}
+
+.pro .opisi-projektov h5 {
+  font-size: 3.5rem;
+}
+
+.pro .opisi-projektov p {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.pro .opisi-projektov .orodja {
+  margin-top: 2rem;
+}
+
+.pro .opisi-projektov .obisci-stran {
+  margin-top: 3rem;
+  color: #eeffff;
+}
+
+.pro .opisi-projektov .obisci-stran:hover {
+  color: #061a33;
+}
+
+.pro .opisi-projektov a.button {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #ff4d5a;
+  font-size: 18px;
+  border-radius: 2rem;
+}
+
+.pro .opisi-projektov a.button:hover {
+  color: #061a33;
+}
+
 .onas {
   display: -ms-grid;
   display: grid;
@@ -602,6 +766,10 @@ header .menu-btn.open .menu-btn__burger::after {
       grid-template-columns: 9rem 2fr 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
+  /* Pozicija kartice za Jureta*/
+  /* Pozicija kartice za Gregorja*/
+  /* Znotraj kartic se definira grid za lazje centriranje */
+  /* Nastavitev opisa pod imeni */
 }
 
 .onas h2 {
@@ -655,6 +823,134 @@ header .menu-btn.open .menu-btn__burger::after {
   border-radius: 50%;
   display: inline-block;
   z-index: 50;
+}
+
+.onas .onas__card__jure {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.onas .onas__card__gregor {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.onas .onas__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 4fr 1fr;
+      grid-template-rows: 4fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  /* Nastavitev za prikaz in centriranje imena*/
+}
+
+.onas .onas__card__slika {
+  /* Nastavis velikost kroga za sliko in  */
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  /* Nastavis sliko v ozadje */
+}
+
+.onas .onas__card__slika--jure {
+  background-color: yellowgreen;
+}
+
+.onas .onas__card__slika--gregor {
+  background-color: blue;
+}
+
+.onas .onas__card__ime {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 5rem;
+}
+
+.onas .onas__opis--jure {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.onas .onas__opis--gregor {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.onas .onas__opis {
+  display: table;
+  text-align: center;
+}
+
+.onas .onas__opis__besedilo {
+  padding: 4rem 2rem 0 2rem;
+  width: 100%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.onas .onas__opis__besedilo p {
+  font-size: 2.5rem;
+}
+
+.onas .onas__opis__besedilo .typing,
+.onas .onas__opis__besedilo .typing1 {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.onas .onas__opis__besedilo .typing::after,
+.onas .onas__opis__besedilo .typing1::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border-right: 2px solid white;
+  -webkit-animation: blink 0.8s infinite ease;
+          animation: blink 0.8s infinite ease;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.onas .onas__opis__besedilo__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .kontakt {
