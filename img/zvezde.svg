@@ -1,0 +1,27 @@
+<svg id="noc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1369 768">
+  <title>zvezde</title>
+  <rect width="1369" height="768" fill="none"/>
+  <g id="zvezde">
+    <circle cx="537.12" cy="299.38" r="4.6" fill="#f9f8c5"/>
+    <circle cx="675.21" cy="238.01" r="3.07" fill="#f9f8c5"/>
+    <circle cx="605.4" cy="347.72" r="2.3" fill="#f9f8c5"/>
+    <circle cx="840.94" cy="87.62" r="2.3" fill="#f9f8c5"/>
+    <circle cx="898.94" cy="220.62" r="2.3" fill="#f9f8c5"/>
+    <circle cx="950.94" cy="190.62" r="2.3" fill="#f9f8c5"/>
+    <circle cx="461.94" cy="120.62" r="2.3" fill="#f9f8c5"/>
+    <circle cx="891.57" cy="274.83" r="3.07" fill="#f9f8c5"/>
+    <circle cx="1252.92" cy="321.63" r="3.84" fill="#f9f8c5"/>
+    <circle cx="1227.61" cy="193.51" r="4.6" fill="#f9f8c5"/>
+    <circle cx="1282" cy="149.11" r="7" fill="#f9f8c5"/>
+    <circle cx="1178.5" cy="104.61" r="2.5" fill="#f9f8c5"/>
+    <circle cx="771.12" cy="134.43" r="3.84" fill="#f9f8c5"/>
+    <circle cx="346.08" cy="297.08" r="2.3" fill="#f9f8c5"/>
+    <circle cx="348.08" cy="169.08" r="2.3" fill="#f9f8c5"/>
+    <circle cx="453.49" cy="234.17" r="0.77" fill="#f9f8c5"/>
+    <circle cx="327.67" cy="402.96" r="2.3" fill="#f9f8c5"/>
+    <circle cx="562.43" cy="172.79" r="3.84" fill="#f9f8c5"/>
+    <circle cx="1050.38" cy="112.95" r="2.3" fill="#f9f8c5"/>
+    <circle cx="1132.47" cy="167.42" r="6.14" fill="#f9f8c5"/>
+    <circle cx="926.09" cy="128.29" r="2.3" fill="#f9f8c5"/>
+  </g>
+</svg>

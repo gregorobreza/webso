@@ -70,6 +70,13 @@ chk.addEventListener('change', () => {
 });
 
 
+//paralax
+var scene = document.getElementById('paralax-scene');
+var parallax = new Parallax(scene);
+
+var scene2 = document.getElementById('paralax-scene-2');
+var parallax2 = new Parallax(scene2);
+
 
   
 
