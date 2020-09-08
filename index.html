@@ -219,7 +219,7 @@
 
               <p>resitve.webso@gmail.com</p>
 
-              <form class="kontaktcontainer" action="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <form class="kontaktcontainer" action="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <div class="row100">
                   <div class="col">
                     <div class="inputBox">
@@ -262,9 +262,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="row100">
+                <div class="row100" style="display: none;">
                   <div class="col">
-                    <div data-netlify-recaptcha="true"></div>
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                   </div>
                 </div>
                 <div class="row100">
