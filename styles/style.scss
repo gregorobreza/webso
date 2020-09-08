@@ -20,7 +20,6 @@ body {
 body.day {
   color: #061a33;
   background-color: #eeffff;
-  
 }
 
 body.day a {
@@ -38,8 +37,6 @@ body.day .sidebar {
 body.day .sidebarMenu a {
   color: #061a33;
 }
-
-
 
 /*dnevni burger*/
 body.day .menu-btn__burger,
@@ -78,7 +75,7 @@ h1 {
 
 h2 {
   font-family: "Russo One", sans-serif;
-  font-size: 12rem;
+  font-size: 10rem;
 }
 
 h3 {
@@ -86,12 +83,12 @@ h3 {
 }
 
 p {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 li {
   font-family: "Russo One", sans-serif;
-  font-size: 20pt;
+  font-size: 3rem;
 }
 
 input,
@@ -106,13 +103,13 @@ a {
 
 /*dnevni paralax*/
 
-body.day .paralax-container{
-display:none;
+body.day .paralax-container {
+  display: none;
 }
 
-body.day .paralax-container-2{
-  display:block;
-  }
+body.day .paralax-container-2 {
+  display: block;
+}
 
 /*črta*/
 .verticalLine {
