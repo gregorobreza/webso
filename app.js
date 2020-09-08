@@ -77,7 +77,89 @@ var parallax = new Parallax(scene);
 var scene2 = document.getElementById('paralax-scene-2');
 var parallax2 = new Parallax(scene2);
 
+// Menjava slik pri sliderjih
+var slideIndex = 1;
+showSlides(slideIndex);
 
+//next previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("proSlide");
+  var captionText = document.getElementsByClassName("pro1");
+  //var alts= document.getElementsByClassName("slika");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    captionText[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  captionText[slideIndex - 1].style.display = "block";
+  
+}
+
+/* Animacija tipkanja na strani O NAS */
+
+const textTyping = ['študent elektrotehnike.', 'športni navdušenec.', 'ljubitelj knjig.', 'reševalec težav' ];
+
+let count = 0;
+
+let index = 0;
+
+let currentText = '';
+
+let letter = '';
+
+
+(function type(){
+  if( count === textTyping.length){
+    count = 0;
+  }
+  currentText = textTyping[count];
+  letter = currentText.slice(0, ++index);
+  document.querySelector('.typing').textContent = letter;
+  
+  if(letter.length === currentText.length){
+    count++;
+    index = 0;
+  }
+  setTimeout(type, 300);
+
+}());
+
+
+const textTyping1 = ['študent strojništva', 'navdušen programer.', 'fit powerlifter.', 'mojster za vse'];
+let count1 = 0;
+let index1 = 0;
+let currentText1 = '';
+let letter1 = '';
+
+(function type1(){
+  if( count1 === textTyping1.length){
+    count1 = 0;
+  }
+  currentText1 = textTyping1[count1];
+  letter1 = currentText1.slice(0, ++index1);
+  document.querySelector('.typing1').textContent = letter1;
+
+  if(letter1.length === currentText1.length){
+    count1++;
+    index1 = 0;
+  }
+  setTimeout(type1, 300);
+
+}());
   
 
 
