@@ -193,11 +193,11 @@ header {
 
   .pike {
     grid-row: 2/3;
-    grid-column: 2/5;
+    grid-column: 2/4;
     align-self: flex-end;
     justify-self: flex-start;
     position: relative;
-    left: 29rem;
+    left: 23rem;
     top: -5rem;
 
     .homedot {
@@ -211,14 +211,33 @@ header {
     }
   }
 
-  img {
+  .paralax-container {
     grid-row: 2/4;
     grid-column: 2/6;
-    max-height: 80vh;
-    min-height: 60vh;
-    align-self: center;
-    justify-self: center;
-    margin-top: 10rem;
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 4rem;
+    z-index: -1;
+
+    img {
+      width: 90vw;
+      height: auto;
+    }
+  }
+
+  .paralax-container-2 {
+    grid-row: 2/4;
+    grid-column: 2/6;
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 4rem;
+    z-index: -1;
+    display: none;
+
+    img {
+      width: 90vw;
+      height: auto;
+    }
   }
   p {
     grid-row: 3/4;
