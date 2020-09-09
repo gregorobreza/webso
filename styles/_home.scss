@@ -191,7 +191,6 @@ header {
     margin-bottom: 5rem;
     span {
       margin-left: 18rem;
-      
     }
   }
 
@@ -254,12 +253,32 @@ header {
     }
   }
 }
-
-/* For tablets: */
-@media only screen and (max-width: 768px) {
+/*responsive menu*/
+@media only screen and (max-width: 1024px) {
   .menu-kontakt {
     display: none;
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-linkedin {
+    display: none;
+  }
+  header {
+    nav {
+      ul {
+        flex: 1;
+      }
+
+      #logo1 {
+        flex: 1.5;
+      }
+    }
+  }
+}
+
+/* For tablets: */
+@media only screen and (max-width: 800px) {
   /* VSEBINA */
   .showcase {
     display: grid;
@@ -272,11 +291,12 @@ header {
       grid-row: 2/3;
       grid-column: 2/5;
       align-self: flex-end;
-      justify-self: flex-start;
-      margin-left: 5rem;
+      justify-self: center;
+      margin-left: 0rem;
       margin-bottom: 5rem;
       span {
-        margin-left: 18rem;
+        justify-self: center;
+        margin-left: 0rem;
       }
     }
 
@@ -284,9 +304,9 @@ header {
       grid-row: 2/3;
       grid-column: 2/5;
       align-self: flex-end;
-      justify-self: flex-start;
+      justify-self: center;
       position: relative;
-      left: 23rem;
+      left: -1rem;
       top: -5rem;
 
       .homedot {
@@ -335,8 +355,82 @@ header {
       justify-self: start;
       margin-bottom: 10rem;
       span {
-        margin-left: 12rem;
+        margin-left: 8rem;
       }
     }
   }
 }
+
+/* For mobile: */
+@media only screen and (max-width: 440px) {
+  /* VSEBINA */
+
+  .sidebar{
+    width: 20rem;
+  }
+  .showcase {
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 68px 1fr 2fr;
+
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      align-self: flex-end;
+      justify-self: center;
+      margin-left: 0rem;
+      margin-bottom: 5rem;
+      span {
+        justify-self: center;
+        margin-left: 0rem;
+      }
+    }
+
+    .pike {
+      display:none;
+
+
+
+    }
+
+    .paralax-container {
+      grid-row: 2/4;
+      grid-column: 1/4;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 0rem;
+      z-index: -1;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+
+    .paralax-container-2 {
+      grid-row: 2/4;
+      grid-column: 1/4;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 0rem;
+      z-index: -1;
+      display: none;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+    p {
+      grid-row: 3/4;
+      grid-column: 2/5;
+      align-self: center;
+      justify-self: start;
+      margin-bottom: 0;
+      margin-top: 20rem;
+      span {
+        margin-left: 8rem;
+      }
+    }
+  }
+}
+
