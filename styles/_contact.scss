@@ -226,7 +226,6 @@ input[type="submit"] {
       span {
         display: inline-block;
         margin-left: 0rem;
-      
       }
     }
     p {
@@ -261,10 +260,10 @@ input[type="submit"] {
     height: 100vh;
     align-content: stretch;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 68px minmax(0.5fr, 1fr) minmax(2fr ,auto);
-    h2{
-      align-self:start;
-      justify-self:center;
+    grid-template-rows: 68px minmax(0.5fr, 1fr) minmax(2fr, auto);
+    h2 {
+      align-self: start;
+      justify-self: center;
     }
   }
 
@@ -279,7 +278,7 @@ input[type="submit"] {
     padding: 1.5rem;
     background: #061a33;
     border: 2px solid #eeffff;
-    margin-bottom:10%;
+    margin-bottom: 10%;
 
     .row100 {
       position: relative;

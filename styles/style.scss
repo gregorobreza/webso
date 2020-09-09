@@ -16,8 +16,6 @@ body {
   transition: all 1s ease-in-out;
 }
 
-
-
 /*vse za dnevno temo*/
 body.day {
   color: #061a33;
@@ -126,7 +124,6 @@ a {
   top: 65%;
 }
 
-
 /*dnevni paralax*/
 
 body.day .paralax-container {
@@ -200,28 +197,26 @@ body.day #fp-nav ul li a span,
 /* For tablets: */
 @media only screen and (max-width: 800px) {
   h1 {
-    
     font-size: 3rem;
   }
-  
+
   h2 {
-    
     font-size: 8rem;
   }
-  
+
   h3 {
     font-size: 3.5pt;
   }
-  
+
   p {
     font-size: 4rem;
   }
-  
+
   li {
     font-size: 3rem;
   }
 
-  .sectionname{
+  .sectionname {
     font-size: 1.5rem;
     left: 6rem;
   }
@@ -234,40 +229,37 @@ body.day #fp-nav ul li a span,
     margin-left: 6rem;
   }
 
-  #fp-nav.fp-left{
-    left:7px;
+  #fp-nav.fp-left {
+    left: 7px;
   }
-
 }
 
 /* For mobile: */
 @media only screen and (max-width: 440px) {
   h1 {
-    
     font-size: 3rem;
   }
-  
+
   h2 {
-    
     font-size: 5rem;
   }
-  
+
   h3 {
     font-size: 2.5pt;
   }
-  
+
   p {
     font-size: 3rem;
   }
-  
+
   li {
     font-size: 2rem;
   }
 
-  .sectionname{
+  .sectionname {
     font-size: 1.5rem;
     left: 4rem;
-    top: 80%
+    top: 80%;
   }
 
   .verticalLine {
@@ -275,17 +267,15 @@ body.day #fp-nav ul li a span,
     border-left: 2pt solid #ff4d5a;
     height: 20%;
     position: fixed;
-    top:80%;
+    top: 80%;
     margin-left: 6rem;
   }
 
-  #fp-nav.fp-left{
-    left:7px;
-    top:90%;
+  #fp-nav.fp-left {
+    left: 7px;
+    top: 90%;
   }
-
 }
-
 
 @import "home";
 @import "projects";
