@@ -1418,11 +1418,11 @@ input[type="submit"] {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
     position: relative;
-    top: 0;
-    left: 0;
+    top: -10rem;
+    left: 2rem;
     right: 0;
     bottom: 0;
   }
