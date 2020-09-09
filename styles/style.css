@@ -470,6 +470,10 @@ header .menu-btn.open .menu-btn__burger::after {
   margin-bottom: 5rem;
 }
 
+.showcase h2 span {
+  margin-left: 18rem;
+}
+
 .showcase .pike {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -551,6 +555,10 @@ header .menu-btn.open .menu-btn__burger::after {
   margin-left: 8rem;
 }
 
+.showcase p span {
+  margin-left: 12rem;
+}
+
 .pro {
   display: -ms-grid;
   display: grid;
@@ -578,6 +586,10 @@ header .menu-btn.open .menu-btn__burger::after {
   justify-self: flex-start;
   margin-left: 5rem;
   margin-bottom: 5rem;
+}
+
+.pro h2 span {
+  margin-left: 12rem;
 }
 
 .pro .pike {
@@ -979,6 +991,10 @@ header .menu-btn.open .menu-btn__burger::after {
   margin-bottom: 5rem;
 }
 
+.kontakt h2 span {
+  margin-left: 27rem;
+}
+
 .kontakt p {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -1072,8 +1088,8 @@ header .menu-btn.open .menu-btn__burger::after {
           box-shadow: none;
   border: none;
   outline: none;
-  font-size: 18px;
-  padding: 0 10px;
+  font-size: 1.8rem;
+  padding: 0 1rem;
   z-index: 1;
   color: #061a33;
 }
@@ -1087,8 +1103,8 @@ header .menu-btn.open .menu-btn__burger::after {
           box-shadow: none;
   border: none;
   outline: none;
-  font-size: 18px;
-  padding: 0 10px;
+  font-size: 1.8rem;
+  padding: 0 1rem;
   z-index: 1;
   color: #061a33;
 }
@@ -1097,9 +1113,9 @@ header .menu-btn.open .menu-btn__burger::after {
   position: absolute;
   top: 0;
   left: 0;
-  line-height: 40px;
+  line-height: 4rem;
   font-size: 2rem;
-  padding: 0px 10px;
+  padding: 0px 1rem;
   display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1110,9 +1126,9 @@ header .menu-btn.open .menu-btn__burger::after {
   position: absolute;
   top: 6rem;
   left: 0;
-  line-height: 40px;
+  line-height: 4rem;
   font-size: 2rem;
-  padding: 0px 10px;
+  padding: 0px 1rem;
   display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1120,13 +1136,13 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .kontaktcontainer .row100 .inputBox input:focus + .text {
-  top: -35px;
-  left: -10px;
+  top: -3.5rem;
+  left: -1rem;
 }
 
 .kontaktcontainer .row100 .inputBox input:valid + .text {
-  top: -35px;
-  left: -10px;
+  top: -3.5rem;
+  left: -1rem;
 }
 
 .kontaktcontainer .row100 .inputBox .line {
@@ -1151,13 +1167,13 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .kontaktcontainer .row100 .inputBox textarea:focus + .text {
-  top: -35px;
-  left: -10px;
+  top: -3.5rem;
+  left: -1rem;
 }
 
 .kontaktcontainer .row100 .inputBox textarea:valid + .text {
-  top: -35px;
-  left: -10px;
+  top: -3.5rem;
+  left: -1rem;
 }
 
 .kontaktcontainer .row100 .inputBox textarea:focus ~ .line {
@@ -1171,8 +1187,8 @@ header .menu-btn.open .menu-btn__burger::after {
 .kontaktcontainer .row100 .textarea {
   position: relative;
   width: 100%;
-  height: 100px;
-  padding: 10px 0;
+  height: 10rem;
+  padding: 1rem 0;
   resize: none;
 }
 

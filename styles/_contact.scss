@@ -12,6 +12,9 @@
     justify-self: flex-start;
     margin-left: 5rem;
     margin-bottom: 5rem;
+    span{
+      margin-left:27rem;
+    }
   }
   p {
     grid-row: 3/4;
@@ -81,8 +84,8 @@
         box-shadow: none;
         border: none;
         outline: none;
-        font-size: 18px;
-        padding: 0 10px;
+        font-size: 1.8rem;
+        padding: 0 1rem;
         z-index: 1;
         color: #061a33;
       }
@@ -95,8 +98,8 @@
         box-shadow: none;
         border: none;
         outline: none;
-        font-size: 18px;
-        padding: 0 10px;
+        font-size: 1.8rem;
+        padding: 0 1rem;
         z-index: 1;
         color: #061a33;
       }
@@ -105,9 +108,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        line-height: 40px;
+        line-height: 4rem;
         font-size: 2rem;
-        padding: 0px 10px;
+        padding: 0px 1rem;
         display: block;
         transition: 0.5s;
         pointer-events: none;
@@ -117,22 +120,22 @@
         position: absolute;
         top: 6rem;
         left: 0;
-        line-height: 40px;
+        line-height: 4rem;
         font-size: 2rem;
-        padding: 0px 10px;
+        padding: 0px 1rem;
         display: block;
         transition: 0.5s;
         pointer-events: none;
       }
 
       input:focus + .text {
-        top: -35px;
-        left: -10px;
+        top: -3.5rem;
+        left: -1rem;
       }
 
       input:valid + .text {
-        top: -35px;
-        left: -10px;
+        top: -3.5rem;
+        left: -1rem;
       }
 
       .line {
@@ -155,13 +158,13 @@
         height: 100%;
       }
       textarea:focus + .text {
-        top: -35px;
-        left: -10px;
+        top: -3.5rem;
+        left: -1rem;
       }
 
       textarea:valid + .text {
-        top: -35px;
-        left: -10px;
+        top: -3.5rem;
+        left: -1rem;
       }
       textarea:focus ~ .line {
         height: 100%;
@@ -175,8 +178,8 @@
     .textarea {
       position: relative;
       width: 100%;
-      height: 100px;
-      padding: 10px 0;
+      height: 10rem;
+      padding: 1rem 0;
       resize: none;
 
       textarea {

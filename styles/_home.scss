@@ -189,6 +189,9 @@ header {
     justify-self: flex-start;
     margin-left: 5rem;
     margin-bottom: 5rem;
+    span{
+      margin-left: 18rem;
+    }
   }
 
   .pike {
@@ -245,5 +248,8 @@ header {
     align-self: flex-start;
     justify-self: flex-start;
     margin-left: 8rem;
+    span{
+      margin-left: 12rem;
+    }
   }
 }
