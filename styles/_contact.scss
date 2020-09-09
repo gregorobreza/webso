@@ -212,12 +212,12 @@ input[type="submit"] {
     display: grid;
     height: 100vh;
     align-content: stretch;
-    grid-template-columns: 6rem 1fr 5%;
+    grid-template-columns: 5% 1fr 5%;
     grid-template-rows: 68px 0.5fr 1.5fr;
 
     h2 {
       grid-row: 2/3;
-      grid-column: 2/4;
+      grid-column: 2/3;
       align-self: center;
       justify-self: center;
       margin-left: 5rem;
@@ -230,7 +230,7 @@ input[type="submit"] {
     }
     p {
       grid-row: 2/3;
-      grid-column: 2/4;
+      grid-column: 2/3;
       align-self: end;
       justify-self: center;
       margin-left: 0rem;
