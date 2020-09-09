@@ -7,7 +7,7 @@ header {
   nav {
     width: 90%;
     margin: auto;
-    min-height: 68px;
+    min-height: 6.8rem;
     padding: 23px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
@@ -88,8 +88,8 @@ header {
   position: fixed;
   display: flex;
   justify-content: center;
-  right: -300px;
-  width: 300px;
+  right: -30rem;
+  width: 30rem;
   height: 100%;
   background-color: #061a33;
   z-index: 100;
@@ -131,49 +131,52 @@ header {
 }
 
 /*night/day mode*/
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
+.day_night_container {
+  align-self: center;
+  margin-bottom: 1.5rem;
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
 
-.label {
-  background-color: rgb(121, 121, 115);
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  position: relative;
-  height: 26px;
-  width: 50px;
-  transform: scale(1.5);
-}
+  .label {
+    background-color: rgb(121, 121, 115);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  }
 
-.label .ball {
-  background-color: #eeffff;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
-}
+  .label .ball {
+    background-color: #eeffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
 
-.checkbox:checked + .label .ball {
-  transform: translateX(24px);
-}
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
 
-.fa-moon {
-  color: #f1c40f;
-}
+  .fa-moon {
+    color: #f1c40f;
+  }
 
-.fa-sun {
-  color: #ff4d5a;
+  .fa-sun {
+    color: #ff4d5a;
+  }
 }
-
 /* VSEBINA */
 .showcase {
   display: grid;
@@ -189,14 +192,14 @@ header {
     justify-self: flex-start;
     margin-left: 5rem;
     margin-bottom: 5rem;
-    span{
+    span {
       margin-left: 18rem;
     }
   }
 
   .pike {
     grid-row: 2/3;
-    grid-column: 2/4;
+    grid-column: 2/5;
     align-self: flex-end;
     justify-self: flex-start;
     position: relative;
@@ -205,8 +208,8 @@ header {
 
     .homedot {
       margin: 0 20px 0 0;
-      height: 15px;
-      width: 15px;
+      height: 1.5rem;
+      width: 1.5rem;
       background-color: red;
       border-radius: 50%;
       display: inline-block;
@@ -248,8 +251,226 @@ header {
     align-self: flex-start;
     justify-self: flex-start;
     margin-left: 8rem;
-    span{
+    span {
       margin-left: 12rem;
+    }
+  }
+}
+/*responsive menu*/
+@media only screen and (max-width: 1024px) {
+  .menu-kontakt {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-linkedin {
+    display: none;
+  }
+  header {
+    nav {
+      ul {
+        flex: 1;
+      }
+
+      #logo1 {
+        flex: 1.5;
+      }
+    }
+  }
+}
+
+/* For tablets: */
+@media only screen and (max-width: 800px) {
+  /* VSEBINA */
+  .showcase {
+    display: grid;
+    height: 100vh;
+    align-content: stretch;
+    grid-template-columns: 6rem 1fr 1fr 2fr 5%;
+    grid-template-rows: 68px 1fr 2fr;
+
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/5;
+      align-self: flex-end;
+      justify-self: center;
+      margin-left: 0rem;
+      margin-bottom: 5rem;
+      span {
+        justify-self: center;
+        margin-left: 0rem;
+      }
+    }
+
+    .pike {
+      grid-row: 2/3;
+      grid-column: 2/5;
+      align-self: flex-end;
+      justify-self: center;
+      position: relative;
+      left: -1rem;
+      top: -5rem;
+
+      .homedot {
+        margin: 0 20px 0 0;
+        height: 0.8rem;
+        width: 0.8rem;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 50;
+      }
+    }
+
+    .paralax-container {
+      grid-row: 2/4;
+      grid-column: 2/6;
+      align-self: end;
+      justify-self: end;
+      margin-bottom: 6rem;
+      z-index: -1;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+
+    .paralax-container-2 {
+      grid-row: 2/4;
+      grid-column: 2/6;
+      align-self: end;
+      justify-self: end;
+      margin-bottom: 6rem;
+      z-index: -1;
+      display: none;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+    p {
+      grid-row: 3/4;
+      grid-column: 2/5;
+      align-self: start;
+      justify-self: start;
+      margin-bottom: 10rem;
+      span {
+        margin-left: 8rem;
+      }
+    }
+  }
+}
+
+/* For mobile: */
+@media only screen and (max-width: 440px) {
+  /* VSEBINA */
+
+  .sidebar {
+    width: 20rem;
+  }
+  .showcase {
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 68px 1fr 2fr;
+
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      align-self: flex-end;
+      justify-self: center;
+      margin-left: 0rem;
+      margin-bottom: 5rem;
+      span {
+        justify-self: center;
+        margin-left: 0rem;
+      }
+    }
+
+    .pike {
+      display: none;
+    }
+
+    .paralax-container {
+      grid-row: 2/4;
+      grid-column: 1/4;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 0rem;
+      z-index: -1;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+
+    .paralax-container-2 {
+      grid-row: 2/4;
+      grid-column: 1/4;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 0rem;
+      z-index: -1;
+      display: none;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+    p {
+      grid-row: 3/4;
+      grid-column: 2/5;
+      align-self: center;
+      justify-self: start;
+      margin-bottom: 0;
+      margin-top: 20rem;
+      span {
+        margin-left: 8rem;
+      }
+    }
+  }
+
+  .day_night_container {
+    align-self: center;
+    margin-bottom: 1.5rem;
+    .label {
+      background-color: rgb(121, 121, 115);
+      border-radius: 50px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      position: relative;
+      height: 19.5px;
+      width: 38.5px;
+      transform: scale(1.5);
+    }
+
+    .label .ball {
+      border-radius: 50%;
+      position: absolute;
+      top: 1.5px;
+      left: 1.5px;
+      height: 16.5px;
+      width: 16.5px;
+      transform: translateX(0px);
+      transition: transform 0.2s linear;
+    }
+
+    .checkbox:checked + .label .ball {
+      transform: translateX(18px);
+    }
+
+    .fa-moon {
+      color: #f1c40f;
+    }
+
+    .fa-sun {
+      color: #ff4d5a;
     }
   }
 }

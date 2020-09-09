@@ -12,17 +12,21 @@
     justify-self: flex-start;
     margin-left: 5rem;
     margin-bottom: 5rem;
-    span{
-      margin-left:27rem;
+    span {
+      display: table;
+      margin-left: 27rem;
     }
   }
   p {
     grid-row: 3/4;
     grid-column: 2/4;
-    align-self: center;
     align-self: flex-start;
     justify-self: flex-start;
     margin-left: 8rem;
+    font-size: 3.5rem;
+    .fas {
+      margin-right: 1rem;
+    }
   }
 
   .pike {
@@ -35,8 +39,8 @@
     top: -5rem;
     .homedot {
       margin: 0 20px 0 0;
-      height: 15px;
-      width: 15px;
+      height: 1.5rem;
+      width: 1.5rem;
       background-color: red;
       border-radius: 50%;
       display: inline-block;
@@ -199,4 +203,225 @@ input[type="submit"] {
   background: #ff4d5a;
   font-size: 2rem;
   border-radius: 2rem;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 1024px) {
+  /* VSEBINA */
+  .kontakt {
+    display: grid;
+    height: 100vh;
+    align-content: stretch;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 68px 0.5fr 1.5fr;
+
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      align-self: center;
+      justify-self: center;
+      margin-left: 5rem;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      span {
+        display: inline-block;
+        margin-left: 0rem;
+      }
+    }
+    p {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      align-self: end;
+      justify-self: center;
+      margin-left: 0rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .pike {
+      display: none;
+    }
+  }
+
+  .kontaktcontainer {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+/* For mobile: */
+@media only screen and (max-width: 440px) {
+  /* VSEBINA */
+  .kontakt {
+    display: grid;
+    height: 100vh;
+    align-content: stretch;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 68px minmax(0.5fr, 1fr) minmax(2fr, auto);
+    h2 {
+      align-self: start;
+      justify-self: center;
+    }
+  }
+
+  /*kontaktna forma*/
+
+  .kontaktcontainer {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: 80%;
+    align-self: center;
+    justify-self: end;
+    padding: 1.5rem;
+    background: #061a33;
+    border: 2px solid #eeffff;
+    margin-bottom: 10%;
+
+    .row100 {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+
+      .col {
+        position: relative;
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem 0 1rem;
+        transition: 0.5s;
+      }
+
+      .inputBox {
+        position: relative;
+        width: 100%;
+        height: 2.5rem;
+        color: #eeffff;
+
+        input {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          box-shadow: none;
+          border: none;
+          outline: none;
+          font-size: 1.3rem;
+          padding: 0 1rem;
+          z-index: 1;
+          color: #061a33;
+        }
+
+        textarea {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          box-shadow: none;
+          border: none;
+          outline: none;
+          font-size: 1.5rem;
+          padding: 0 1rem;
+          z-index: 1;
+          color: #061a33;
+        }
+
+        .text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          line-height: 2rem;
+          font-size: 1.5rem;
+          padding: 0px 1rem;
+          display: block;
+          transition: 0.5s;
+          pointer-events: none;
+        }
+
+        .sporocilo {
+          position: absolute;
+          top: 2.5rem;
+          left: 0;
+          line-height: 1.5rem;
+          font-size: 1.5rem;
+          padding: 0px 1rem;
+          display: block;
+          transition: 0.5s;
+          pointer-events: none;
+        }
+
+        input:focus + .text {
+          top: -1.6rem;
+          left: -1rem;
+        }
+
+        input:valid + .text {
+          top: -1.6rem;
+          left: -1rem;
+        }
+
+        .line {
+          position: absolute;
+          bottom: 0;
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #eeffff;
+          transition: 0.5s;
+          border-radius: 2px;
+          pointer-events: none;
+        }
+
+        input:focus ~ .line {
+          height: 100%;
+        }
+
+        input:valid ~ .line {
+          height: 100%;
+        }
+        textarea:focus + .text {
+          top: -1.6rem;
+          left: -1rem;
+        }
+
+        textarea:valid + .text {
+          top: -1.6rem;
+          left: -1rem;
+        }
+        textarea:focus ~ .line {
+          height: 100%;
+        }
+
+        textarea:valid ~ .line {
+          height: 100%;
+        }
+      }
+
+      .textarea {
+        position: relative;
+        width: 100%;
+        height: 5rem;
+        padding: 1rem 0;
+        resize: none;
+
+        textarea {
+          height: 100%;
+          resize: none;
+        }
+      }
+    }
+  }
+
+  input[type="submit"] {
+    border: none;
+    font-family: "Russo One", sans-serif;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #ff4d5a;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+  }
 }
