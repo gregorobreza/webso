@@ -13,16 +13,18 @@
     margin-left: 5rem;
     margin-bottom: 5rem;
     span{
+      display:table;
       margin-left:27rem;
     }
   }
   p {
     grid-row: 3/4;
     grid-column: 2/4;
-    align-self: center;
     align-self: flex-start;
     justify-self: flex-start;
     margin-left: 8rem;
+    font-size: 3.5rem;
+    .fas{margin-right: 1rem;}
   }
 
   .pike {
@@ -35,8 +37,8 @@
     top: -5rem;
     .homedot {
       margin: 0 20px 0 0;
-      height: 15px;
-      width: 15px;
+      height: 1.5rem;
+      width: 1.5rem;
       background-color: red;
       border-radius: 50%;
       display: inline-block;
@@ -199,4 +201,68 @@ input[type="submit"] {
   background: #ff4d5a;
   font-size: 2rem;
   border-radius: 2rem;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 768px) {
+    /* VSEBINA */
+    .kontakt {
+      display: grid;
+      height: 100vh;
+      align-content: stretch;
+      grid-template-columns: 6rem 1fr 2fr 5%;
+      grid-template-rows: 68px 1fr 1fr;
+    
+      h2 {
+        grid-row: 2/3;
+        grid-column: 2/4;
+        align-self: start;
+        justify-self: start;
+        margin-left: 5rem;
+        margin-top: 5rem;
+          span{
+          display:inline-block;
+          margin-left:0rem;
+        }
+      }
+      p {
+        grid-row: 3/4;
+        grid-column: 2/4;
+        align-self: end;
+        justify-self: start;
+        margin-left: 5rem;
+        margin-bottom: 8rem;
+      }
+    
+      .pike {
+        grid-row: 2/3;
+        grid-column: 2/4;
+        align-self:center;
+        justify-self: center;
+        position: relative;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        
+
+        .homedot {
+          margin: 0 20px 0 0;
+          height: 0.8rem;
+          width: 0.8rem;
+          background-color: red;
+          border-radius: 50%;
+          display: inline-block;
+        }
+      }
+    }
+
+    .kontaktcontainer {
+      grid-row: 2/4;
+      grid-column: 2/4;
+      width: 80%;
+      align-self: center;
+      justify-self: center;}
+
+  
 }

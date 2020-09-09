@@ -7,7 +7,7 @@ header {
   nav {
     width: 90%;
     margin: auto;
-    min-height: 68px;
+    min-height: 6.8rem;
     padding: 23px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
@@ -88,8 +88,8 @@ header {
   position: fixed;
   display: flex;
   justify-content: center;
-  right: -300px;
-  width: 300px;
+  right: -30rem;
+  width: 30rem;
   height: 100%;
   background-color: #061a33;
   z-index: 100;
@@ -189,14 +189,15 @@ header {
     justify-self: flex-start;
     margin-left: 5rem;
     margin-bottom: 5rem;
-    span{
+    span {
       margin-left: 18rem;
+      
     }
   }
 
   .pike {
     grid-row: 2/3;
-    grid-column: 2/4;
+    grid-column: 2/5;
     align-self: flex-end;
     justify-self: flex-start;
     position: relative;
@@ -205,8 +206,8 @@ header {
 
     .homedot {
       margin: 0 20px 0 0;
-      height: 15px;
-      width: 15px;
+      height: 1.5rem;
+      width: 1.5rem;
       background-color: red;
       border-radius: 50%;
       display: inline-block;
@@ -248,8 +249,94 @@ header {
     align-self: flex-start;
     justify-self: flex-start;
     margin-left: 8rem;
-    span{
+    span {
       margin-left: 12rem;
+    }
+  }
+}
+
+/* For tablets: */
+@media only screen and (max-width: 768px) {
+  .menu-kontakt {
+    display: none;
+  }
+  /* VSEBINA */
+  .showcase {
+    display: grid;
+    height: 100vh;
+    align-content: stretch;
+    grid-template-columns: 6rem 1fr 1fr 2fr 5%;
+    grid-template-rows: 68px 1fr 2fr;
+
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/5;
+      align-self: flex-end;
+      justify-self: flex-start;
+      margin-left: 5rem;
+      margin-bottom: 5rem;
+      span {
+        margin-left: 18rem;
+      }
+    }
+
+    .pike {
+      grid-row: 2/3;
+      grid-column: 2/5;
+      align-self: flex-end;
+      justify-self: flex-start;
+      position: relative;
+      left: 23rem;
+      top: -5rem;
+
+      .homedot {
+        margin: 0 20px 0 0;
+        height: 0.8rem;
+        width: 0.8rem;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 50;
+      }
+    }
+
+    .paralax-container {
+      grid-row: 2/4;
+      grid-column: 2/6;
+      align-self: end;
+      justify-self: end;
+      margin-bottom: 6rem;
+      z-index: -1;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+
+    .paralax-container-2 {
+      grid-row: 2/4;
+      grid-column: 2/6;
+      align-self: end;
+      justify-self: end;
+      margin-bottom: 6rem;
+      z-index: -1;
+      display: none;
+
+      img {
+        width: 100vw;
+        height: auto;
+      }
+    }
+    p {
+      grid-row: 3/4;
+      grid-column: 2/5;
+      align-self: start;
+      justify-self: start;
+      margin-bottom: 10rem;
+      span {
+        margin-left: 12rem;
+      }
     }
   }
 }

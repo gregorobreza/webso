@@ -20,6 +20,7 @@ body {
   transition: all 1s ease-in-out;
 }
 
+/* For tablets: */
 /*vse za dnevno temo*/
 body.day {
   color: #061a33;
@@ -119,6 +120,18 @@ a {
   text-decoration: none;
 }
 
+/*ime sekcije*/
+.sectionname {
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  left: 9rem;
+  top: 65%;
+}
+
 /*dnevni paralax*/
 body.day .paralax-container {
   display: none;
@@ -134,7 +147,7 @@ body.day .paralax-container-2 {
   border-left: 3pt solid #ff4d5a;
   height: 55%;
   position: fixed;
-  margin-left: 90px;
+  margin-left: 9rem;
   top: 55%;
   bottom: 0;
 }
@@ -198,15 +211,37 @@ body.day #fp-nav ul li a span,
   height: 100%;
 }
 
-.sectionname {
-  position: absolute;
-  text-align: center;
-  font-size: 2rem;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  left: 90px;
-  top: 65%;
+/* For tablets: */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 8rem;
+  }
+  h3 {
+    font-size: 3.5pt;
+  }
+  p {
+    font-size: 4rem;
+  }
+  li {
+    font-size: 3rem;
+  }
+  .sectionname {
+    font-size: 1.5rem;
+    left: 6rem;
+  }
+  .verticalLine {
+    display: box;
+    border-left: 3pt solid #ff4d5a;
+    height: 55%;
+    position: fixed;
+    margin-left: 6rem;
+  }
+  #fp-nav.fp-left {
+    left: 7px;
+  }
 }
 
 header {
@@ -221,7 +256,7 @@ header {
 header nav {
   width: 90%;
   margin: auto;
-  min-height: 68px;
+  min-height: 6.8rem;
   padding: 23px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,8 +369,8 @@ header .menu-btn.open .menu-btn__burger::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  right: -300px;
-  width: 300px;
+  right: -30rem;
+  width: 30rem;
   height: 100%;
   background-color: #061a33;
   z-index: 100;
@@ -479,8 +514,8 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
   -ms-flex-item-align: end;
       align-self: flex-end;
   justify-self: flex-start;
@@ -491,8 +526,8 @@ header .menu-btn.open .menu-btn__burger::after {
 
 .showcase .pike .homedot {
   margin: 0 20px 0 0;
-  height: 15px;
-  width: 15px;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: red;
   border-radius: 50%;
   display: inline-block;
@@ -557,6 +592,120 @@ header .menu-btn.open .menu-btn__burger::after {
 
 .showcase p span {
   margin-left: 12rem;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 768px) {
+  .menu-kontakt {
+    display: none;
+  }
+  /* VSEBINA */
+  .showcase {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    -ms-grid-columns: 6rem 1fr 1fr 2fr 5%;
+        grid-template-columns: 6rem 1fr 1fr 2fr 5%;
+    -ms-grid-rows: 68px 1fr 2fr;
+        grid-template-rows: 68px 1fr 2fr;
+  }
+  .showcase h2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    justify-self: flex-start;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+  .showcase h2 span {
+    margin-left: 18rem;
+  }
+  .showcase .pike {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    justify-self: flex-start;
+    position: relative;
+    left: 23rem;
+    top: -5rem;
+  }
+  .showcase .pike .homedot {
+    margin: 0 20px 0 0;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 50;
+  }
+  .showcase .paralax-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2/6;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-bottom: 6rem;
+    z-index: -1;
+  }
+  .showcase .paralax-container img {
+    width: 100vw;
+    height: auto;
+  }
+  .showcase .paralax-container-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2/6;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-bottom: 6rem;
+    z-index: -1;
+    display: none;
+  }
+  .showcase .paralax-container-2 img {
+    width: 100vw;
+    height: auto;
+  }
+  .showcase p {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2/5;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-bottom: 10rem;
+  }
+  .showcase p span {
+    margin-left: 12rem;
+  }
 }
 
 .pro {
@@ -992,6 +1141,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .kontakt h2 span {
+  display: table;
   margin-left: 27rem;
 }
 
@@ -1002,13 +1152,15 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -ms-flex-item-align: start;
       align-self: flex-start;
   justify-self: flex-start;
   margin-left: 8rem;
+  font-size: 3.5rem;
+}
+
+.kontakt p .fas {
+  margin-right: 1rem;
 }
 
 .kontakt .pike {
@@ -1028,8 +1180,8 @@ header .menu-btn.open .menu-btn__burger::after {
 
 .kontakt .pike .homedot {
   margin: 0 20px 0 0;
-  height: 15px;
-  width: 15px;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: red;
   border-radius: 50%;
   display: inline-block;
@@ -1206,5 +1358,95 @@ input[type="submit"] {
   background: #ff4d5a;
   font-size: 2rem;
   border-radius: 2rem;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 768px) {
+  /* VSEBINA */
+  .kontakt {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    -ms-grid-columns: 6rem 1fr 2fr 5%;
+        grid-template-columns: 6rem 1fr 2fr 5%;
+    -ms-grid-rows: 68px 1fr 1fr;
+        grid-template-rows: 68px 1fr 1fr;
+  }
+  .kontakt h2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .kontakt h2 span {
+    display: inline-block;
+    margin-left: 0rem;
+  }
+  .kontakt p {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-left: 5rem;
+    margin-bottom: 8rem;
+  }
+  .kontakt .pike {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .kontakt .pike .homedot {
+    margin: 0 20px 0 0;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .kontaktcontainer {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
