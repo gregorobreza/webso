@@ -263,19 +263,19 @@ body.day #fp-nav ul li a span,
   .sectionname {
     font-size: 1.5rem;
     left: 4rem;
-    top: 73%;
+    top: 78%;
   }
   .verticalLine {
     display: box;
     border-left: 2pt solid #ff4d5a;
-    height: 30%;
+    height: 25%;
     position: fixed;
-    top: 70%;
+    top: 75%;
     margin-left: 6rem;
   }
   #fp-nav.fp-left {
     left: 7px;
-    top: 80%;
+    top: 85%;
   }
 }
 
