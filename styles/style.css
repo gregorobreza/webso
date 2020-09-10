@@ -1329,6 +1329,9 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .kontakt {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   height: 100vh;
@@ -1359,22 +1362,46 @@ header .menu-btn.open .menu-btn__burger::after {
   margin-left: 27rem;
 }
 
-.kontakt p {
+.kontakt ul {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  justify-self: flex-start;
-  margin-left: 8rem;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  list-style-type: none;
+}
+
+.kontakt ul li {
+  padding: 2rem;
+}
+
+.kontakt ul li .fas, .kontakt ul li .fab {
+  margin-right: 1rem;
+}
+
+.kontakt p {
   font-size: 3.5rem;
 }
 
-.kontakt p .fas {
-  margin-right: 1rem;
+.kontakt .besedilo {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-left: 5rem;
 }
 
 .kontakt .pike {
@@ -1585,8 +1612,8 @@ input[type="submit"] {
         align-content: stretch;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px 0.5fr 1.5fr;
-        grid-template-rows: 68px 0.5fr 1.5fr;
+    -ms-grid-rows: 68px 0.7fr 1.5fr;
+        grid-template-rows: 68px 0.7fr 1.5fr;
   }
   .kontakt h2 {
     -ms-grid-row: 2;
@@ -1601,14 +1628,16 @@ input[type="submit"] {
     -ms-grid-column-align: center;
         justify-self: center;
     margin-left: 5rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
     padding-bottom: 1rem;
+    text-align: center;
+    line-height: 80%;
   }
   .kontakt h2 span {
     display: inline-block;
     margin-left: 0rem;
   }
-  .kontakt p {
+  .kontakt ul {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -1620,9 +1649,19 @@ input[type="submit"] {
         align-self: end;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-left: 0rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    list-style-type: none;
+  }
+  .kontakt ul li {
+    padding: 1rem;
+  }
+  .kontakt ul li .fas, .kontakt ul li .fab {
+    margin-right: 1rem;
+  }
+  .kontakt p {
+    font-size: 2.5rem;
+  }
+  .kontakt .besedilo {
+    display: none;
   }
   .kontakt .pike {
     display: none;
@@ -1654,169 +1693,78 @@ input[type="submit"] {
         align-content: stretch;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px minmax(0.5fr, 1fr) minmax(2fr, auto);
-        grid-template-rows: 68px minmax(0.5fr, 1fr) minmax(2fr, auto);
+    -ms-grid-rows: 68px 0.8fr 1fr;
+        grid-template-rows: 68px 0.8fr 1fr;
   }
   .kontakt h2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-left: 0rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+    text-align: center;
   }
-  /*kontaktna forma*/
-  .kontaktcontainer {
+  .kontakt h2 span {
+    display: block;
+    margin-left: 0rem;
+  }
+  .kontakt ul {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    width: 80%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: end;
-        justify-self: end;
-    padding: 1.5rem;
-    background: #061a33;
-    border: 2px solid #eeffff;
-    margin-bottom: 10%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    list-style-type: none;
+    margin-top: 4rem;
+    text-align: center;
   }
-  .kontaktcontainer .row100 {
-    position: relative;
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(300px, 1fr))[autofit];
-        grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+  .kontakt ul li {
+    padding: 1rem;
   }
-  .kontaktcontainer .row100 .col {
-    position: relative;
-    width: 100%;
-    padding: 0 1rem;
-    margin: 1rem 0 1rem;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+  .kontakt ul li .fas, .kontakt ul li .fab {
+    margin-right: 1rem;
   }
-  .kontaktcontainer .row100 .inputBox {
-    position: relative;
-    width: 100%;
-    height: 2.5rem;
-    color: #eeffff;
+  .kontakt p {
+    font-size: 1.8rem;
   }
-  .kontaktcontainer .row100 .inputBox input {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: none;
-    outline: none;
-    font-size: 1.3rem;
-    padding: 0 1rem;
-    z-index: 1;
-    color: #061a33;
-  }
-  .kontaktcontainer .row100 .inputBox textarea {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    padding: 0 1rem;
-    z-index: 1;
-    color: #061a33;
-  }
-  .kontaktcontainer .row100 .inputBox .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    padding: 0px 1rem;
+  .kontakt .besedilo {
     display: block;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    pointer-events: none;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 2rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    text-align: center;
   }
-  .kontaktcontainer .row100 .inputBox .sporocilo {
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
-    line-height: 1.5rem;
-    font-size: 1.5rem;
-    padding: 0px 1rem;
-    display: block;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    pointer-events: none;
+  .kontakt .pike {
+    display: none;
   }
-  .kontaktcontainer .row100 .inputBox input:focus + .text {
-    top: -1.6rem;
-    left: -1rem;
-  }
-  .kontaktcontainer .row100 .inputBox input:valid + .text {
-    top: -1.6rem;
-    left: -1rem;
-  }
-  .kontaktcontainer .row100 .inputBox .line {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #eeffff;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border-radius: 2px;
-    pointer-events: none;
-  }
-  .kontaktcontainer .row100 .inputBox input:focus ~ .line {
-    height: 100%;
-  }
-  .kontaktcontainer .row100 .inputBox input:valid ~ .line {
-    height: 100%;
-  }
-  .kontaktcontainer .row100 .inputBox textarea:focus + .text {
-    top: -1.6rem;
-    left: -1rem;
-  }
-  .kontaktcontainer .row100 .inputBox textarea:valid + .text {
-    top: -1.6rem;
-    left: -1rem;
-  }
-  .kontaktcontainer .row100 .inputBox textarea:focus ~ .line {
-    height: 100%;
-  }
-  .kontaktcontainer .row100 .inputBox textarea:valid ~ .line {
-    height: 100%;
-  }
-  .kontaktcontainer .row100 .textarea {
-    position: relative;
-    width: 100%;
-    height: 5rem;
-    padding: 1rem 0;
-    resize: none;
-  }
-  .kontaktcontainer .row100 .textarea textarea {
-    height: 100%;
-    resize: none;
-  }
-  input[type="submit"] {
-    border: none;
-    font-family: "Russo One", sans-serif;
-    padding: 7px 35px;
-    cursor: pointer;
-    outline: none;
-    background: #ff4d5a;
-    font-size: 1.5rem;
-    border-radius: 2rem;
+  .kontaktcontainer {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
