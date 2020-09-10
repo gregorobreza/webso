@@ -780,6 +780,9 @@ header .menu-btn.open .menu-btn__burger::after {
   .sidebar {
     width: 20rem;
   }
+  .sidebar ul li h1 {
+    padding-bottom: 1rem;
+  }
   .showcase {
     position: absolute;
     top: 0;

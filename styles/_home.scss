@@ -370,6 +370,9 @@ header {
 
   .sidebar {
     width: 20rem;
+    ul li h1{
+      padding-bottom:1rem;
+    }
   }
   .showcase {
     position: absolute;
