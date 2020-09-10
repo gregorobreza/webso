@@ -263,19 +263,19 @@ body.day #fp-nav ul li a span,
   .sectionname {
     font-size: 1.5rem;
     left: 4rem;
-    top: 80%;
+    top: 73%;
   }
   .verticalLine {
     display: box;
     border-left: 2pt solid #ff4d5a;
-    height: 20%;
+    height: 30%;
     position: fixed;
-    top: 80%;
+    top: 70%;
     margin-left: 6rem;
   }
   #fp-nav.fp-left {
     left: 7px;
-    top: 90%;
+    top: 80%;
   }
 }
 
@@ -820,7 +820,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-bottom: 0rem;
+    margin-top: 15rem;
     z-index: -1;
   }
   .showcase .paralax-container img {
@@ -839,7 +839,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-bottom: 0rem;
+    margin-top: 17rem;
     z-index: -1;
     display: none;
   }
@@ -854,13 +854,14 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
     grid-column: 2/5;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: start;
-        justify-self: start;
-    margin-bottom: 0;
-    margin-top: 20rem;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-bottom: 0rem;
+    margin-top: -7%;
+    margin-left: 0;
   }
   .showcase p span {
     margin-left: 8rem;
