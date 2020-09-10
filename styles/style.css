@@ -781,6 +781,7 @@ header .menu-btn.open .menu-btn__burger::after {
     width: 20rem;
   }
   .showcase {
+    height: 90vh;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
     -ms-grid-rows: 68px 1fr 2fr;
