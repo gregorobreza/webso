@@ -798,7 +798,7 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column-align: center;
         justify-self: center;
     margin-left: 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .showcase h2 span {
     -ms-grid-column-align: center;
@@ -820,7 +820,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 15rem;
+    margin-top: 20rem;
     z-index: -1;
   }
   .showcase .paralax-container img {
