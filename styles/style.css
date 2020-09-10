@@ -782,6 +782,8 @@ header .menu-btn.open .menu-btn__burger::after {
   }
   .showcase {
     height: 90vh;
+    position: absolute;
+    top: 0;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
     -ms-grid-rows: 68px 1fr 2fr;
@@ -810,18 +812,18 @@ header .menu-btn.open .menu-btn__burger::after {
     display: none;
   }
   .showcase .paralax-container {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    grid-row: 2/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 0rem;
+    margin-top: 5rem;
     margin-bottom: 0rem;
     z-index: -1;
   }
@@ -830,18 +832,18 @@ header .menu-btn.open .menu-btn__burger::after {
     height: auto;
   }
   .showcase .paralax-container-2 {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    grid-row: 2/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 0rem;
+    margin-top: 5rem;
     margin-bottom: 0rem;
     z-index: -1;
     display: none;
