@@ -815,12 +815,13 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 20rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     z-index: -1;
   }
   .showcase .paralax-container img {
@@ -834,12 +835,13 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 17rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     z-index: -1;
     display: none;
   }
