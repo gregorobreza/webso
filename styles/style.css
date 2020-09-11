@@ -1294,7 +1294,7 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column-align: center;
         justify-self: center;
     height: 90%;
-    width: 100%;
+    width: 90%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 10% 80% 10%;
