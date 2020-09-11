@@ -931,7 +931,6 @@ header .menu-btn.open .menu-btn__burger::after {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  height: 100vh;
   -ms-grid-columns: 9rem 1fr 1fr 5%;
       grid-template-columns: 9rem 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
