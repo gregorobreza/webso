@@ -1,7 +1,9 @@
 .pro {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: grid;
-  min-height: 100vh;
-  max-height: fit-content;
+  height: 100vh;
   grid-template-columns: 9rem 1fr 1fr 5%;
   grid-template-rows: 68px 1fr 1fr;
 
@@ -12,8 +14,9 @@
     justify-self: flex-start;
     margin-left: 5rem;
     margin-bottom: 5rem;
-    span{
-      margin-left:12rem;
+    span {
+      display: table;
+      margin-left: 12rem;
     }
   }
 
@@ -84,7 +87,6 @@
           right: -2rem;
           bottom: -2rem;
         }
-
       }
 
       .oakSlika {
@@ -172,8 +174,212 @@
       font-size: 18px;
       border-radius: 2rem;
 
-      &:hover{
+      &:hover {
         color: #061a33;
+      }
+    }
+  }
+}
+
+/* For tablets: */
+@media only screen and (max-width: 1024px) {
+  .pro {
+    display: grid;
+    min-height: 100vh;
+    max-height: fit-content;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 68px 8% 1fr 0.2fr;
+
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      align-self: center;
+      justify-self: center;
+      margin-top: 6rem;
+      text-align: center;
+      line-height: 80%;
+      span {
+        margin-left: 0rem;
+        display: inline-block;
+      }
+    }
+
+    .pike {
+      display: none;
+    }
+
+    /* SLIDER S PROJEKTI */
+
+    .container-projekti {
+      grid-row: 3 / 4;
+      grid-column: 2/3;
+      align-self: center;
+      justify-self: center;
+      height: 90%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+    }
+
+    /* OPISI PROJEKTOV */
+
+    .opisi-projektov {
+      grid-row: 4 / 5;
+      grid-column: 2/3;
+      align-self: center;
+      justify-self: center;
+      /*background-color: white;*/
+      padding: 2rem 2em 4rem 2rem;
+      text-align: center;
+      /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
+
+      h4 {
+        font-size: 5rem;
+      }
+
+      h5 {
+        font-size: 3.5rem;
+      }
+
+      p {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+      }
+
+      .orodja {
+        margin-top: 2rem;
+      }
+
+      .obisci-stran {
+        margin-top: 3rem;
+        color: #eeffff;
+      }
+      .obisci-stran:hover {
+        color: #061a33;
+      }
+
+      a.button {
+        border: none;
+        padding: 7px 35px;
+        cursor: pointer;
+        outline: none;
+        background: #ff4d5a;
+        font-size: 18px;
+        border-radius: 2rem;
+
+        &:hover {
+          color: #061a33;
+        }
+      }
+    }
+  }
+}
+
+/* For mobile: */
+@media only screen and (max-width: 440px) {
+  .pro {
+    display: grid;
+    min-height: 100vh;
+    max-height: fit-content;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 68px auto 1fr 25%;
+
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      align-self: center;
+      justify-self: center;
+      margin: 3rem 0 0 0;
+      text-align: center;
+      line-height: 80%;
+      span {
+        margin-left: 0rem;
+        display: inline-block;
+      }
+    }
+
+    .pike {
+      display: none;
+    }
+
+    /* SLIDER S PROJEKTI */
+
+    .container-projekti {
+      grid-row: 3 / 4;
+      grid-column: 2/3;
+      align-self: center;
+      justify-self: center;
+      height: 90%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+
+      .nazaj-naprej i{
+        font-size:5rem;
+      }
+      .projekt-slika {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        position: relative;
+        z-index: 1;
+
+        .proSlide {
+
+
+          .st-projekta {
+            width: 6rem;
+            height: 6rem;
+            position: absolute;
+            font-size: 5rem;
+            font-weight: bold;
+            right: -1rem;
+            bottom: -1rem;
+          }
+        }
+      }
+    }
+
+    /* OPISI PROJEKTOV */
+
+    .opisi-projektov {
+      grid-row: 4 / 5;
+      grid-column: 2/3;
+      align-self: start;
+      justify-self: center;
+      /*background-color: white;*/
+      padding: 2rem 2em 4rem 2rem;
+      text-align: center;
+      /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
+      z-index: 1000;
+
+      h4 {
+        display: none;
+      }
+
+      h5 {
+        display: none;
+      }
+
+      p {
+        display: none;
+      }
+
+      .orodja {
+        display: none;
+      }
+
+      a.button {
+        border: none;
+        padding: 7px 35px;
+        cursor: pointer;
+        outline: none;
+        background: #ff4d5a;
+        font-size: 18px;
+        border-radius: 2rem;
+
+        &:hover {
+          color: #061a33;
+        }
       }
     }
   }

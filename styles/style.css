@@ -926,12 +926,12 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .pro {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  min-height: 100vh;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  height: 100vh;
   -ms-grid-columns: 9rem 1fr 1fr 5%;
       grid-template-columns: 9rem 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
@@ -955,6 +955,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .pro h2 span {
+  display: table;
   margin-left: 12rem;
 }
 
@@ -1132,6 +1133,233 @@ header .menu-btn.open .menu-btn__burger::after {
 
 .pro .opisi-projektov a.button:hover {
   color: #061a33;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 1024px) {
+  .pro {
+    display: -ms-grid;
+    display: grid;
+    min-height: 100vh;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    -ms-grid-columns: 5% 1fr 5%;
+        grid-template-columns: 5% 1fr 5%;
+    -ms-grid-rows: 68px 8% 1fr 0.2fr;
+        grid-template-rows: 68px 8% 1fr 0.2fr;
+    /* SLIDER S PROJEKTI */
+    /* OPISI PROJEKTOV */
+  }
+  .pro h2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 6rem;
+    text-align: center;
+    line-height: 80%;
+  }
+  .pro h2 span {
+    margin-left: 0rem;
+    display: inline-block;
+  }
+  .pro .pike {
+    display: none;
+  }
+  .pro .container-projekti {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: 90%;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
+  }
+  .pro .opisi-projektov {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    /*background-color: white;*/
+    padding: 2rem 2em 4rem 2rem;
+    text-align: center;
+    /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
+  }
+  .pro .opisi-projektov h4 {
+    font-size: 5rem;
+  }
+  .pro .opisi-projektov h5 {
+    font-size: 3.5rem;
+  }
+  .pro .opisi-projektov p {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  .pro .opisi-projektov .orodja {
+    margin-top: 2rem;
+  }
+  .pro .opisi-projektov .obisci-stran {
+    margin-top: 3rem;
+    color: #eeffff;
+  }
+  .pro .opisi-projektov .obisci-stran:hover {
+    color: #061a33;
+  }
+  .pro .opisi-projektov a.button {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #ff4d5a;
+    font-size: 18px;
+    border-radius: 2rem;
+  }
+  .pro .opisi-projektov a.button:hover {
+    color: #061a33;
+  }
+}
+
+/* For mobile: */
+@media only screen and (max-width: 440px) {
+  .pro {
+    display: -ms-grid;
+    display: grid;
+    min-height: 100vh;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    -ms-grid-columns: 5% 1fr 5%;
+        grid-template-columns: 5% 1fr 5%;
+    -ms-grid-rows: 68px auto 1fr 25%;
+        grid-template-rows: 68px auto 1fr 25%;
+    /* SLIDER S PROJEKTI */
+    /* OPISI PROJEKTOV */
+  }
+  .pro h2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 3rem 0 0 0;
+    text-align: center;
+    line-height: 80%;
+  }
+  .pro h2 span {
+    margin-left: 0rem;
+    display: inline-block;
+  }
+  .pro .pike {
+    display: none;
+  }
+  .pro .container-projekti {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: 90%;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% 80% 10%;
+        grid-template-columns: 10% 80% 10%;
+  }
+  .pro .container-projekti .nazaj-naprej i {
+    font-size: 5rem;
+  }
+  .pro .container-projekti .projekt-slika {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  .pro .container-projekti .projekt-slika .proSlide .st-projekta {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    right: -1rem;
+    bottom: -1rem;
+  }
+  .pro .opisi-projektov {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    /*background-color: white;*/
+    padding: 2rem 2em 4rem 2rem;
+    text-align: center;
+    /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
+    z-index: 1000;
+  }
+  .pro .opisi-projektov h4 {
+    display: none;
+  }
+  .pro .opisi-projektov h5 {
+    display: none;
+  }
+  .pro .opisi-projektov p {
+    display: none;
+  }
+  .pro .opisi-projektov .orodja {
+    display: none;
+  }
+  .pro .opisi-projektov a.button {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #ff4d5a;
+    font-size: 18px;
+    border-radius: 2rem;
+  }
+  .pro .opisi-projektov a.button:hover {
+    color: #061a33;
+  }
 }
 
 .onas {
