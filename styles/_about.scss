@@ -14,12 +14,13 @@
     margin-bottom: 15rem;
   }
   p {
+    text-align: justify;
     grid-row: 3/4;
-    grid-column: 2/4;
+    grid-column: 2/3;
     align-self: flex-start;
     justify-self: flex-start;
-    margin-left: 8rem;
-    margin-top: 3rem;
+    margin:5rem;
+ 
   }
 
   .pike {
@@ -103,7 +104,7 @@
     text-align: center;
 
     &__besedilo {
-      padding: 4rem 2rem 0 2rem;
+      padding: 2rem 2rem 0 2rem;
       width: 100%;
       display: table-cell;
       vertical-align: top;

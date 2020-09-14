@@ -101,7 +101,7 @@ h3 {
 }
 
 p {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 li {
@@ -630,6 +630,7 @@ header .menu-btn.open .menu-btn__burger::after {
       align-self: flex-start;
   justify-self: flex-start;
   margin-left: 8rem;
+  font-size: 5rem;
 }
 
 .showcase p span {
@@ -1393,17 +1394,17 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas p {
+  text-align: justify;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   -ms-flex-item-align: start;
       align-self: flex-start;
   justify-self: flex-start;
-  margin-left: 8rem;
-  margin-top: 3rem;
+  margin: 5rem;
 }
 
 .onas .pike {
@@ -1508,7 +1509,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas .onas__opis__besedilo {
-  padding: 4rem 2rem 0 2rem;
+  padding: 2rem 2rem 0 2rem;
   width: 100%;
   display: table-cell;
   vertical-align: top;
