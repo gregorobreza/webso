@@ -257,10 +257,8 @@
                 <span class="homedot"></span>
               </div>
               <p class="opis">
-                Naša ekipa trenutno šteje dva člana, ki uživata v procesu
-                izdelave spletnih strani; vse od designa do končnega videza in
-                optimizacije na spletu. Zadovljstvo strank je pri nas na prvem
-                mestu, zato se vedno trudimo izpolniti vse želje in ideje.
+                Od designa do končnega videza in
+                optimizacije na spletu. Trudimo se izpolniti vse želje in ideje.
               </p>
 
               <div class="onas__card onas__card__jure">
@@ -279,8 +277,11 @@
               <div class="onas__opis onas__opis--jure">
                 <div class="onas__opis__besedilo">
                   <div class="onas__opis__besedilo__intro">
-                    <p>Sem</p>
-                    <p class="typing"></p>
+                    <ul>
+                      <li><span class="type_jure1"></span></li>
+                      <li><span class="type_jure2"></span></li>
+                      <li><span class="type_jure3"></span></li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -288,8 +289,12 @@
               <div class="onas__opis onas__opis--gregor">
                 <div class="onas__opis__besedilo">
                   <div class="onas__opis__besedilo__intro">
-                    <p>Sem</p>
-                    <p class="typing1"></p>
+                    <ul>
+                      <li><span class="type_gregor1"></span></li>
+                      <li><span class="type_gregor2"></span></li>
+                      <li><span class="type_gregor3"></span></li>
+                    </ul>
+                    
                   </div>
                 </div>
               </div>
@@ -406,5 +411,61 @@
     <script src="./fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      var typed = new Typed(".type_gregor1", {
+        strings: ['Inženir strojništva'],
+        typeSpeed: 100,
+        backSpeed: 0,
+        loop: false,
+        
+      });
+      var typed = new Typed(".type_gregor2", {
+        strings: ['Illustrator mojster'],
+        typeSpeed: 100,
+        backSpeed: 0,
+        startDelay: 1800,
+        loop: false,
+        preStringTyped: (arrayPos, self) => {showCursor:false},
+      });
+      var typed = new Typed(".type_gregor3", {
+        strings: ['Full-stack programer'],
+        typeSpeed: 100,
+        backSpeed: 0,
+        startDelay: 3500,
+        loop: false,
+      });
+
+      var typed = new Typed(".type_jure1", {
+        strings: ['Inženir elektrotehnike'],
+        typeSpeed: 100,
+        backSpeed: 0,
+        startDelay: 0,
+        loop: false,
+      });
+
+      var typed = new Typed(".type_jure2", {
+        strings: ['SEO mojster'],
+        typeSpeed: 100,
+        backSpeed: 0,
+        startDelay: 1800,
+        loop: false,
+      });
+
+      var typed = new Typed(".type_jure3", {
+        strings: ['Full-stack programer'],
+        typeSpeed: 100,
+        backSpeed: 0,
+        startDelay: 3500,
+        loop: false,
+      });
+
+      
+
+
+
+
+
+    </script>
   </body>
 </html>
