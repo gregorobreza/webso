@@ -1,6 +1,6 @@
 .kontakt {
   position: absolute;
-  top:0;
+  top: 0;
   width: 100%;
   display: grid;
   height: 100vh;
@@ -20,31 +20,30 @@
       margin-left: 27rem;
     }
   }
-  ul{
-    grid-row:3/4;
+  ul {
+    grid-row: 3/4;
     grid-column: 2/3;
-    align-self:center;
+    align-self: center;
     justify-self: center;
     list-style-type: none;
-    li{
-      padding:2rem;
-      .fas, .fab{
+    li {
+      padding: 2rem;
+      .fas,
+      .fab {
         margin-right: 1rem;
       }
     }
   }
   p {
     font-size: 3.5rem;
- 
   }
 
-  .besedilo{
+  .besedilo {
     grid-row: 3/4;
     grid-column: 2/3;
     align-self: start;
     justify-self: center;
-    margin-left:5rem;
-
+    margin-left: 5rem;
   }
 
   .pike {
@@ -241,34 +240,33 @@ input[type="submit"] {
       margin-left: 5rem;
       margin-top: 0rem;
       padding-bottom: 1rem;
-      text-align:center;
+      text-align: center;
       line-height: 80%;
       span {
         display: inline-block;
         margin-left: 0rem;
       }
     }
-    ul{
-      grid-row:2/3;
+    ul {
+      grid-row: 2/3;
       grid-column: 2/3;
-      align-self:end;
+      align-self: end;
       justify-self: center;
       list-style-type: none;
-      li{
-        padding:1rem;
-        .fas, .fab{
+      li {
+        padding: 1rem;
+        .fas,
+        .fab {
           margin-right: 1rem;
         }
       }
     }
     p {
       font-size: 2.5rem;
-   
     }
-  
-    .besedilo{
-      display:none;
-  
+
+    .besedilo {
+      display: none;
     }
 
     .pike {
@@ -289,7 +287,6 @@ input[type="submit"] {
 @media only screen and (max-width: 440px) {
   /* VSEBINA */
 
-  
   .kontakt {
     display: grid;
     height: 100vh;
@@ -305,45 +302,43 @@ input[type="submit"] {
       margin-left: 0rem;
       margin-top: 4rem;
       padding-bottom: 1rem;
-      text-align:center;
+      text-align: center;
       span {
         display: block;
         margin-left: 0rem;
       }
     }
-    ul{
-      grid-row:3/4;
+    ul {
+      grid-row: 3/4;
       grid-column: 2/3;
-      align-self:start;
+      align-self: start;
       justify-self: center;
       list-style-type: none;
-      margin-top:2rem;
-      text-align:center;
-      li{
-        padding:1rem;
-        
-        .fas, .fab{
+      margin-top: 2rem;
+      text-align: center;
+      li {
+        padding: 1rem;
+
+        .fas,
+        .fab {
           margin-right: 1rem;
         }
       }
     }
     p {
       font-size: 1.8rem;
-   
     }
-  
-    .besedilo{
-      display:block;
-      grid-row:2/3;
-      grid-column: 2/3;
-      align-self:end;
-      justify-self: center;
-      font-size:2rem;
-      margin-top:0rem;
-      margin-left:0rem;
-      text-align: center;
 
-  
+    .besedilo {
+      display: block;
+      grid-row: 2/3;
+      grid-column: 2/3;
+      align-self: end;
+      justify-self: center;
+      font-size: 2rem;
+      margin-top: 0rem;
+      margin-left: 0rem;
+      text-align: center;
     }
 
     .pike {
@@ -355,4 +350,3 @@ input[type="submit"] {
     display: none;
   }
 }
-

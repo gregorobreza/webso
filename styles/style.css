@@ -1364,15 +1364,18 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas {
+  position: absolute;
+  top: 0;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   height: 100vh;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  -ms-grid-columns: 9rem 2fr 1fr 1fr 5%;
-      grid-template-columns: 9rem 2fr 1fr 1fr 5%;
-  -ms-grid-rows: 68px 1fr 1fr;
-      grid-template-rows: 68px 1fr 1fr;
+  -ms-grid-columns: 9rem 2.2fr 1fr 1fr 5%;
+      grid-template-columns: 9rem 2.2fr 1fr 1fr 5%;
+  -ms-grid-rows: 68px 1fr 1.3fr;
+      grid-template-rows: 68px 1fr 1.3fr;
   /* Pozicija kartice za Jureta*/
   /* Pozicija kartice za Gregorja*/
   /* Znotraj kartic se definira grid za lazje centriranje */
@@ -1386,14 +1389,14 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  justify-self: flex-start;
-  margin-left: 5rem;
-  margin-bottom: 15rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-.onas p {
+.onas .opis {
   text-align: justify;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -1402,9 +1405,11 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   -ms-flex-item-align: start;
-      align-self: flex-start;
-  justify-self: flex-start;
-  margin: 5rem;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  padding: 0 7rem 0 7rem;
 }
 
 .onas .pike {
@@ -1412,14 +1417,16 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  justify-self: flex-start;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   position: relative;
-  left: 5rem;
-  top: -15rem;
+  top: 5rem;
+  left: 2rem;
 }
 
 .onas .pike .homedot {
