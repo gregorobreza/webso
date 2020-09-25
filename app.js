@@ -1,5 +1,5 @@
 TweenMax.defaultEase = Linear.easeOut;
-
+let firstTyping;
 new fullpage("#fullpage", {
   //options here
   autoScrolling: true,
@@ -11,6 +11,8 @@ new fullpage("#fullpage", {
   css3: true,
   anchors: ["domov-stran", "projekti-stran", "onas-stran", "kontakt-stran"],
   menu: "#sidebarMenu",
+
+
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
     const title = section.querySelector("h2");
@@ -29,7 +31,75 @@ new fullpage("#fullpage", {
 
     const pike = document.querySelectorAll(".pike");
     tl.fromTo(pike, 0.8, { x: -20, opacity: 0 }, { x: 0, opacity: 1 });
+
+    
+    
+    if(destination.index === 2){
+      
+
+      if (firstTyping == undefined){
+        firstTyping = 2; // prvic ko prides na slide se zamenja vrednost, da ne zacne ponovno pisat
+        var typed1 = new Typed(".type_gregor1", {
+          strings: ["Inženir strojništva"],
+          typeSpeed: 100,
+          backSpeed: 0,
+          startDelay: 900,
+          loop: false,
+        });
+        var typed2 = new Typed(".type_gregor2", {
+          strings: ["Illustrator mojster"],
+          typeSpeed: 100,
+          backSpeed: 0,
+          startDelay: 2800,
+          loop: false,
+          preStringTyped: (arrayPos, self) => {
+            showCursor: false;
+          },
+        });
+        var typed3 = new Typed(".type_gregor3", {
+          strings: ["Full-stack programer"],
+          typeSpeed: 100,
+          backSpeed: 0,
+          startDelay: 4500,
+          loop: false,
+        });
+    
+        var typed4 = new Typed(".type_jure1", {
+          strings: ["Inženir elektrotehnike"],
+          typeSpeed: 100,
+          backSpeed: 0,
+          startDelay: 900,
+          loop: false,
+        });
+    
+        var typed5 = new Typed(".type_jure2", {
+          strings: ["SEO mojster"],
+          typeSpeed: 100,
+          backSpeed: 0,
+          startDelay: 2800,
+          loop: false,
+        });
+    
+        var typed6 = new Typed(".type_jure3", {
+          strings: ["Full-stack programer"],
+          typeSpeed: 100,
+          backSpeed: 0,
+          startDelay: 4500,
+          loop: false,
+        });
+
+      }
+
+      
+
+    }else{
+      
+    }
+
+    
   },
+
+  
 });
 
 // odpre in zapre stranski meni in naredi animacijo burger menija
@@ -99,61 +169,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   captionText[slideIndex - 1].style.display = "block";
 }
-
-/* Animacija tipkanja na strani O NAS */
-
-const textTyping = [
-  "študent elektrotehnike.",
-  "športni navdušenec.",
-  "ljubitelj knjig.",
-  "reševalec težav",
-];
-
-let count = 0;
-
-let index = 0;
-
-let currentText = "";
-
-let letter = "";
-
-(function type() {
-  if (count === textTyping.length) {
-    count = 0;
-  }
-  currentText = textTyping[count];
-  letter = currentText.slice(0, ++index);
-  document.querySelector(".typing").textContent = letter;
-
-  if (letter.length === currentText.length) {
-    count++;
-    index = 0;
-  }
-  setTimeout(type, 300);
-})();
-
-const textTyping1 = [
-  "študent strojništva",
-  "navdušen programer.",
-  "fit powerlifter.",
-  "mojster za vse",
-];
-let count1 = 0;
-let index1 = 0;
-let currentText1 = "";
-let letter1 = "";
-
-(function type1() {
-  if (count1 === textTyping1.length) {
-    count1 = 0;
-  }
-  currentText1 = textTyping1[count1];
-  letter1 = currentText1.slice(0, ++index1);
-  document.querySelector(".typing1").textContent = letter1;
-
-  if (letter1.length === currentText1.length) {
-    count1++;
-    index1 = 0;
-  }
-  setTimeout(type1, 300);
-})();
