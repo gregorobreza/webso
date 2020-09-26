@@ -1522,6 +1522,17 @@ header .menu-btn.open .menu-btn__burger::after {
   vertical-align: top;
 }
 
+.onas .onas__opis__besedilo ul {
+  list-style: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.onas .onas__opis__besedilo ul li {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+}
+
 .onas .onas__opis__besedilo p {
   font-size: 2.5rem;
 }
@@ -1565,6 +1576,9 @@ header .menu-btn.open .menu-btn__burger::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .kontakt {
@@ -1620,7 +1634,8 @@ header .menu-btn.open .menu-btn__burger::after {
   padding: 2rem;
 }
 
-.kontakt ul li .fas, .kontakt ul li .fab {
+.kontakt ul li .fas,
+.kontakt ul li .fab {
   margin-right: 1rem;
 }
 
@@ -1893,7 +1908,8 @@ input[type="submit"] {
   .kontakt ul li {
     padding: 1rem;
   }
-  .kontakt ul li .fas, .kontakt ul li .fab {
+  .kontakt ul li .fas,
+  .kontakt ul li .fab {
     margin-right: 1rem;
   }
   .kontakt p {
@@ -1975,7 +1991,8 @@ input[type="submit"] {
   .kontakt ul li {
     padding: 1rem;
   }
-  .kontakt ul li .fas, .kontakt ul li .fab {
+  .kontakt ul li .fas,
+  .kontakt ul li .fab {
     margin-right: 1rem;
   }
   .kontakt p {

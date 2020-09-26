@@ -110,8 +110,19 @@
       display: table-cell;
       vertical-align: top;
 
+      ul{
+        list-style: none;
+        align-content: center;
+        
+        li{
+          font-family: "Titillium Web", sans-serif;
+          font-size: 2rem;
+        }
+      }
+
       p {
         font-size: 2.5rem;
+        
       }
 
       .typing,
@@ -141,7 +152,10 @@
 
       &__intro {
         display: flex;
+        justify-content: center;
       }
     }
   }
 }
+
+
