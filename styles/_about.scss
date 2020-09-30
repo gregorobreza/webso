@@ -65,8 +65,8 @@
       grid-row: 1;
       justify-self: center;
       align-self: flex-end;
-      width: 22rem;
-      height: 22rem;
+      width: 20rem;
+      height: 20rem;
       border-radius: 50%;
 
       /* Nastavis sliko v ozadje */
@@ -156,6 +156,304 @@
       }
     }
   }
+}
+
+/* For tablets: */
+@media only screen and (max-width: 1024px) {
+  .onas {
+    width: 100%;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-rows: 68px 15% min-content min-content min-content;
+  
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/4;
+      align-self: center;
+      justify-self: center;
+    }
+    .opis {
+      text-align: justify;
+      grid-row: 3/4;
+      grid-column: 2/4;
+      align-self: start;
+      justify-self: start;
+      padding: 0 7rem 4rem 7rem;
+    }
+  
+    .pike {
+      display: none;
+    }
+  
+    /* Pozicija kartice za Jureta*/
+    .onas__card__jure {
+      grid-row: 4/5;
+      grid-column: 2/3;
+      align-self: start;
+    }
+    /* Pozicija kartice za Gregorja*/
+    .onas__card__gregor {
+      grid-row: 4/5;
+      grid-column: 3/4;
+      align-self: start;
+    }
+  
+    /* Znotraj kartic se definira grid za lazje centriranje */
+    .onas__card {
+      display: grid;
+      grid-template-rows: 4fr 1fr;
+      grid-template-columns: 1fr;
+  
+      &__slika {
+        /* Nastavis velikost kroga za sliko in  */
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+  
+        /* Nastavis sliko v ozadje */
+        &--jure {
+          background-color: yellowgreen;
+        }
+  
+        &--gregor {
+          background-color: blue;
+        }
+      }
+  
+      /* Nastavitev za prikaz in centriranje imena*/
+      &__ime {
+        grid-row: 2;
+        justify-self: center;
+        align-self: center;
+        font-size: 3rem;
+      }
+    }
+  
+    /* Nastavitev opisa pod imeni */
+  
+    .onas__opis--jure {
+      grid-row: 5/6;
+      grid-column: 2/3;
+      align-self: center;
+    }
+  
+    .onas__opis--gregor {
+      grid-row: 5/6;
+      grid-column: 3/4;
+      align-self: center;
+    }
+  
+    .onas__opis {
+      display: table;
+      text-align: center;
+  
+      &__besedilo {
+        padding: 2rem 2rem 0 2rem;
+        width: 100%;
+        display: table-cell;
+        vertical-align: top;
+  
+        ul{
+          list-style: none;
+          align-content: center;
+          
+          li{
+            font-family: "Titillium Web", sans-serif;
+            font-size: 2rem;
+          }
+        }
+  
+        p {
+          font-size: 2.5rem;
+          
+        }
+  
+        .typing,
+        .typing1 {
+          position: relative;
+          margin-left: 1rem;
+        }
+  
+        .typing::after,
+        .typing1::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          border-right: 2px solid white;
+          animation: blink 0.8s infinite ease;
+        }
+  
+        @keyframes blink {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+  
+        &__intro {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  
+}
+
+
+/* For mobile: */
+@media only screen and (max-width: 440px) {
+  .onas {
+    width: 100%;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-rows: 68px 8% min-content min-content min-content;
+  
+    h2 {
+      grid-row: 2/3;
+      grid-column: 2/4;
+      align-self: center;
+      justify-self: center;
+    }
+    .opis {
+      font-size: 20px;
+      padding: 0 2rem 0 2rem;
+
+    }
+  
+    .pike {
+      display: none;
+    }
+  
+    /* Pozicija kartice za Jureta*/
+    .onas__card__jure {
+      grid-row: 4/5;
+      grid-column: 2/3;
+      align-self: start;
+    }
+    /* Pozicija kartice za Gregorja*/
+    .onas__card__gregor {
+      grid-row: 4/5;
+      grid-column: 3/4;
+      align-self: start;
+    }
+  
+    /* Znotraj kartic se definira grid za lazje centriranje */
+    .onas__card {
+      display: grid;
+      grid-template-rows: 4fr 1fr;
+      grid-template-columns: 1fr;
+  
+      &__slika {
+        /* Nastavis velikost kroga za sliko in  */
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+  
+        /* Nastavis sliko v ozadje */
+        &--jure {
+          background-color: yellowgreen;
+        }
+  
+        &--gregor {
+          background-color: blue;
+        }
+      }
+  
+      /* Nastavitev za prikaz in centriranje imena*/
+      &__ime {
+        grid-row: 2;
+        justify-self: center;
+        align-self: center;
+        font-size: 3rem;
+      }
+    }
+  
+    /* Nastavitev opisa pod imeni */
+  
+    .onas__opis--jure {
+      grid-row: 5/6;
+      grid-column: 2/3;
+      align-self: center;
+    }
+  
+    .onas__opis--gregor {
+      grid-row: 5/6;
+      grid-column: 3/4;
+      align-self: center;
+    }
+  
+    .onas__opis {
+      display: table;
+      text-align: center;
+  
+      &__besedilo {
+        padding: 0rem 0.5rem 0 0.5rem;
+        width: 100%;
+        display: table-cell;
+        vertical-align: top;
+  
+        ul{
+          list-style: none;
+          align-content: center;
+          
+          li{
+            font-family: "Titillium Web", sans-serif;
+            font-size: 1.5rem;
+          }
+        }
+  
+        p {
+          font-size: 2.5rem;
+          
+        }
+  
+        .typing,
+        .typing1 {
+          position: relative;
+          margin-left: 1rem;
+        }
+  
+        .typing::after,
+        .typing1::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          border-right: 2px solid white;
+          animation: blink 0.8s infinite ease;
+        }
+  
+        @keyframes blink {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+  
+        &__intro {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  
 }
 
 

@@ -856,6 +856,7 @@ header .menu-btn.open .menu-btn__burger::after {
     height: auto;
   }
   .showcase p {
+    font-size: 3rem;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -868,7 +869,7 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column-align: center;
         justify-self: center;
     margin-bottom: 0rem;
-    margin-top: -7%;
+    margin-top: 3%;
     margin-left: 0;
   }
   .showcase p span {
@@ -1471,8 +1472,8 @@ header .menu-btn.open .menu-btn__burger::after {
       justify-self: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   /* Nastavis sliko v ozadje */
 }
@@ -1579,6 +1580,383 @@ header .menu-btn.open .menu-btn__burger::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* For tablets: */
+@media only screen and (max-width: 1024px) {
+  .onas {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-grid-columns: 5% 1fr 1fr 5%;
+        grid-template-columns: 5% 1fr 1fr 5%;
+    -ms-grid-rows: 68px 15% min-content min-content min-content;
+        grid-template-rows: 68px 15% -webkit-min-content -webkit-min-content -webkit-min-content;
+        grid-template-rows: 68px 15% min-content min-content min-content;
+    /* Pozicija kartice za Jureta*/
+    /* Pozicija kartice za Gregorja*/
+    /* Znotraj kartic se definira grid za lazje centriranje */
+    /* Nastavitev opisa pod imeni */
+  }
+  .onas h2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .onas .opis {
+    text-align: justify;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    padding: 0 7rem 4rem 7rem;
+  }
+  .onas .pike {
+    display: none;
+  }
+  .onas .onas__card__jure {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .onas .onas__card__gregor {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .onas .onas__card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 4fr 1fr;
+        grid-template-rows: 4fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    /* Nastavitev za prikaz in centriranje imena*/
+  }
+  .onas .onas__card__slika {
+    /* Nastavis velikost kroga za sliko in  */
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    /* Nastavis sliko v ozadje */
+  }
+  .onas .onas__card__slika--jure {
+    background-color: yellowgreen;
+  }
+  .onas .onas__card__slika--gregor {
+    background-color: blue;
+  }
+  .onas .onas__card__ime {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 3rem;
+  }
+  .onas .onas__opis--jure {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .onas .onas__opis--gregor {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .onas .onas__opis {
+    display: table;
+    text-align: center;
+  }
+  .onas .onas__opis__besedilo {
+    padding: 2rem 2rem 0 2rem;
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+  }
+  .onas .onas__opis__besedilo ul {
+    list-style: none;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .onas .onas__opis__besedilo ul li {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 2rem;
+  }
+  .onas .onas__opis__besedilo p {
+    font-size: 2.5rem;
+  }
+  .onas .onas__opis__besedilo .typing,
+  .onas .onas__opis__besedilo .typing1 {
+    position: relative;
+    margin-left: 1rem;
+  }
+  .onas .onas__opis__besedilo .typing::after,
+  .onas .onas__opis__besedilo .typing1::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid white;
+    -webkit-animation: blink 0.8s infinite ease;
+            animation: blink 0.8s infinite ease;
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .onas .onas__opis__besedilo__intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* For mobile: */
+@media only screen and (max-width: 440px) {
+  .onas {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-grid-columns: 5% 1fr 1fr 5%;
+        grid-template-columns: 5% 1fr 1fr 5%;
+    -ms-grid-rows: 68px 8% min-content min-content min-content;
+        grid-template-rows: 68px 8% -webkit-min-content -webkit-min-content -webkit-min-content;
+        grid-template-rows: 68px 8% min-content min-content min-content;
+    /* Pozicija kartice za Jureta*/
+    /* Pozicija kartice za Gregorja*/
+    /* Znotraj kartic se definira grid za lazje centriranje */
+    /* Nastavitev opisa pod imeni */
+  }
+  .onas h2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .onas .opis {
+    font-size: 20px;
+    padding: 0 2rem 0 2rem;
+  }
+  .onas .pike {
+    display: none;
+  }
+  .onas .onas__card__jure {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .onas .onas__card__gregor {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .onas .onas__card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 4fr 1fr;
+        grid-template-rows: 4fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    /* Nastavitev za prikaz in centriranje imena*/
+  }
+  .onas .onas__card__slika {
+    /* Nastavis velikost kroga za sliko in  */
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    /* Nastavis sliko v ozadje */
+  }
+  .onas .onas__card__slika--jure {
+    background-color: yellowgreen;
+  }
+  .onas .onas__card__slika--gregor {
+    background-color: blue;
+  }
+  .onas .onas__card__ime {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 3rem;
+  }
+  .onas .onas__opis--jure {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .onas .onas__opis--gregor {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .onas .onas__opis {
+    display: table;
+    text-align: center;
+  }
+  .onas .onas__opis__besedilo {
+    padding: 0rem 0.5rem 0 0.5rem;
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+  }
+  .onas .onas__opis__besedilo ul {
+    list-style: none;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .onas .onas__opis__besedilo ul li {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.5rem;
+  }
+  .onas .onas__opis__besedilo p {
+    font-size: 2.5rem;
+  }
+  .onas .onas__opis__besedilo .typing,
+  .onas .onas__opis__besedilo .typing1 {
+    position: relative;
+    margin-left: 1rem;
+  }
+  .onas .onas__opis__besedilo .typing::after,
+  .onas .onas__opis__besedilo .typing1::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid white;
+    -webkit-animation: blink 0.8s infinite ease;
+            animation: blink 0.8s infinite ease;
+  }
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .onas .onas__opis__besedilo__intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .kontakt {
