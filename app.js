@@ -1,3 +1,15 @@
+//remove preloader
+
+window.addEventListener("load", () =>{
+  setTimeout(()=>{
+    const preload = document.getElementById("preload");
+    preload.classList.add("preload-finish")
+  }, 2000)
+  
+
+} )
+
+
 TweenMax.defaultEase = Linear.easeOut;
 let firstTyping;
 new fullpage("#fullpage", {
