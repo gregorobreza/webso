@@ -10,6 +10,7 @@ window.addEventListener("load", () =>{
 } )
 
 
+
 TweenMax.defaultEase = Linear.easeOut;
 let firstTyping;
 new fullpage("#fullpage", {
