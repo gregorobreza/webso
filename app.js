@@ -70,14 +70,7 @@ new fullpage("#fullpage", {
           },
         });
         var typed3 = new Typed(".type_gregor3", {
-          strings: ["Wordpress"],
-          typeSpeed: 100,
-          backSpeed: 0,
-          startDelay: 4500,
-          loop: false,
-        });
-        var typed4 = new Typed(".type_gregor4", {
-          strings: ["HTML, CSS, JS"],
+          strings: ["WHTML, CSS, JS"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 4500,
