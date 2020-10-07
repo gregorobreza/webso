@@ -2546,6 +2546,7 @@ input[type="submit"] {
     list-style-type: none;
     margin-top: 7rem;
     text-align: center;
+    padding-bottom: 2rem;
   }
   .kontakt ul li {
     padding: 1rem;
