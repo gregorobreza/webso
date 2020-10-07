@@ -1639,11 +1639,13 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas .onas__card__slika--jure {
-  background-color: yellowgreen;
+  background-image: url("/img/Jure_webso.jpg");
+  background-position: center top;
 }
 
 .onas .onas__card__slika--gregor {
-  background-color: blue;
+  background-image: url("/img/Gregor_webso.jpg");
+  background-position: center;
 }
 
 .onas .onas__card__ime {
@@ -1835,12 +1837,6 @@ header .menu-btn.open .menu-btn__burger::after {
     border-radius: 50%;
     /* Nastavis sliko v ozadje */
   }
-  .onas .onas__card__slika--jure {
-    background-color: yellowgreen;
-  }
-  .onas .onas__card__slika--gregor {
-    background-color: blue;
-  }
   .onas .onas__card__ime {
     -ms-grid-row: 2;
     grid-row: 2;
@@ -1945,9 +1941,9 @@ header .menu-btn.open .menu-btn__burger::after {
     height: 100vh;
     -ms-grid-columns: 5% 1fr 1fr 5%;
         grid-template-columns: 5% 1fr 1fr 5%;
-    -ms-grid-rows: 68px 8% min-content min-content min-content;
-        grid-template-rows: 68px 8% -webkit-min-content -webkit-min-content -webkit-min-content;
-        grid-template-rows: 68px 8% min-content min-content min-content;
+    -ms-grid-rows: 68px min-content min-content min-content min-content;
+        grid-template-rows: 68px -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+        grid-template-rows: 68px min-content min-content min-content min-content;
     /* Pozicija kartice za Jureta*/
     /* Pozicija kartice za Gregorja*/
     /* Znotraj kartic se definira grid za lazje centriranje */
@@ -1965,6 +1961,8 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
   }
   .onas .opis {
     font-size: 20px;
@@ -2016,13 +2014,6 @@ header .menu-btn.open .menu-btn__burger::after {
     width: 13rem;
     height: 13rem;
     border-radius: 50%;
-    /* Nastavis sliko v ozadje */
-  }
-  .onas .onas__card__slika--jure {
-    background-color: yellowgreen;
-  }
-  .onas .onas__card__slika--gregor {
-    background-color: blue;
   }
   .onas .onas__card__ime {
     -ms-grid-row: 2;

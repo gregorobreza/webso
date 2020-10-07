@@ -71,11 +71,14 @@
 
       /* Nastavis sliko v ozadje */
       &--jure {
-        background-color: yellowgreen;
+        background-image: url("/img/Jure_webso.jpg");
+        background-position: center top;
       }
 
       &--gregor {
-        background-color: blue;
+        background-image: url("/img/Gregor_webso.jpg");
+        background-position: center;
+        
       }
     }
 
@@ -215,13 +218,8 @@
         border-radius: 50%;
   
         /* Nastavis sliko v ozadje */
-        &--jure {
-          background-color: yellowgreen;
-        }
   
-        &--gregor {
-          background-color: blue;
-        }
+
       }
   
       /* Nastavitev za prikaz in centriranje imena*/
@@ -316,13 +314,15 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: 68px 8% min-content min-content min-content;
+    grid-template-rows: 68px min-content min-content min-content min-content;
   
     h2 {
       grid-row: 2/3;
       grid-column: 2/4;
       align-self: center;
       justify-self: center;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
     }
     .opis {
       font-size: 20px;
@@ -362,14 +362,9 @@
         height: 13rem;
         border-radius: 50%;
   
-        /* Nastavis sliko v ozadje */
-        &--jure {
-          background-color: yellowgreen;
-        }
+
   
-        &--gregor {
-          background-color: blue;
-        }
+
       }
   
       /* Nastavitev za prikaz in centriranje imena*/

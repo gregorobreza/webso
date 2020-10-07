@@ -53,14 +53,14 @@ new fullpage("#fullpage", {
       if (firstTyping == undefined){
         firstTyping = 2; // prvic ko prides na slide se zamenja vrednost, da ne zacne ponovno pisat
         var typed1 = new Typed(".type_gregor1", {
-          strings: ["Inženir strojništva"],
+          strings: ["Študent strojništva"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 900,
           loop: false,
         });
         var typed2 = new Typed(".type_gregor2", {
-          strings: ["Illustrator mojster"],
+          strings: ["Web design"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 2800,
@@ -70,7 +70,14 @@ new fullpage("#fullpage", {
           },
         });
         var typed3 = new Typed(".type_gregor3", {
-          strings: ["Full-stack programer"],
+          strings: ["Wordpress"],
+          typeSpeed: 100,
+          backSpeed: 0,
+          startDelay: 4500,
+          loop: false,
+        });
+        var typed4 = new Typed(".type_gregor4", {
+          strings: ["HTML, CSS, JS"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 4500,
@@ -86,7 +93,7 @@ new fullpage("#fullpage", {
         });
     
         var typed5 = new Typed(".type_jure2", {
-          strings: ["SEO mojster"],
+          strings: ["Wordpress"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 2800,
@@ -94,7 +101,7 @@ new fullpage("#fullpage", {
         });
     
         var typed6 = new Typed(".type_jure3", {
-          strings: ["Full-stack programer"],
+          strings: ["HTML, CSS, JS"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 4500,
