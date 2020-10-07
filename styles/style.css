@@ -1433,7 +1433,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin: 5rem 0 0 0;
+    margin: 4rem 0 1rem 0;
     text-align: center;
     line-height: 80%;
   }
