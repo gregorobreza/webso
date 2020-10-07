@@ -400,21 +400,28 @@ body.day #fp-nav ul li a span,
     font-size: 2rem;
   }
   .sectionname {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
     font-size: 1.5rem;
-    left: 4rem;
-    top: 75%;
+    left: 2rem;
+    top: 92vh;
   }
   .verticalLine {
     display: box;
-    border-left: 2pt solid #ff4d5a;
-    height: 25%;
+    border: 0;
+    border-top: 2pt solid #ff4d5a;
+    width: 100vw;
     position: fixed;
-    top: 75%;
-    margin-left: 6rem;
+    top: 92vh;
+    margin: 0;
   }
   #fp-nav.fp-left {
-    left: 7px;
-    top: 84%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    top: 92vh;
+    left: 30vw;
+    bottom: 0;
   }
 }
 
