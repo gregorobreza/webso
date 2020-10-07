@@ -182,3 +182,9 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   captionText[slideIndex - 1].style.display = "block";
 }
+
+
+//viewport height for mobile
+let vh = window.innerHeight * 0.01;
+
+document.documentElement.style.setProperty('--vh', `${vh}px`);

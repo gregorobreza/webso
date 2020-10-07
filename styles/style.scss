@@ -360,6 +360,8 @@ body.day #fp-nav ul li a span,
   }
 
   .verticalLine {
+    height:100vh;
+    height: calc(var(--vh, 1vh) * 100);
     display: box;
     border: 0;
     border-top: 2pt solid #ff4d5a;
