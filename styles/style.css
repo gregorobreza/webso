@@ -940,10 +940,12 @@ header .menu-btn.open .menu-btn__burger::after {
   .showcase {
     position: absolute;
     top: 0;
+    height: 100vh;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px 1fr 2fr;
-        grid-template-rows: 68px 1fr 2fr;
+    -ms-grid-rows: 68px min-content 1fr;
+        grid-template-rows: 68px -webkit-min-content 1fr;
+        grid-template-rows: 68px min-content 1fr;
   }
   .showcase h2 {
     -ms-grid-row: 2;
@@ -956,8 +958,9 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: flex-end;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-top: 5rem;
     margin-left: 0rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
   }
   .showcase h2 span {
     -ms-grid-column-align: center;

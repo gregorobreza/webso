@@ -382,16 +382,18 @@ header {
   .showcase {
     position: absolute;
     top: 0;
+    height: 100vh;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 68px 1fr 2fr;
+    grid-template-rows: 68px min-content 1fr;
 
     h2 {
       grid-row: 2/3;
       grid-column: 2/3;
       align-self: flex-end;
       justify-self: center;
+      margin-top: 5rem;
       margin-left: 0rem;
-      margin-bottom: 3rem;
+      margin-bottom: 0;
       span {
         justify-self: center;
         margin-left: 0rem;
