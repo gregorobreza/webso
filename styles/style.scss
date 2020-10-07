@@ -106,11 +106,6 @@ body {
   }
 }
 
-@media only screen and (max-device-width: 812px) and (orientation: portrait) {
-  .rotate {
-    display: none;
-  }
-}
 
 /*vse za dnevno temo*/
 body.day {
