@@ -979,7 +979,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 0rem;
     z-index: -1;
     margin-right: 5rem;
@@ -1000,7 +1000,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 0rem;
     margin-right: 5rem;
     z-index: -1;
