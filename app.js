@@ -192,7 +192,7 @@ window.addEventListener("orientationchange", function(event) {
   //rotateMessage.style.display = "block"
   rotateMessage.classList.add("rotate-landscape")
   }
-  else if(event.target.screen.orientation.angle === -90){
+  else if(event.target.screen.orientation.angle === 270){
     console.log("the orientation of the device is now " + event.target.screen.orientation.angle);
     //rotateMessage.style.display = "block"
     rotateMessage.classList.add("rotate-landscape")
