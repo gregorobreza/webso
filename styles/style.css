@@ -142,23 +142,30 @@ body {
   }
 }
 
-@media only screen and (max-device-width: 812px) and (orientation: landscape) {
-  .rotate {
-    display: block;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.rotate-landscape {
+  display: block;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
+/*@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+  .rotate {
+    display: block;
+    display: grid;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}*/
 /*vse za dnevno temo*/
 body.day {
   color: #061a33;

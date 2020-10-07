@@ -184,3 +184,28 @@ function showSlides(n) {
 }
 
 
+const rotateMessage = document.getElementById("rotate");
+
+window.addEventListener("orientationchange", function(event) {
+  if(event.target.screen.orientation.angle === 90){
+    console.log("the orientation of the device is now " + event.target.screen.orientation.angle);
+  //rotateMessage.style.display = "block"
+  rotateMessage.classList.add("rotate-landscape")
+  }
+  else if(event.target.screen.orientation.angle === -90){
+    console.log("the orientation of the device is now " + event.target.screen.orientation.angle);
+    //rotateMessage.style.display = "block"
+    rotateMessage.classList.add("rotate-landscape")
+  }
+  else if(event.target.screen.orientation.angle === 0){
+    console.log("OK")
+    //rotateMessage.style.display = "none"
+    rotateMessage.classList.remove("rotate-landscape")
+  }
+  else if(event.target.screen.orientation.angle === 180){
+    console.log("OK")
+    //rotateMessage.style.display = "none"
+    rotateMessage.classList.remove("rotate-landscape")
+  }
+  
+});
