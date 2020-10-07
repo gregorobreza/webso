@@ -186,6 +186,11 @@ function showSlides(n) {
 
 
 // orientacija zaslona
+const mediaQuery = window.matchMedia('(max-width: 700px)')
+
+if(mediaQuery.matches){
+ 
+
 const rotateMessage = document.getElementById("rotate");
 console.log(window.orientation)
 if(window.orientation === 90){
@@ -223,4 +228,4 @@ window.addEventListener("orientationchange", function(event) {
     rotateMessage.classList.remove("rotate-landscape")
   }
   
-});
+});}

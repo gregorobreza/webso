@@ -2480,7 +2480,7 @@ input[type="submit"] {
 }
 
 /* For mobile: */
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 440px), screen and (max-width: 1024px) and (orientation: landscape) {
   /* VSEBINA */
   .kontakt {
     display: -ms-grid;
