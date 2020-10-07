@@ -2507,7 +2507,7 @@ input[type="submit"] {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    height: 35vh;
+    height: 30vh;
   }
   .kontakt h2 {
     -ms-grid-row: 2;
