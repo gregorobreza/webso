@@ -404,7 +404,7 @@ body.day #fp-nav ul li a span,
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
     font-size: 1.5rem;
-    left: 4rem;
+    left: 2rem;
     top: 92vh;
   }
   .verticalLine {
@@ -419,8 +419,9 @@ body.day #fp-nav ul li a span,
   #fp-nav.fp-left {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
-    top: 88%;
-    left: 43%;
+    top: 92vh;
+    left: 35vw;
+    bottom: 0;
   }
 }
 
