@@ -943,9 +943,9 @@ header .menu-btn.open .menu-btn__burger::after {
     height: 100vh;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px min-content 1fr;
-        grid-template-rows: 68px -webkit-min-content 1fr;
-        grid-template-rows: 68px min-content 1fr;
+    -ms-grid-rows: 68px min-content min-content;
+        grid-template-rows: 68px -webkit-min-content -webkit-min-content;
+        grid-template-rows: 68px min-content min-content;
   }
   .showcase h2 {
     -ms-grid-row: 2;
@@ -977,9 +977,9 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
     margin-top: 20vh;
@@ -988,7 +988,7 @@ header .menu-btn.open .menu-btn__burger::after {
     margin-right: 5rem;
   }
   .showcase .paralax-container img {
-    width: 110vw;
+    width: 100vw;
     height: auto;
   }
   .showcase .paralax-container-2 {
@@ -998,9 +998,9 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
     margin-top: 2rem;
