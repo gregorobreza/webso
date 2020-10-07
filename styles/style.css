@@ -1854,9 +1854,9 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
   .onas .onas__opis--gregor {
     -ms-grid-row: 5;
@@ -1865,9 +1865,9 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
   .onas .onas__opis {
     display: table;
@@ -1966,7 +1966,7 @@ header .menu-btn.open .menu-btn__burger::after {
   }
   .onas .opis {
     font-size: 20px;
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem 2rem 2rem;
   }
   .onas .pike {
     display: none;
@@ -1996,8 +1996,9 @@ header .menu-btn.open .menu-btn__burger::after {
   .onas .onas__card {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 4fr 1fr;
-        grid-template-rows: 4fr 1fr;
+    -ms-grid-rows: min-content min-content;
+        grid-template-rows: -webkit-min-content -webkit-min-content;
+        grid-template-rows: min-content min-content;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     /* Nastavitev za prikaz in centriranje imena*/
@@ -2008,12 +2009,20 @@ header .menu-btn.open .menu-btn__burger::after {
     grid-row: 1;
     -ms-grid-column-align: center;
         justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
     width: 13rem;
     height: 13rem;
     border-radius: 50%;
+  }
+  .onas .onas__card__slika--jure {
+    background-image: url("/img/Jure_webso.jpg");
+    background-position: 50% 20%;
+  }
+  .onas .onas__card__slika--gregor {
+    background-image: url("/img/Gregor_webso.jpg");
+    background-position: 50% 30%;
   }
   .onas .onas__card__ime {
     -ms-grid-row: 2;
@@ -2032,9 +2041,9 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
   .onas .onas__opis--gregor {
     -ms-grid-row: 5;
@@ -2043,9 +2052,9 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
   .onas .onas__opis {
     display: table;

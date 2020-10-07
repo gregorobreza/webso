@@ -236,13 +236,13 @@
     .onas__opis--jure {
       grid-row: 5/6;
       grid-column: 2/3;
-      align-self: center;
+      align-self: start;
     }
   
     .onas__opis--gregor {
       grid-row: 5/6;
       grid-column: 3/4;
-      align-self: center;
+      align-self: start;
     }
   
     .onas__opis {
@@ -326,7 +326,7 @@
     }
     .opis {
       font-size: 20px;
-      padding: 0 2rem 0 2rem;
+      padding: 0 2rem 2rem 2rem;
 
     }
   
@@ -350,17 +350,27 @@
     /* Znotraj kartic se definira grid za lazje centriranje */
     .onas__card {
       display: grid;
-      grid-template-rows: 4fr 1fr;
+      grid-template-rows: min-content min-content;
       grid-template-columns: 1fr;
   
       &__slika {
         /* Nastavis velikost kroga za sliko in  */
         grid-row: 1;
         justify-self: center;
-        align-self: center;
+        align-self: end;
         width: 13rem;
         height: 13rem;
         border-radius: 50%;
+        &--jure {
+          background-image: url("/img/Jure_webso.jpg");
+          background-position: 50% 20%;
+        }
+  
+        &--gregor {
+          background-image: url("/img/Gregor_webso.jpg");
+          background-position: 50% 30%;
+          
+        }
   
 
   
@@ -381,13 +391,13 @@
     .onas__opis--jure {
       grid-row: 5/6;
       grid-column: 2/3;
-      align-self: center;
+      align-self: start;
     }
   
     .onas__opis--gregor {
       grid-row: 5/6;
       grid-column: 3/4;
-      align-self: center;
+      align-self: start;
     }
   
     .onas__opis {
