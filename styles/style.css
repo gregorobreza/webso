@@ -406,6 +406,8 @@ body.day #fp-nav ul li a span,
     font-size: 1.5rem;
     left: 2rem;
     top: 92vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .verticalLine {
     height: 100vh;
