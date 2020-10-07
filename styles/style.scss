@@ -353,31 +353,16 @@ body.day #fp-nav ul li a span,
   }
 
   .sectionname {
-    writing-mode: horizontal-tb;
-    font-size: 1.5rem;
-    left: 2rem;
-    top: 92vh;
-    height:100vh;
-    height: calc(var(--vh, 1vh) * 100);
+display: none;
   }
 
   .verticalLine {
-    height:100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    display: box;
-    border: 0;
-    border-top: 2pt solid #ff4d5a;
-    width: 100vw;
-    position: fixed;
-    bottom: 8vh;
-    top:92vh;
-    margin:0;
+display:none
   }
 
   #fp-nav.fp-left {
-    transform:rotate(-90deg);
-    top:92vh;
-    left:30vw;
+    left:2vw;
+    top: 85vh;
     bottom: 0;
   }
 
