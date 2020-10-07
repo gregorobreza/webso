@@ -78,7 +78,7 @@ new fullpage("#fullpage", {
         });
     
         var typed4 = new Typed(".type_jure1", {
-          strings: ["Inženir elektrotehnike"],
+          strings: ["Študent elektrotehnike"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 900,
