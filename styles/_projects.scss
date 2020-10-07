@@ -289,7 +289,7 @@
       grid-column: 2/3;
       align-self: center;
       justify-self: center;
-      margin: 3rem 0 0 0;
+      margin: 5rem 0 0 0;
       text-align: center;
       line-height: 80%;
       span {
@@ -306,11 +306,11 @@
 
     .container-projekti {
       grid-row: 3 / 4;
-      grid-column: 2/3;
+      grid-column: 1/4;
       align-self: center;
       justify-self: center;
       height: 90%;
-      width: 90%;
+      width: 100%;
       display: grid;
       grid-template-columns: 10% 80% 10%;
 

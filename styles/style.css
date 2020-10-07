@@ -1433,7 +1433,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin: 3rem 0 0 0;
+    margin: 5rem 0 0 0;
     text-align: center;
     line-height: 80%;
   }
@@ -1448,15 +1448,15 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
     -ms-grid-row-align: center;
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
     height: 90%;
-    width: 90%;
+    width: 100%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 10% 80% 10%;
