@@ -2549,7 +2549,7 @@ input[type="submit"] {
     padding: 0;
   }
   .kontakt ul li {
-    padding: 1rem;
+    padding: 0rem 1rem 0 1rem;
   }
   .kontakt ul li .fas,
   .kontakt ul li .fab {
