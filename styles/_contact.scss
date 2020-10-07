@@ -296,7 +296,7 @@ input[type="submit"] {
     height: 100vh;
     align-content: stretch;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 68px min-content min-content 1fr;
+    grid-template-rows: 68px min-content min-content min-content 20px;
     .kontakt-picture{
       display:block;
       justify-self: center;
@@ -331,7 +331,7 @@ input[type="submit"] {
       list-style-type: none;
       margin-top: 7rem;
       text-align: center;
-      padding-bottom: 2rem;
+      padding:0;
       li {
         padding: 1rem;
 

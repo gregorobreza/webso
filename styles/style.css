@@ -2490,9 +2490,9 @@ input[type="submit"] {
         align-content: stretch;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px min-content min-content 1fr;
-        grid-template-rows: 68px -webkit-min-content -webkit-min-content 1fr;
-        grid-template-rows: 68px min-content min-content 1fr;
+    -ms-grid-rows: 68px min-content min-content min-content 20px;
+        grid-template-rows: 68px -webkit-min-content -webkit-min-content -webkit-min-content 20px;
+        grid-template-rows: 68px min-content min-content min-content 20px;
   }
   .kontakt .kontakt-picture {
     display: block;
@@ -2546,7 +2546,7 @@ input[type="submit"] {
     list-style-type: none;
     margin-top: 7rem;
     text-align: center;
-    padding-bottom: 2rem;
+    padding: 0;
   }
   .kontakt ul li {
     padding: 1rem;
