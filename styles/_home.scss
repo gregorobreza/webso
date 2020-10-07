@@ -384,7 +384,7 @@ header {
     top: 0;
     height: 100vh;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 68px min-content min-content;
+    grid-template-rows: 68px min-content auto;
 
     h2 {
       grid-row: 2/3;
@@ -409,11 +409,10 @@ header {
       grid-column: 1/4;
       align-self: center;
       justify-self: center;
-      margin-top: 20vh;
+      margin-top: 2rem;
       margin-bottom: 0rem;
       z-index: -1;
       margin-right:5rem;
-    
 
       img {
         width: 100vw;

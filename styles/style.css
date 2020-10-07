@@ -943,9 +943,9 @@ header .menu-btn.open .menu-btn__burger::after {
     height: 100vh;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px min-content min-content;
-        grid-template-rows: 68px -webkit-min-content -webkit-min-content;
-        grid-template-rows: 68px min-content min-content;
+    -ms-grid-rows: 68px min-content auto;
+        grid-template-rows: 68px -webkit-min-content auto;
+        grid-template-rows: 68px min-content auto;
   }
   .showcase h2 {
     -ms-grid-row: 2;
@@ -982,7 +982,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 20vh;
+    margin-top: 2rem;
     margin-bottom: 0rem;
     z-index: -1;
     margin-right: 5rem;
