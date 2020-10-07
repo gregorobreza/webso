@@ -406,9 +406,7 @@ body.day #fp-nav ul li a span,
     display: none;
   }
   #fp-nav.fp-left {
-    left: 1vw;
-    top: 80vh;
-    bottom: 0;
+    display: none;
   }
 }
 
