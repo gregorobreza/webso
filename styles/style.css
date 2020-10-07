@@ -986,6 +986,7 @@ header .menu-btn.open .menu-btn__burger::after {
     margin-bottom: 0rem;
     z-index: -1;
     margin-right: 5rem;
+    padding-bottom: 1rem;
   }
   .showcase .paralax-container img {
     width: 100vw;
@@ -1008,6 +1009,7 @@ header .menu-btn.open .menu-btn__burger::after {
     margin-right: 5rem;
     z-index: -1;
     display: none;
+    padding-bottom: 1rem;
   }
   .showcase .paralax-container-2 img {
     width: 110vw;
