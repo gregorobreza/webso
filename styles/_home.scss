@@ -407,15 +407,15 @@ header {
     .paralax-container {
       grid-row: 3/4;
       grid-column: 1/4;
-      align-self: center;
+      align-self: start;
       justify-self: center;
-      margin-top: 2rem;
+      margin-top: 20vh;
       margin-bottom: 0rem;
       z-index: -1;
       margin-right:5rem;
 
       img {
-        width: 100vw;
+        width: 110vw;
         height: auto;
       }
     }
@@ -423,7 +423,7 @@ header {
     .paralax-container-2 {
       grid-row: 3/4;
       grid-column: 1/4;
-      align-self: center;
+      align-self: start;
       justify-self: center;
       margin-top: 2rem;
       margin-bottom: 0rem;

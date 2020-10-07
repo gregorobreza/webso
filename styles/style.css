@@ -977,18 +977,18 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-top: 2rem;
+    margin-top: 20vh;
     margin-bottom: 0rem;
     z-index: -1;
     margin-right: 5rem;
   }
   .showcase .paralax-container img {
-    width: 100vw;
+    width: 110vw;
     height: auto;
   }
   .showcase .paralax-container-2 {
@@ -998,9 +998,9 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     -ms-grid-column-align: center;
         justify-self: center;
     margin-top: 2rem;
