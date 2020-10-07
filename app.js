@@ -184,7 +184,26 @@ function showSlides(n) {
 }
 
 
+
+// orientacija zaslona
 const rotateMessage = document.getElementById("rotate");
+console.log(window.orientation)
+if(window.orientation === 90){
+    
+  rotateMessage.classList.add("rotate-landscape")
+  }
+  else if(window.orientation === 270){
+ 
+    rotateMessage.classList.add("rotate-landscape")
+  }
+  else if(window.orientation === 0){
+  
+    rotateMessage.classList.remove("rotate-landscape")
+  }
+  else if(window.orientation=== 180){
+    
+    rotateMessage.classList.remove("rotate-landscape")
+  }
 
 window.addEventListener("orientationchange", function(event) {
   if(event.target.screen.orientation.angle === 90){
