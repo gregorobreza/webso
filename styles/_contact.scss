@@ -8,6 +8,10 @@
   grid-template-columns: 9rem 1.5fr 1fr 5%;
   grid-template-rows: 68px 1fr 1fr;
 
+  .kontakt-picture{
+    display:none;
+  }
+
   h2 {
     grid-row: 2/3;
     grid-column: 2/4;
@@ -292,16 +296,27 @@ input[type="submit"] {
     height: 100vh;
     align-content: stretch;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 68px 0.8fr 1fr;
+    grid-template-rows: 68px min-content min-content 1fr;
+    .kontakt-picture{
+      display:block;
+      justify-self: center;
+      align-self: center;
+      grid-row:3/4;
+      grid-column: 1/4;
+      height: 35vh;
+      
+
+    }
 
     h2 {
       grid-row: 2/3;
       grid-column: 2/3;
-      align-self: start;
+      align-self: center;
       justify-self: center;
       margin-left: 0rem;
       margin-top: 4rem;
-      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      padding:0;
       text-align: center;
       span {
         display: block;
@@ -309,12 +324,12 @@ input[type="submit"] {
       }
     }
     ul {
-      grid-row: 3/4;
+      grid-row: 4/5;
       grid-column: 2/3;
       align-self: start;
       justify-self: center;
       list-style-type: none;
-      margin-top: 2rem;
+      margin-top: 7rem;
       text-align: center;
       li {
         padding: 1rem;
@@ -331,9 +346,9 @@ input[type="submit"] {
 
     .besedilo {
       display: block;
-      grid-row: 2/3;
+      grid-row: 4/5;
       grid-column: 2/3;
-      align-self: end;
+      align-self: start;
       justify-self: center;
       font-size: 2rem;
       margin-top: 0rem;

@@ -2134,6 +2134,10 @@ header .menu-btn.open .menu-btn__burger::after {
       grid-template-rows: 68px 1fr 1fr;
 }
 
+.kontakt .kontakt-picture {
+  display: none;
+}
+
 .kontakt h2 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -2486,8 +2490,24 @@ input[type="submit"] {
         align-content: stretch;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px 0.8fr 1fr;
-        grid-template-rows: 68px 0.8fr 1fr;
+    -ms-grid-rows: 68px min-content min-content 1fr;
+        grid-template-rows: 68px -webkit-min-content -webkit-min-content 1fr;
+        grid-template-rows: 68px min-content min-content 1fr;
+  }
+  .kontakt .kontakt-picture {
+    display: block;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    height: 35vh;
   }
   .kontakt h2 {
     -ms-grid-row: 2;
@@ -2496,14 +2516,15 @@ input[type="submit"] {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
     margin-left: 0rem;
     margin-top: 4rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
     text-align: center;
   }
   .kontakt h2 span {
@@ -2511,9 +2532,9 @@ input[type="submit"] {
     margin-left: 0rem;
   }
   .kontakt ul {
-    -ms-grid-row: 3;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 1;
-    grid-row: 3/4;
+    grid-row: 4/5;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -2523,7 +2544,7 @@ input[type="submit"] {
     -ms-grid-column-align: center;
         justify-self: center;
     list-style-type: none;
-    margin-top: 2rem;
+    margin-top: 7rem;
     text-align: center;
   }
   .kontakt ul li {
@@ -2538,15 +2559,15 @@ input[type="submit"] {
   }
   .kontakt .besedilo {
     display: block;
-    -ms-grid-row: 2;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 1;
-    grid-row: 2/3;
+    grid-row: 4/5;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     -ms-grid-column-align: center;
         justify-self: center;
     font-size: 2rem;
