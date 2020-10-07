@@ -2507,7 +2507,7 @@ input[type="submit"] {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    height: 25vh;
+    height: 35vh;
   }
   .kontakt h2 {
     -ms-grid-row: 2;
@@ -2549,7 +2549,7 @@ input[type="submit"] {
     padding: 0;
   }
   .kontakt ul li {
-    padding: 0rem 1rem 0 1rem;
+    padding: 1rem 1rem 0 1rem;
   }
   .kontakt ul li .fas,
   .kontakt ul li .fab {
