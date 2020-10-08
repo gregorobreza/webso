@@ -1302,14 +1302,12 @@ header .menu-btn.open .menu-btn__burger::after {
   .pro {
     display: -ms-grid;
     display: grid;
-    min-height: 100vh;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
+    height: 90vh;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px 8% 1fr 0.2fr;
-        grid-template-rows: 68px 8% 1fr 0.2fr;
+    -ms-grid-rows: 68px min-content 1fr min-content;
+        grid-template-rows: 68px -webkit-min-content 1fr -webkit-min-content;
+        grid-template-rows: 68px min-content 1fr min-content;
     /* SLIDER S PROJEKTI */
     /* OPISI PROJEKTOV */
   }
@@ -1325,6 +1323,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin: 3rem 0 1rem 0;
     margin-top: 6rem;
     text-align: center;
     line-height: 80%;
@@ -1367,7 +1366,7 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column-align: center;
         justify-self: center;
     /*background-color: white;*/
-    padding: 2rem 2em 4rem 2rem;
+    padding: 2rem 2em 0rem 2rem;
     text-align: center;
     /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
   }
@@ -2403,13 +2402,14 @@ input[type="submit"] {
   .kontakt {
     display: -ms-grid;
     display: grid;
-    height: 100vh;
+    height: 92vh;
     -ms-flex-line-pack: stretch;
         align-content: stretch;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px 0.7fr 1.5fr;
-        grid-template-rows: 68px 0.7fr 1.5fr;
+    -ms-grid-rows: 68px 0.7fr min-content;
+        grid-template-rows: 68px 0.7fr -webkit-min-content;
+        grid-template-rows: 68px 0.7fr min-content;
   }
   .kontakt h2 {
     -ms-grid-row: 2;

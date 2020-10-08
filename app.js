@@ -70,7 +70,7 @@ new fullpage("#fullpage", {
           },
         });
         var typed3 = new Typed(".type_gregor3", {
-          strings: ["WHTML, CSS, JS"],
+          strings: ["HTML, CSS, JS"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 4500,

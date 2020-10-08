@@ -231,10 +231,10 @@ input[type="submit"] {
   /* VSEBINA */
   .kontakt {
     display: grid;
-    height: 100vh;
+    height: 92vh;
     align-content: stretch;
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 68px 0.7fr 1.5fr;
+    grid-template-rows: 68px 0.7fr min-content;
 
     h2 {
       grid-row: 2/3;
