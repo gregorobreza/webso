@@ -1,15 +1,11 @@
 //remove preloader
 
-window.addEventListener("load", () =>{
-  setTimeout(()=>{
+window.addEventListener("load", () => {
+  setTimeout(() => {
     const preload = document.getElementById("preload");
-    preload.classList.add("preload-finish")
-  }, 2000)
-  
-
-} )
-
-
+    preload.classList.add("preload-finish");
+  }, 2000);
+});
 
 TweenMax.defaultEase = Linear.easeOut;
 let firstTyping;
@@ -24,7 +20,6 @@ new fullpage("#fullpage", {
   css3: true,
   anchors: ["domov-stran", "projekti-stran", "onas-stran", "kontakt-stran"],
   menu: "#sidebarMenu",
-
 
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
@@ -45,16 +40,23 @@ new fullpage("#fullpage", {
     const pike = document.querySelectorAll(".pike");
     tl.fromTo(pike, 0.8, { x: -20, opacity: 0 }, { x: 0, opacity: 1 });
 
-    const slike= document.querySelector(".projekt-slika");
-    const tl5 = new TimelineMax({ delay: 1.0 });
-    tl5.fromTo(slike, 1.4, {x: -50, opacity: 0}, {x:0, opacity:1});
+    //animacija slik pri pojektih
 
-    
-    
-    if(destination.index === 2){
+    const tl5 = new TimelineMax({ delay: 0.3 });
+
+    if (destination.index === 1) {
+      const slike = document.querySelector(".projekt-slika");
+      const cov = document.querySelector(".cover");
+
       
-
-      if (firstTyping == undefined){
+      tl5.fromTo(cov, 1, { x: "0%"}, {x:"100%"}, "reveal");
+      /*
+      tl5.to(cov, 1, { scaleX: 0, transformOrigin: "right" }, "reveal");
+      */
+      tl5.from(slike, 2, { opacity: 0 }, "reveal");
+      
+    } else if (destination.index === 2) {
+      if (firstTyping == undefined) {
         firstTyping = 2; // prvic ko prides na slide se zamenja vrednost, da ne zacne ponovno pisat
         var typed1 = new Typed(".type_gregor1", {
           strings: ["Študent strojništva"],
@@ -80,7 +82,7 @@ new fullpage("#fullpage", {
           startDelay: 4500,
           loop: false,
         });
-    
+
         var typed4 = new Typed(".type_jure1", {
           strings: ["Študent elektrotehnike"],
           typeSpeed: 100,
@@ -88,7 +90,7 @@ new fullpage("#fullpage", {
           startDelay: 900,
           loop: false,
         });
-    
+
         var typed5 = new Typed(".type_jure2", {
           strings: ["Wordpress"],
           typeSpeed: 100,
@@ -96,7 +98,7 @@ new fullpage("#fullpage", {
           startDelay: 2800,
           loop: false,
         });
-    
+
         var typed6 = new Typed(".type_jure3", {
           strings: ["HTML, CSS, JS"],
           typeSpeed: 100,
@@ -104,19 +106,10 @@ new fullpage("#fullpage", {
           startDelay: 4500,
           loop: false,
         });
-
       }
-
-      
-
-    }else{
-      
+    } else {
     }
-
-    
   },
-
-  
 });
 
 // odpre in zapre stranski meni in naredi animacijo burger menija
@@ -187,49 +180,31 @@ function showSlides(n) {
   captionText[slideIndex - 1].style.display = "block";
 }
 
-
-
 // orientacija zaslona
-const mediaQuery = window.matchMedia('(max-width: 700px)')
+const mediaQuery = window.matchMedia("(max-width: 700px)");
 
-if(mediaQuery.matches){
- 
-
-const rotateMessage = document.getElementById("rotate");
-console.log(window.orientation)
-if(window.orientation === 90){
-    
-  rotateMessage.classList.add("rotate-landscape")
-  }
-  else if(window.orientation === 270){
- 
-    rotateMessage.classList.add("rotate-landscape")
-  }
-  else if(window.orientation === 0){
-  
-    rotateMessage.classList.remove("rotate-landscape")
-  }
-  else if(window.orientation=== 180){
-    
-    rotateMessage.classList.remove("rotate-landscape")
+if (mediaQuery.matches) {
+  const rotateMessage = document.getElementById("rotate");
+  console.log(window.orientation);
+  if (window.orientation === 90) {
+    rotateMessage.classList.add("rotate-landscape");
+  } else if (window.orientation === 270) {
+    rotateMessage.classList.add("rotate-landscape");
+  } else if (window.orientation === 0) {
+    rotateMessage.classList.remove("rotate-landscape");
+  } else if (window.orientation === 180) {
+    rotateMessage.classList.remove("rotate-landscape");
   }
 
-window.addEventListener("orientationchange", function(event) {
-  if(event.target.screen.orientation.angle === 90){
-    
-  rotateMessage.classList.add("rotate-landscape")
-  }
-  else if(event.target.screen.orientation.angle === 270){
- 
-    rotateMessage.classList.add("rotate-landscape")
-  }
-  else if(event.target.screen.orientation.angle === 0){
-  
-    rotateMessage.classList.remove("rotate-landscape")
-  }
-  else if(event.target.screen.orientation.angle === 180){
-    
-    rotateMessage.classList.remove("rotate-landscape")
-  }
-  
-});}
+  window.addEventListener("orientationchange", function (event) {
+    if (event.target.screen.orientation.angle === 90) {
+      rotateMessage.classList.add("rotate-landscape");
+    } else if (event.target.screen.orientation.angle === 270) {
+      rotateMessage.classList.add("rotate-landscape");
+    } else if (event.target.screen.orientation.angle === 0) {
+      rotateMessage.classList.remove("rotate-landscape");
+    } else if (event.target.screen.orientation.angle === 180) {
+      rotateMessage.classList.remove("rotate-landscape");
+    }
+  });
+}
