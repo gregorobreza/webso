@@ -45,6 +45,10 @@ new fullpage("#fullpage", {
     const pike = document.querySelectorAll(".pike");
     tl.fromTo(pike, 0.8, { x: -20, opacity: 0 }, { x: 0, opacity: 1 });
 
+    const slike= document.querySelector(".projekt-slika");
+    const tl5 = new TimelineMax({ delay: 1.0 });
+    tl5.fromTo(slike, 1.4, {x: -50, opacity: 0}, {x:0, opacity:1});
+
     
     
     if(destination.index === 2){
