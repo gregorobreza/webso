@@ -2169,6 +2169,7 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-column-align: center;
       justify-self: center;
   list-style-type: none;
+  margin-top: 6rem;
 }
 
 .kontakt ul li {
@@ -2194,8 +2195,8 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
   margin-left: 5rem;
 }
 
