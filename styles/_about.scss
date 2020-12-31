@@ -6,7 +6,7 @@
   height: 100vh;
   align-content: stretch;
   grid-template-columns: 9rem 2.2fr 1fr 1fr 5%;
-  grid-template-rows: 68px 1fr 1.3fr;
+  grid-template-rows: 68px 1fr 1fr 25%;
 
   h2 {
     grid-row: 2/3;
@@ -16,7 +16,7 @@
   }
   .opis {
     text-align: justify;
-    grid-row: 3/4;
+    grid-row: 3/3;
     grid-column: 2/3;
     align-self: start;
     justify-self: start;
@@ -41,6 +41,32 @@
       display: inline-block;
       z-index: 50;
     }
+  }
+
+  .tehnologije{
+    grid-row: 4/4;
+    grid-column: 2/5;
+
+    ul{
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.5rem;
+      list-style: none;
+      padding: 0;
+      margin-right: 1rem;
+      
+      li{
+        display: block;
+        margin-right: 0.25rem;
+
+      }
+      li:last-child{
+        margin-right:0;
+      }
+    }
+
   }
 
   /* Pozicija kartice za Jureta*/
@@ -68,16 +94,21 @@
       width: 20rem;
       height: 20rem;
       border-radius: 50%;
+      
 
       /* Nastavis sliko v ozadje */
       &--jure {
-        background-image: url("/img/Jure_webso.jpg");
-        background-position: center top;
+        background-image: url("/img/Jure_slika.jpg");
+        background-position: center;
+        background-size: cover;
+        background-position: top;
       }
 
       &--gregor {
-        background-image: url("/img/Gregor_webso.jpg");
+        background-image: url("/img/Gregor_slika.jpg");
         background-position: center;
+        background-size: cover;
+        background-position: top;
         
       }
     }
@@ -362,12 +393,12 @@
         height: 13rem;
         border-radius: 50%;
         &--jure {
-          background-image: url("/img/Jure_webso.jpg");
+          background-image: url("/img/Jure_slika.jpg");
           background-position: 50% 20%;
         }
   
         &--gregor {
-          background-image: url("/img/Gregor_webso.jpg");
+          background-image: url("/img/Gregor_slika.jpg");
           background-position: 50% 30%;
           
         }

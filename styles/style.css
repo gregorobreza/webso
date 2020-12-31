@@ -1563,8 +1563,8 @@ header .menu-btn.open .menu-btn__burger::after {
       align-content: stretch;
   -ms-grid-columns: 9rem 2.2fr 1fr 1fr 5%;
       grid-template-columns: 9rem 2.2fr 1fr 1fr 5%;
-  -ms-grid-rows: 68px 1fr 1.3fr;
-      grid-template-rows: 68px 1fr 1.3fr;
+  -ms-grid-rows: 68px 1fr 1fr 25%;
+      grid-template-rows: 68px 1fr 1fr 25%;
   /* Pozicija kartice za Jureta*/
   /* Pozicija kartice za Gregorja*/
   /* Znotraj kartic se definira grid za lazje centriranje */
@@ -1588,8 +1588,7 @@ header .menu-btn.open .menu-btn__burger::after {
 .onas .opis {
   text-align: justify;
   -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
+  grid-row: 3/3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1626,6 +1625,40 @@ header .menu-btn.open .menu-btn__burger::after {
   border-radius: 50%;
   display: inline-block;
   z-index: 50;
+}
+
+.onas .tehnologije {
+  -ms-grid-row: 4;
+  grid-row: 4/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+}
+
+.onas .tehnologije ul {
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin-right: 1rem;
+}
+
+.onas .tehnologije ul li {
+  display: block;
+  margin-right: 0.25rem;
+}
+
+.onas .tehnologije ul li:last-child {
+  margin-right: 0;
 }
 
 .onas .onas__card__jure {
@@ -1667,13 +1700,17 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas .onas__card__slika--jure {
-  background-image: url("/img/Jure_webso.jpg");
-  background-position: center top;
+  background-image: url("/img/Jure_slika.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: top;
 }
 
 .onas .onas__card__slika--gregor {
-  background-image: url("/img/Gregor_webso.jpg");
+  background-image: url("/img/Gregor_slika.jpg");
   background-position: center;
+  background-size: cover;
+  background-position: top;
 }
 
 .onas .onas__card__ime {
@@ -2045,11 +2082,11 @@ header .menu-btn.open .menu-btn__burger::after {
     border-radius: 50%;
   }
   .onas .onas__card__slika--jure {
-    background-image: url("/img/Jure_webso.jpg");
+    background-image: url("/img/Jure_slika.jpg");
     background-position: 50% 20%;
   }
   .onas .onas__card__slika--gregor {
-    background-image: url("/img/Gregor_webso.jpg");
+    background-image: url("/img/Gregor_slika.jpg");
     background-position: 50% 30%;
   }
   .onas .onas__card__ime {
