@@ -96,7 +96,7 @@ body {
   }
 }
 
-.rotate-landscape{
+.rotate-landscape {
   display: block;
   display: grid;
   flex-direction: column;
@@ -113,7 +113,6 @@ body {
     justify-content: center;
   }
 }
-
 
 /*vse za dnevno temo*/
 body.day {
@@ -135,6 +134,14 @@ body.day .sidebar {
 
 body.day .sidebarMenu a {
   color: #061a33;
+}
+
+body.day .fp-controlArrow.fp-prev {
+  border-right-color: #061a33;
+}
+
+body.day .fp-controlArrow.fp-next {
+  border-left-color: #061a33;
 }
 
 /*dnevni burger*/

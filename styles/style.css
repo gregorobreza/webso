@@ -196,6 +196,14 @@ body.day .sidebarMenu a {
   color: #061a33;
 }
 
+body.day .fp-controlArrow.fp-prev {
+  border-right-color: #061a33;
+}
+
+body.day .fp-controlArrow.fp-next {
+  border-left-color: #061a33;
+}
+
 /*dnevni burger*/
 body.day .menu-btn__burger,
 .menu-btn__burger::before {
@@ -1088,7 +1096,6 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .pro {
-  position: absolute;
   top: 0;
   width: 100%;
   height: 100vh;
@@ -1098,7 +1105,6 @@ header .menu-btn.open .menu-btn__burger::after {
       grid-template-columns: 9rem 1fr 1fr 5%;
   -ms-grid-rows: 68px 1fr 1fr;
       grid-template-rows: 68px 1fr 1fr;
-  /* SLIDER S PROJEKTI */
   /* OPISI PROJEKTOV */
 }
 
@@ -1146,113 +1152,75 @@ header .menu-btn.open .menu-btn__burger::after {
   z-index: 50;
 }
 
-.pro .container-projekti {
+.pro .projekt-slika-section {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
-  grid-row: 2 / 4;
+  grid-row: 2/4;
   -ms-grid-column: 3;
   grid-column: 3;
-  -ms-grid-row-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
   height: 70%;
-  width: 90%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 10% 80% 10%;
-      grid-template-columns: 10% 80% 10%;
+  width: 80%;
 }
 
-.pro .container-projekti .projekt-slika {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  position: relative;
+.pro .projekt-slika-section .background-image-layout {
   z-index: 1;
-}
-
-.pro .container-projekti .projekt-slika .proSlide {
-  z-index: 1;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   background-position-x: center;
   background-position-y: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: auto;
   background-origin: padding-box;
   background-clip: border-box;
   background-size: cover;
 }
 
-.pro .container-projekti .projekt-slika .proSlide .st-projekta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #eeffff;
-  color: #061a33;
-  z-index: 2;
-  text-align: center;
-  width: 12rem;
-  height: 12rem;
-  position: absolute;
-  font-size: 10rem;
-  font-weight: bold;
-  right: -2rem;
-  bottom: -2rem;
-}
-
-.pro .container-projekti .projekt-slika .oakSlika {
+.pro .projekt-slika-section .oak-slika {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/oakneagle.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/oakneagle.jpg");
 }
 
-.pro .container-projekti .projekt-slika .andSlika {
+.pro .projekt-slika-section .andraztech-slika {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/andraztech.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/andraztech.jpg");
 }
 
-.pro .container-projekti .projekt-slika .pikSlika {
+.pro .projekt-slika-section .locice-slika {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/piknikprostorlocice.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/piknikprostorlocice.jpg");
 }
 
-.pro .container-projekti .nazaj-naprej {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pro .container-projekti .nazaj-naprej i {
-  padding-left: 10px;
-  padding-right: 10px;
-  cursor: pointer;
-  font-size: 10rem;
-}
-
-.pro .container-projekti .nazaj-naprej i:hover {
-  color: #ff4d5a;
-}
-
-.pro .opisi-projektov {
+.pro .opisi-projektov.prvi-projekt {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
   -ms-grid-column: 2;
   grid-column: 2/2;
-  /*background-color: white;*/
   padding: 4rem 4rem 4rem 4rem;
+}
+
+.pro .opisi-projektov {
+  padding-top: 50vh;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  -ms-grid-column: 2;
+  grid-column: 2/2;
+  /*background-color: #ff4d5a;*/
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 70%;
+  width: 80%;
+  /*background-color: white;*/
+  padding: 12rem 4rem 4rem 4rem;
   text-align: center;
   /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
 }
@@ -1302,13 +1270,12 @@ header .menu-btn.open .menu-btn__burger::after {
   .pro {
     display: -ms-grid;
     display: grid;
-    height: 90vh;
+    height: 100vh;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px min-content 1fr min-content;
-        grid-template-rows: 68px -webkit-min-content 1fr -webkit-min-content;
-        grid-template-rows: 68px min-content 1fr min-content;
-    /* SLIDER S PROJEKTI */
+    -ms-grid-rows: 68px min-content 1.5fr 1fr;
+        grid-template-rows: 68px -webkit-min-content 1.5fr 1fr;
+        grid-template-rows: 68px min-content 1.5fr 1fr;
     /* OPISI PROJEKTOV */
   }
   .pro h2 {
@@ -1335,38 +1302,72 @@ header .menu-btn.open .menu-btn__burger::after {
   .pro .pike {
     display: none;
   }
-  .pro .container-projekti {
+  .pro .projekt-slika-section {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
-    grid-row: 3 / 4;
+    grid-row: 3/4;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    height: 90%;
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 10% 80% 10%;
-        grid-template-columns: 10% 80% 10%;
-  }
-  .pro .opisi-projektov {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4 / 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
+    padding-top: 5rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
+    height: 90%;
+    width: 70%;
+  }
+  .pro .projekt-slika-section .background-image-layout {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-size: cover;
+  }
+  .pro .projekt-slika-section .oak-slika {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/oakneagle.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/oakneagle.jpg");
+  }
+  .pro .projekt-slika-section .andraztech-slika {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/andraztech.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/andraztech.jpg");
+  }
+  .pro .projekt-slika-section .locice-slika {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/piknikprostorlocice.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/piknikprostorlocice.jpg");
+  }
+  .pro .opisi-projektov.prvi-projekt {
+    -ms-grid-row: 4;
+    grid-row: 4 / 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-top: -13rem;
+    padding: 2rem 2em 0rem 2rem;
+  }
+  .pro .opisi-projektov {
+    -ms-grid-row: 4;
+    grid-row: 4 / 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    /*background-color: #ff4d5a;*/
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: 70%;
+    width: 80%;
     /*background-color: white;*/
     padding: 2rem 2em 0rem 2rem;
+    margin-top: -5rem;
     text-align: center;
     /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
   }
@@ -1421,9 +1422,6 @@ header .menu-btn.open .menu-btn__burger::after {
     /* OPISI PROJEKTOV */
   }
   .pro h2 {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -1443,46 +1441,58 @@ header .menu-btn.open .menu-btn__burger::after {
   .pro .pike {
     display: none;
   }
-  .pro .container-projekti {
+  .pro .projekt-slika-section {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-    -ms-grid-row-align: center;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
     height: 90%;
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 10% 80% 10%;
-        grid-template-columns: 10% 80% 10%;
+    width: 70%;
+    margin-bottom: 8rem;
   }
-  .pro .container-projekti .nazaj-naprej i {
-    font-size: 5rem;
-  }
-  .pro .container-projekti .projekt-slika {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    position: relative;
+  .pro .projekt-slika-section .background-image-layout {
     z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-size: cover;
   }
-  .pro .container-projekti .projekt-slika .proSlide .st-projekta {
-    width: 6rem;
-    height: 6rem;
-    position: absolute;
-    font-size: 5rem;
-    font-weight: bold;
-    right: -1rem;
-    bottom: -1rem;
+  .pro .projekt-slika-section .oak-slika {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/oakneagle.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/oakneagle.jpg");
+  }
+  .pro .projekt-slika-section .andraztech-slika {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/andraztech.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/andraztech.jpg");
+  }
+  .pro .projekt-slika-section .locice-slika {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/piknikprostorlocice.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/piknikprostorlocice.jpg");
+  }
+  .pro .opisi-projektov.prvi-projekt {
+    -ms-grid-row: 4;
+    grid-row: 4 / 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-top: -7rem;
+    padding: 2rem 2em 0rem 2rem;
   }
   .pro .opisi-projektov {
     -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4 / 5;
+    grid-row: 4 / 4;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -1492,24 +1502,43 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-column-align: center;
         justify-self: center;
     /*background-color: white;*/
-    padding: 2rem 2em 4rem 2rem;
+    padding-bottom: 1rem;
+    margin-top: -7rem;
+    /*padding: 1rem 2em 1rem 1rem;*/
     text-align: center;
     /*color: #061A33; Po koncanem urejanju izbrisi oz dodaj dnevni nacin*/
     z-index: 1000;
+    /*
+      h4 {
+        display: none;
+      }
+
+      h5 {
+        display: none;
+      }
+
+      p {
+        display: none;
+      }
+      */
   }
   .pro .opisi-projektov h4 {
-    display: none;
+    font-size: 2.7rem;
+    padding-bottom: 1rem;
   }
   .pro .opisi-projektov h5 {
-    display: none;
+    font-size: 2rem;
   }
   .pro .opisi-projektov p {
-    display: none;
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
   }
   .pro .opisi-projektov .orodja {
     display: none;
   }
   .pro .opisi-projektov a.button {
+    margin-top: 2rem;
     border: none;
     padding: 7px 35px;
     cursor: pointer;
