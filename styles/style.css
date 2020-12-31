@@ -204,6 +204,18 @@ body.day .fp-controlArrow.fp-next {
   border-left-color: #061a33;
 }
 
+body.day .onas .tehnologije ul li svg {
+  height: 6rem;
+  width: 6rem;
+  fill: #061a33;
+}
+
+body.day .onas .tehnologije ul li svg:hover {
+  fill: #ff4d5a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 /*dnevni burger*/
 body.day .menu-btn__burger,
 .menu-btn__burger::before {
@@ -1629,10 +1641,11 @@ header .menu-btn.open .menu-btn__burger::after {
 
 .onas .tehnologije {
   -ms-grid-row: 4;
-  grid-row: 4/4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2/5;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
 }
 
 .onas .tehnologije ul {
@@ -1648,13 +1661,25 @@ header .menu-btn.open .menu-btn__burger::after {
           align-items: center;
   font-size: 0.5rem;
   list-style: none;
-  padding: 0;
-  margin-right: 1rem;
+  padding: 5rem;
+  margin-right: 5rem;
 }
 
 .onas .tehnologije ul li {
   display: block;
-  margin-right: 0.25rem;
+  margin-right: 4rem;
+}
+
+.onas .tehnologije ul li svg {
+  height: 6rem;
+  width: 6rem;
+  fill: #eeffff;
+}
+
+.onas .tehnologije ul li svg:hover {
+  fill: #ff4d5a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .onas .tehnologije ul li:last-child {

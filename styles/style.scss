@@ -144,6 +144,17 @@ body.day .fp-controlArrow.fp-next {
   border-left-color: #061a33;
 }
 
+body.day .onas .tehnologije ul li svg {
+    height: 6rem;
+    width: 6rem;
+    fill: #061a33;
+}
+body.day .onas .tehnologije ul li svg:hover
+ {
+    fill: #ff4d5a;
+    transition: 0.3s;
+}
+
 /*dnevni burger*/
 body.day .menu-btn__burger,
 .menu-btn__burger::before {
