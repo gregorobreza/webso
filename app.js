@@ -78,7 +78,7 @@ new fullpage("#fullpage", {
         });
     
         var typed4 = new Typed(".type_jure1", {
-          strings: ["Full Stack razvijalec"],
+          strings: ["Aplikacija: Beležnica"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 900,

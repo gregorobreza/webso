@@ -212,22 +212,38 @@
     width: 100%;
     display: grid;
     height: 100vh;
-    grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: 68px 15% min-content min-content min-content;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 68px 15% min-content min-content min-content min-content;
   
     h2 {
       grid-row: 2/3;
-      grid-column: 2/4;
+      grid-column-start: 2;
+      grid-column-end: 4;
       align-self: center;
       justify-self: center;
+      
     }
     .opis {
       text-align: justify;
       grid-row: 3/4;
-      grid-column: 2/4;
-      align-self: start;
-      justify-self: start;
-      padding: 0 7rem 4rem 7rem;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      padding: 4rem 7rem 4rem 7rem;
+      font-size: 2rem;
+    }
+
+    .tehnologije{
+      grid-column-start: 2;
+      grid-column-end: 4;
+      align-self: center;
+      justify-self: center;
+
+      ul{
+        margin-right: 0;
+      }
     }
   
     .pike {
@@ -236,15 +252,19 @@
   
     /* Pozicija kartice za Jureta*/
     .onas__card__jure {
-      grid-row: 4/5;
-      grid-column: 2/3;
-      align-self: start;
+      margin-top: 10rem;
+      grid-row: 5/6;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      align-self: center;
     }
     /* Pozicija kartice za Gregorja*/
     .onas__card__gregor {
-      grid-row: 4/5;
-      grid-column: 3/4;
-      align-self: start;
+      margin-top: 10rem;
+      grid-row: 5/6;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      align-self: flex-end;
     }
   
     /* Znotraj kartic se definira grid za lazje centriranje */
@@ -279,13 +299,13 @@
     /* Nastavitev opisa pod imeni */
   
     .onas__opis--jure {
-      grid-row: 5/6;
+      grid-row: 6/7;
       grid-column: 2/3;
       align-self: start;
     }
   
     .onas__opis--gregor {
-      grid-row: 5/6;
+      grid-row: 6/7;
       grid-column: 3/4;
       align-self: start;
     }
@@ -359,7 +379,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: 68px min-content min-content min-content min-content;
+    grid-template-rows: 68px min-content min-content min-content min-content min-content;
   
     h2 {
       grid-row: 2/3;
@@ -370,25 +390,47 @@
       margin-bottom: 1rem;
     }
     .opis {
-      font-size: 20px;
-      padding: 0 2rem 2rem 2rem;
+      font-size: 1.5rem;
+      padding: 0 2rem 0rem 2rem;
 
     }
   
     .pike {
       display: none;
     }
+
+    .tehnologije{
+      grid-row-start:4;
+      grid-row-end:5;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      align-self: center;
+      justify-self: center;
+      ul{
+        li{
+          margin-right: 2rem;
+          svg{
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+      }
+    }
   
     /* Pozicija kartice za Jureta*/
     .onas__card__jure {
-      grid-row: 4/5;
-      grid-column: 2/3;
+      margin-top: 3rem;
+      grid-row: 5/6;
+      grid-column-start: 2;
+      grid-column-end: 3;
       align-self: start;
     }
     /* Pozicija kartice za Gregorja*/
     .onas__card__gregor {
-      grid-row: 4/5;
-      grid-column: 3/4;
+      margin-top: 3rem;
+      grid-row: 5/6;
+      grid-column-start: 3;
+      grid-column-end: 4;
       align-self: start;
     }
   
@@ -427,20 +469,20 @@
         grid-row: 2;
         justify-self: center;
         align-self: center;
-        font-size: 3rem;
+        font-size: 2rem;
       }
     }
   
     /* Nastavitev opisa pod imeni */
   
     .onas__opis--jure {
-      grid-row: 5/6;
+      grid-row: 6/7;
       grid-column: 2/3;
       align-self: start;
     }
   
     .onas__opis--gregor {
-      grid-row: 5/6;
+      grid-row: 6/7;
       grid-column: 3/4;
       align-self: start;
     }

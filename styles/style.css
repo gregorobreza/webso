@@ -1841,11 +1841,11 @@ header .menu-btn.open .menu-btn__burger::after {
     display: -ms-grid;
     display: grid;
     height: 100vh;
-    -ms-grid-columns: 5% 1fr 1fr 5%;
-        grid-template-columns: 5% 1fr 1fr 5%;
-    -ms-grid-rows: 68px 15% min-content min-content min-content;
-        grid-template-rows: 68px 15% -webkit-min-content -webkit-min-content -webkit-min-content;
-        grid-template-rows: 68px 15% min-content min-content min-content;
+    -ms-grid-columns: 5% 45% 45% 5%;
+        grid-template-columns: 5% 45% 45% 5%;
+    -ms-grid-rows: 68px 15% min-content min-content min-content min-content;
+        grid-template-rows: 68px 15% -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+        grid-template-rows: 68px 15% min-content min-content min-content min-content;
     /* Pozicija kartice za Jureta*/
     /* Pozicija kartice za Gregorja*/
     /* Znotraj kartic se definira grid za lazje centriranje */
@@ -1856,8 +1856,8 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2/4;
+        grid-column-start: 2;
+    grid-column-end: 4;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1870,39 +1870,55 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2/4;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-    -ms-grid-column-align: start;
-        justify-self: start;
-    padding: 0 7rem 4rem 7rem;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+    padding: 4rem 7rem 4rem 7rem;
+    font-size: 2rem;
+  }
+  .onas .tehnologije {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .onas .tehnologije ul {
+    margin-right: 0;
   }
   .onas .pike {
     display: none;
   }
   .onas .onas__card__jure {
-    -ms-grid-row: 4;
+    margin-top: 10rem;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 4/5;
+    grid-row: 5/6;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .onas .onas__card__gregor {
-    -ms-grid-row: 4;
+    margin-top: 10rem;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 4/5;
+    grid-row: 5/6;
     -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+        grid-column-start: 3;
+    grid-column-end: 4;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   .onas .onas__card {
     display: -ms-grid;
@@ -1938,9 +1954,9 @@ header .menu-btn.open .menu-btn__burger::after {
     font-size: 3rem;
   }
   .onas .onas__opis--jure {
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 6/7;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -1949,9 +1965,9 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: start;
   }
   .onas .onas__opis--gregor {
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 6/7;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
@@ -2031,9 +2047,9 @@ header .menu-btn.open .menu-btn__burger::after {
     height: 100vh;
     -ms-grid-columns: 5% 1fr 1fr 5%;
         grid-template-columns: 5% 1fr 1fr 5%;
-    -ms-grid-rows: 68px min-content min-content min-content min-content;
-        grid-template-rows: 68px -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
-        grid-template-rows: 68px min-content min-content min-content min-content;
+    -ms-grid-rows: 68px min-content min-content min-content min-content min-content;
+        grid-template-rows: 68px -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+        grid-template-rows: 68px min-content min-content min-content min-content min-content;
     /* Pozicija kartice za Jureta*/
     /* Pozicija kartice za Gregorja*/
     /* Znotraj kartic se definira grid za lazje centriranje */
@@ -2055,30 +2071,52 @@ header .menu-btn.open .menu-btn__burger::after {
     margin-bottom: 1rem;
   }
   .onas .opis {
-    font-size: 20px;
-    padding: 0 2rem 2rem 2rem;
+    font-size: 1.5rem;
+    padding: 0 2rem 0rem 2rem;
   }
   .onas .pike {
     display: none;
   }
-  .onas .onas__card__jure {
+  .onas .tehnologije {
     -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
+        grid-row-start: 4;
+    grid-row-end: 5;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .onas .tehnologije ul li {
+    margin-right: 2rem;
+  }
+  .onas .tehnologije ul li svg {
+    height: 3rem;
+    width: 3rem;
+  }
+  .onas .onas__card__jure {
+    margin-top: 3rem;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
   }
   .onas .onas__card__gregor {
-    -ms-grid-row: 4;
+    margin-top: 3rem;
+    -ms-grid-row: 5;
     -ms-grid-row-span: 1;
-    grid-row: 4/5;
+    grid-row: 5/6;
     -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
+        grid-column-start: 3;
+    grid-column-end: 4;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
@@ -2122,12 +2160,12 @@ header .menu-btn.open .menu-btn__burger::after {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .onas .onas__opis--jure {
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 6/7;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -2136,9 +2174,9 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: start;
   }
   .onas .onas__opis--gregor {
-    -ms-grid-row: 5;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 1;
-    grid-row: 5/6;
+    grid-row: 6/7;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
@@ -2499,9 +2537,9 @@ input[type="submit"] {
         align-content: stretch;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px 0.7fr min-content;
-        grid-template-rows: 68px 0.7fr -webkit-min-content;
-        grid-template-rows: 68px 0.7fr min-content;
+    -ms-grid-rows: 68px 1fr min-content;
+        grid-template-rows: 68px 1fr -webkit-min-content;
+        grid-template-rows: 68px 1fr min-content;
   }
   .kontakt h2 {
     -ms-grid-row: 2;
