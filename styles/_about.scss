@@ -74,6 +74,10 @@
           fill: #ff4d5a;
           transition: 0.3s;
         }
+        #woo{
+          height: 9rem;
+          width: 9rem;
+        }
 
       }
       li:last-child{
@@ -413,6 +417,10 @@
             height: 3rem;
             width: 3rem;
           }
+          #woo{
+            height: 5.5rem;
+            width: 5.5rem;
+          }
         }
       }
     }
@@ -555,10 +563,16 @@
   }
   .onas .tehnologije ul{
     li{
-      margin-right: 2rem;
+      margin-right: 1.5rem;
       svg{
-        height: 2rem;
-        width: 2rem;
+        height: 2.4rem;
+        width: 2.4rem;
+
+        
+      }
+      #woo{
+        height: 5.5rem;
+        width: 5.5rem;
       }
     }
   }

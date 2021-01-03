@@ -205,8 +205,6 @@ body.day .fp-controlArrow.fp-next {
 }
 
 body.day .onas .tehnologije ul li svg {
-  height: 6rem;
-  width: 6rem;
   fill: #061a33;
 }
 
@@ -1682,6 +1680,11 @@ header .menu-btn.open .menu-btn__burger::after {
   transition: 0.3s;
 }
 
+.onas .tehnologije ul li #woo {
+  height: 9rem;
+  width: 9rem;
+}
+
 .onas .tehnologije ul li:last-child {
   margin-right: 0;
 }
@@ -2097,6 +2100,10 @@ header .menu-btn.open .menu-btn__burger::after {
     height: 3rem;
     width: 3rem;
   }
+  .onas .tehnologije ul li #woo {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
   .onas .onas__card__jure {
     margin-top: 2vw;
     -ms-grid-row: 5;
@@ -2253,11 +2260,15 @@ header .menu-btn.open .menu-btn__burger::after {
     display: none;
   }
   .onas .tehnologije ul li {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
   .onas .tehnologije ul li svg {
-    height: 2rem;
-    width: 2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  .onas .tehnologije ul li #woo {
+    height: 5.5rem;
+    width: 5.5rem;
   }
 }
 
