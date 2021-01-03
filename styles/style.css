@@ -1428,8 +1428,8 @@ header .menu-btn.open .menu-btn__burger::after {
     max-height: fit-content;
     -ms-grid-columns: 5% 1fr 5%;
         grid-template-columns: 5% 1fr 5%;
-    -ms-grid-rows: 68px auto 1fr 25%;
-        grid-template-rows: 68px auto 1fr 25%;
+    -ms-grid-rows: 68px auto 1fr 25% 69px;
+        grid-template-rows: 68px auto 1fr 25% 69px;
     /* SLIDER S PROJEKTI */
     /* OPISI PROJEKTOV */
   }
@@ -1505,9 +1505,9 @@ header .menu-btn.open .menu-btn__burger::after {
   .pro .opisi-projektov {
     -ms-grid-row: 4;
     grid-row: 4 / 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
@@ -2047,9 +2047,9 @@ header .menu-btn.open .menu-btn__burger::after {
     height: 100vh;
     -ms-grid-columns: 5% 1fr 1fr 5%;
         grid-template-columns: 5% 1fr 1fr 5%;
-    -ms-grid-rows: 68px min-content min-content min-content min-content min-content;
-        grid-template-rows: 68px -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
-        grid-template-rows: 68px min-content min-content min-content min-content min-content;
+    -ms-grid-rows: 68px min-content min-content min-content min-content min-content 69px;
+        grid-template-rows: 68px -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content 69px;
+        grid-template-rows: 68px min-content min-content min-content min-content min-content 69px;
     /* Pozicija kartice za Jureta*/
     /* Pozicija kartice za Gregorja*/
     /* Znotraj kartic se definira grid za lazje centriranje */
