@@ -74,6 +74,10 @@
           fill: #ff4d5a;
           transition: 0.3s;
         }
+        #woo{
+          height: 9rem;
+          width: 9rem;
+        }
 
       }
       li:last-child{
@@ -412,6 +416,10 @@
           svg{
             height: 3rem;
             width: 3rem;
+          }
+          #woo{
+            height: 5.5rem;
+            width: 5.5rem;
           }
         }
       }

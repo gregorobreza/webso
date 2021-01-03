@@ -1680,6 +1680,11 @@ header .menu-btn.open .menu-btn__burger::after {
   transition: 0.3s;
 }
 
+.onas .tehnologije ul li #woo {
+  height: 9rem;
+  width: 9rem;
+}
+
 .onas .tehnologije ul li:last-child {
   margin-right: 0;
 }
@@ -2094,6 +2099,10 @@ header .menu-btn.open .menu-btn__burger::after {
   .onas .tehnologije ul li svg {
     height: 3rem;
     width: 3rem;
+  }
+  .onas .tehnologije ul li #woo {
+    height: 5.5rem;
+    width: 5.5rem;
   }
   .onas .onas__card__jure {
     margin-top: 2vw;
