@@ -205,8 +205,6 @@ body.day .fp-controlArrow.fp-next {
 }
 
 body.day .onas .tehnologije ul li svg {
-  height: 6rem;
-  width: 6rem;
   fill: #061a33;
 }
 
@@ -2253,11 +2251,15 @@ header .menu-btn.open .menu-btn__burger::after {
     display: none;
   }
   .onas .tehnologije ul li {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
   .onas .tehnologije ul li svg {
-    height: 2rem;
-    width: 2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  .onas .tehnologije ul li #woo {
+    height: 5.5rem;
+    width: 5.5rem;
   }
 }
 
