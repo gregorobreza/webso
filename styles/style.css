@@ -1535,7 +1535,7 @@ header .menu-btn.open .menu-btn__burger::after {
       */
   }
   .pro .opisi-projektov h4 {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     padding-bottom: 1rem;
   }
   .pro .opisi-projektov h5 {
@@ -2098,7 +2098,7 @@ header .menu-btn.open .menu-btn__burger::after {
     width: 3rem;
   }
   .onas .onas__card__jure {
-    margin-top: 3rem;
+    margin-top: 2vw;
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
     grid-row: 5/6;
@@ -2110,7 +2110,7 @@ header .menu-btn.open .menu-btn__burger::after {
         align-self: start;
   }
   .onas .onas__card__gregor {
-    margin-top: 3rem;
+    margin-top: 2vw;
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
     grid-row: 5/6;
@@ -2244,6 +2244,20 @@ header .menu-btn.open .menu-btn__burger::after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+/* For smaller mobile: */
+@media only screen and (max-width: 360px) {
+  .onas .onas__opis__besedilo ul {
+    display: none;
+  }
+  .onas .tehnologije ul li {
+    margin-right: 2rem;
+  }
+  .onas .tehnologije ul li svg {
+    height: 2rem;
+    width: 2rem;
   }
 }
 

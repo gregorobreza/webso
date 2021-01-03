@@ -419,7 +419,7 @@
   
     /* Pozicija kartice za Jureta*/
     .onas__card__jure {
-      margin-top: 3rem;
+      margin-top: 2vw;
       grid-row: 5/6;
       grid-column-start: 2;
       grid-column-end: 3;
@@ -427,7 +427,7 @@
     }
     /* Pozicija kartice za Gregorja*/
     .onas__card__gregor {
-      margin-top: 3rem;
+      margin-top: 2vw;
       grid-row: 5/6;
       grid-column-start: 3;
       grid-column-end: 4;
@@ -548,4 +548,18 @@
   
 }
 
-
+/* For smaller mobile: */
+@media only screen and (max-width: 360px) {
+  .onas .onas__opis__besedilo ul {
+    display:none;
+  }
+  .onas .tehnologije ul{
+    li{
+      margin-right: 2rem;
+      svg{
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}

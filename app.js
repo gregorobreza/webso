@@ -53,14 +53,14 @@ new fullpage("#fullpage", {
       if (firstTyping == undefined){
         firstTyping = 2; // prvic ko prides na slide se zamenja vrednost, da ne zacne ponovno pisat
         var typed1 = new Typed(".type_gregor1", {
-          strings: ["Full Stack razvijalec"],
+          strings: ["Hrana: Losos"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 900,
           loop: false,
         });
         var typed2 = new Typed(".type_gregor2", {
-          strings: ["Tek"],
+          strings: ["Knjiga: D. Goggins - Can't hurt me"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 2800,
@@ -70,7 +70,7 @@ new fullpage("#fullpage", {
           },
         });
         var typed3 = new Typed(".type_gregor3", {
-          strings: ["Calisthenics + Weight training"],
+          strings: ["Šport: Street workout"],
           typeSpeed: 100,
           backSpeed: 0,
           startDelay: 4500,
@@ -152,14 +152,6 @@ var parallax = new Parallax(scene);
 var scene2 = document.getElementById("paralax-scene-2");
 var parallax2 = new Parallax(scene2);
 
-// Menjava slik pri sliderjih
-var slideIndex = 1;
-showSlides(slideIndex);
-
-//next previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
 
 
 
