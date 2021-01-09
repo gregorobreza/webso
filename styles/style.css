@@ -1205,6 +1205,16 @@ header .menu-btn.open .menu-btn__burger::after {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/piknikprostorlocice.jpg");
 }
 
+.pro .projekt-slika-section .izlaboats-slika {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/izlaboats.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/izlaboats.jpg");
+}
+
+.pro .projekt-slika-section .creativeula-slika {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/creativeula.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/creativeula.jpg");
+}
+
 .pro .opisi-projektov.prvi-projekt {
   -ms-grid-row: 3;
   grid-row: 3 / 3;
@@ -1571,8 +1581,8 @@ header .menu-btn.open .menu-btn__burger::after {
   height: 100vh;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  -ms-grid-columns: 9rem 2.2fr 1fr 1fr 5%;
-      grid-template-columns: 9rem 2.2fr 1fr 1fr 5%;
+  -ms-grid-columns: 9rem 60% 1fr 1fr 3%;
+      grid-template-columns: 9rem 60% 1fr 1fr 3%;
   -ms-grid-rows: 68px 1fr 1fr 25%;
       grid-template-rows: 68px 1fr 1fr 25%;
   /* Pozicija kartice za Jureta*/
@@ -1607,7 +1617,7 @@ header .menu-btn.open .menu-btn__burger::after {
       align-self: start;
   -ms-grid-column-align: start;
       justify-self: start;
-  padding: 0 7rem 0 7rem;
+  padding: 0 4rem 0 7rem;
 }
 
 .onas .pike {
@@ -1694,6 +1704,7 @@ header .menu-btn.open .menu-btn__burger::after {
   grid-row: 2;
   -ms-grid-column: 3;
   grid-column: 3;
+  padding-right: 0.8rem;
 }
 
 .onas .onas__card__gregor {
@@ -1772,7 +1783,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas .onas__opis__besedilo {
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 0 0 0;
   width: 100%;
   display: table-cell;
   vertical-align: top;
