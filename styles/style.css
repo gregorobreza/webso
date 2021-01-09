@@ -1221,6 +1221,7 @@ header .menu-btn.open .menu-btn__burger::after {
   -ms-grid-column: 2;
   grid-column: 2/2;
   padding: 4rem 4rem 4rem 4rem;
+  margin-top: -4rem;
 }
 
 .pro .opisi-projektov {
@@ -1581,8 +1582,8 @@ header .menu-btn.open .menu-btn__burger::after {
   height: 100vh;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  -ms-grid-columns: 9rem 60% 1fr 1fr 3%;
-      grid-template-columns: 9rem 60% 1fr 1fr 3%;
+  -ms-grid-columns: 9rem 60vw 15vw 15vw 3%;
+      grid-template-columns: 9rem 60vw 15vw 15vw 3%;
   -ms-grid-rows: 68px 1fr 1fr 25%;
       grid-template-rows: 68px 1fr 1fr 25%;
   /* Pozicija kartice za Jureta*/
@@ -1648,9 +1649,9 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas .tehnologije {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1667,10 +1668,10 @@ header .menu-btn.open .menu-btn__burger::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.5rem;
   list-style: none;
-  padding: 5rem;
-  margin-right: 5rem;
+  margin-top: 20rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .onas .tehnologije ul li {
@@ -1679,8 +1680,8 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas .tehnologije ul li svg {
-  height: 6rem;
-  width: 6rem;
+  height: 4vw;
+  width: 4vw;
   fill: #eeffff;
 }
 
@@ -1732,8 +1733,8 @@ header .menu-btn.open .menu-btn__burger::after {
       justify-self: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 20rem;
-  height: 20rem;
+  width: 14vw;
+  height: 14vw;
   border-radius: 50%;
   /* Nastavis sliko v ozadje */
 }
@@ -1783,7 +1784,7 @@ header .menu-btn.open .menu-btn__burger::after {
 }
 
 .onas .onas__opis__besedilo {
-  padding: 2rem 0 0 0;
+  padding: 2rem 0.4rem 0 0.4rem;
   width: 100%;
   display: table-cell;
   vertical-align: top;
@@ -1896,6 +1897,9 @@ header .menu-btn.open .menu-btn__burger::after {
     font-size: 2rem;
   }
   .onas .tehnologije {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
     -ms-grid-column: 2;
         grid-column-start: 2;
     grid-column-end: 4;
@@ -1907,6 +1911,7 @@ header .menu-btn.open .menu-btn__burger::after {
   }
   .onas .tehnologije ul {
     margin-right: 0;
+    margin-top: 0rem;
   }
   .onas .pike {
     display: none;
