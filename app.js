@@ -15,6 +15,7 @@ TweenMax.defaultEase = Linear.easeOut;
 let firstTyping;
 new fullpage("#fullpage", {
   //options here
+  licenseKey: "16C8B169-43374614-A5C8E626-14E12568",
   autoScrolling: true,
   navigation: true,
   navigationPosition: "left",
